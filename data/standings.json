@@ -1,10 +1,38 @@
 {
-  "updated": "2026-06-11T15:56:43.407Z",
+  "updated": "2026-06-11T20:19:00.461Z",
   "source": "football-data.org WC",
   "groups": [
     {
       "name": "A",
       "table": [
+        {
+          "name": "Mexico",
+          "tla": "MEX",
+          "crest": "https://crests.football-data.org/769.svg",
+          "played": 1,
+          "w": 1,
+          "d": 0,
+          "l": 0,
+          "gf": 1,
+          "ga": 0,
+          "gd": 1,
+          "points": 3,
+          "form": []
+        },
+        {
+          "name": "South Korea",
+          "tla": "KOR",
+          "crest": "https://crests.football-data.org/772.png",
+          "played": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 0,
+          "form": []
+        },
         {
           "name": "Czechia",
           "tla": "CZE",
@@ -20,44 +48,16 @@
           "form": []
         },
         {
-          "name": "Mexico",
-          "tla": "MEX",
-          "crest": "https://crests.football-data.org/769.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
           "name": "South Africa",
           "tla": "RSA",
           "crest": "https://crests.football-data.org/9396.svg",
-          "played": 0,
+          "played": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
-          "name": "South Korea",
-          "tla": "KOR",
-          "crest": "https://crests.football-data.org/772.png",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "ga": 1,
+          "gd": -1,
           "points": 0,
           "form": []
         }
@@ -142,9 +142,9 @@
           "form": []
         },
         {
-          "name": "Morocco",
-          "tla": "MAR",
-          "crest": "https://crests.football-data.org/morocco.svg",
+          "name": "Haiti",
+          "tla": "HAI",
+          "crest": "https://crests.football-data.org/haiti.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -156,9 +156,9 @@
           "form": []
         },
         {
-          "name": "Haiti",
-          "tla": "HAI",
-          "crest": "https://crests.football-data.org/haiti.svg",
+          "name": "Morocco",
+          "tla": "MAR",
+          "crest": "https://crests.football-data.org/morocco.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -189,6 +189,34 @@
       "name": "D",
       "table": [
         {
+          "name": "Australia",
+          "tla": "AUS",
+          "crest": "https://crests.football-data.org/779.svg",
+          "played": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 0,
+          "form": []
+        },
+        {
+          "name": "Paraguay",
+          "tla": "PAR",
+          "crest": "https://crests.football-data.org/761.svg",
+          "played": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 0,
+          "form": []
+        },
+        {
           "name": "Turkey",
           "tla": "TUR",
           "crest": "https://crests.football-data.org/803.svg",
@@ -215,54 +243,12 @@
           "gd": 0,
           "points": 0,
           "form": []
-        },
-        {
-          "name": "Paraguay",
-          "tla": "PAR",
-          "crest": "https://crests.football-data.org/761.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
-          "name": "Australia",
-          "tla": "AUS",
-          "crest": "https://crests.football-data.org/779.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
         }
       ]
     },
     {
       "name": "E",
       "table": [
-        {
-          "name": "Germany",
-          "tla": "GER",
-          "crest": "https://crests.football-data.org/759.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
         {
           "name": "Curaçao",
           "tla": "CUW",
@@ -278,9 +264,9 @@
           "form": []
         },
         {
-          "name": "Ivory Coast",
-          "tla": "CIV",
-          "crest": "https://crests.football-data.org/787.svg",
+          "name": "Germany",
+          "tla": "GER",
+          "crest": "https://crests.football-data.org/759.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -304,6 +290,20 @@
           "gd": 0,
           "points": 0,
           "form": []
+        },
+        {
+          "name": "Ivory Coast",
+          "tla": "CIV",
+          "crest": "https://crests.football-data.org/787.svg",
+          "played": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 0,
+          "form": []
         }
       ]
     },
@@ -311,9 +311,9 @@
       "name": "F",
       "table": [
         {
-          "name": "Sweden",
-          "tla": "SWE",
-          "crest": "https://crests.football-data.org/792.svg",
+          "name": "Japan",
+          "tla": "JPN",
+          "crest": "https://crests.football-data.org/766.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -339,9 +339,9 @@
           "form": []
         },
         {
-          "name": "Japan",
-          "tla": "JPN",
-          "crest": "https://crests.football-data.org/766.svg",
+          "name": "Sweden",
+          "tla": "SWE",
+          "crest": "https://crests.football-data.org/792.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -372,9 +372,9 @@
       "name": "G",
       "table": [
         {
-          "name": "Belgium",
-          "tla": "BEL",
-          "crest": "https://crests.football-data.org/805.svg",
+          "name": "Egypt",
+          "tla": "EGY",
+          "crest": "https://crests.football-data.org/825.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -386,9 +386,9 @@
           "form": []
         },
         {
-          "name": "Egypt",
-          "tla": "EGY",
-          "crest": "https://crests.football-data.org/825.svg",
+          "name": "Belgium",
+          "tla": "BEL",
+          "crest": "https://crests.football-data.org/805.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -433,20 +433,6 @@
       "name": "H",
       "table": [
         {
-          "name": "Spain",
-          "tla": "ESP",
-          "crest": "https://crests.football-data.org/760.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
           "name": "Cape Verde Islands",
           "tla": "CPV",
           "crest": "https://crests.football-data.org/cape_verde.svg",
@@ -464,6 +450,20 @@
           "name": "Saudi Arabia",
           "tla": "KSA",
           "crest": "https://crests.football-data.org/saudi_arabia.svg",
+          "played": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 0,
+          "form": []
+        },
+        {
+          "name": "Spain",
+          "tla": "ESP",
+          "crest": "https://crests.football-data.org/760.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -494,20 +494,6 @@
       "name": "I",
       "table": [
         {
-          "name": "Iraq",
-          "tla": "IRQ",
-          "crest": "https://crests.football-data.org/iraq.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
           "name": "France",
           "tla": "FRA",
           "crest": "https://crests.football-data.org/773.svg",
@@ -522,9 +508,9 @@
           "form": []
         },
         {
-          "name": "Senegal",
-          "tla": "SEN",
-          "crest": "https://crests.football-data.org/senegal.svg",
+          "name": "Iraq",
+          "tla": "IRQ",
+          "crest": "https://crests.football-data.org/iraq.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -539,6 +525,20 @@
           "name": "Norway",
           "tla": "NOR",
           "crest": "https://crests.football-data.org/813.svg",
+          "played": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 0,
+          "form": []
+        },
+        {
+          "name": "Senegal",
+          "tla": "SEN",
+          "crest": "https://crests.football-data.org/senegal.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -630,6 +630,20 @@
           "form": []
         },
         {
+          "name": "Colombia",
+          "tla": "COL",
+          "crest": "https://crests.football-data.org/818.svg",
+          "played": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 0,
+          "form": []
+        },
+        {
           "name": "Portugal",
           "tla": "POR",
           "crest": "https://crests.football-data.org/765.svg",
@@ -647,20 +661,6 @@
           "name": "Uzbekistan",
           "tla": "UZB",
           "crest": "https://crests.football-data.org/8070.png",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
-          "name": "Colombia",
-          "tla": "COL",
-          "crest": "https://crests.football-data.org/818.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -691,9 +691,9 @@
           "form": []
         },
         {
-          "name": "Croatia",
-          "tla": "CRO",
-          "crest": "https://crests.football-data.org/799.svg",
+          "name": "Ghana",
+          "tla": "GHA",
+          "crest": "https://crests.football-data.org/ghana.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -705,9 +705,9 @@
           "form": []
         },
         {
-          "name": "Ghana",
-          "tla": "GHA",
-          "crest": "https://crests.football-data.org/ghana.svg",
+          "name": "Croatia",
+          "tla": "CRO",
+          "crest": "https://crests.football-data.org/799.svg",
           "played": 0,
           "w": 0,
           "d": 0,

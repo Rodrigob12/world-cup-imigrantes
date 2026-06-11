@@ -1,5 +1,14 @@
 {
-  "updated": "2026-06-11T15:56:43.564Z",
+  "updated": "2026-06-11T20:19:00.670Z",
   "source": "football-data.org WC",
-  "scorers": []
+  "scorers": [
+    {
+      "name": "Julián Quiñones",
+      "team": "Mexico",
+      "crest": "https://crests.football-data.org/769.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    }
+  ]
 }
