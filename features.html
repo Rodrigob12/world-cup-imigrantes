@@ -53,6 +53,15 @@ async function loadJSON(url){
     return await r.json();
   }catch(e){ return null; }
 }
+// Shown when a data fetch fails — most often because the file was opened locally (file://).
+function fetchNote(){
+  if(location.protocol === 'file:'){
+    return '<div class="empty"><b>Open the live site to see live data.</b><br>'
+      + 'You\'re viewing this as a local file, and browsers block data loading from <code>file://</code>.<br><br>'
+      + '<a href="https://rodrigob12.github.io/world-cup-imigrantes/features.html" style="color:var(--pink);font-weight:800;text-decoration:none">→ Open the live Match Center</a></div>';
+  }
+  return emptyState('Couldn\'t load data right now. Refresh to retry.');
+}
 
 /* ============================================================
    GROUP STAGE DASHBOARD  (data/standings.json)
@@ -84,6 +93,7 @@ async function renderGroups(){
   view.innerHTML = eyebrow('Group stage') + emptyState('Loading…');
   var sd = await loadJSON('data/standings.json');
   var md = await loadJSON('data/matches.json');
+  if(!sd && !md){ view.innerHTML = eyebrow('Group stage') + fetchNote(); return; }
   var standings = (sd && sd.groups) || [];
   // Bucket group-stage fixtures by their group letter.
   var byGroup = {};
@@ -126,7 +136,8 @@ function lbEmpty(title, msg){
 async function renderStats(){
   view.innerHTML = eyebrow('Global stats · leaderboards') + emptyState('Loading…');
   var d = await loadJSON('data/scorers.json');
-  var s = d && d.scorers || [];
+  if(!d){ view.innerHTML = eyebrow('Global stats · leaderboards') + fetchNote(); return; }
+  var s = d.scorers || [];
   var scorers = s.filter(function(x){return x.goals>0;}).sort(function(a,b){return b.goals-a.goals;}).slice(0,10);
   var assists = s.filter(function(x){return x.assists>0;}).sort(function(a,b){return b.assists-a.assists;}).slice(0,10);
   var html = eyebrow('Global stats · leaderboards');
@@ -154,7 +165,8 @@ function matchRow(m){
 async function renderHub(){
   view.innerHTML = eyebrow('Matches') + emptyState('Loading…');
   var d = await loadJSON('data/matches.json');
-  var ms = d && d.matches || [];
+  if(!d){ view.innerHTML = eyebrow('Matches') + fetchNote(); return; }
+  var ms = d.matches || [];
   if(!ms.length){
     view.innerHTML = eyebrow('Matches')
       + emptyState('<b>No fixtures yet.</b><br>Matches appear here as soon as the schedule is published.');
