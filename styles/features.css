@@ -1,0 +1,191 @@
+/* ============================================================
+   features.css — shared styles for the Match Center page.
+   Reuses the same color tokens as the pool page for a consistent look.
+   ============================================================ */
+:root{
+  --ink:#0A1B33; --ink-2:#13294B; --surface:#FFFFFF; --paper:#F4F6FA;
+  --line:#E4E8F0; --muted:#6A7790; --gold:#F5B700; --green:#16B57F;
+  --pink:#E5006D; --blue:#2F6BFF; --red:#E5484D;
+  --shadow:0 1px 2px rgba(10,27,51,.06), 0 8px 24px rgba(10,27,51,.08);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  color:var(--ink); background:var(--paper); line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:680px;margin:0 auto;min-height:100vh;background:var(--paper)}
+.nums{font-variant-numeric:tabular-nums}
+
+/* ---- Header ---- */
+header.board{
+  background:linear-gradient(160deg,var(--ink),var(--ink-2));
+  color:#fff; padding:18px; border-bottom:3px solid var(--gold);
+}
+header.board h1{font-family:Anton,Inter,sans-serif;font-weight:400;margin:0;
+  font-size:30px;letter-spacing:.5px;text-transform:uppercase}
+header.board .yr{color:var(--gold)}
+header.board a.back{color:#9FB2D6;text-decoration:none;font-size:12.5px;font-weight:600}
+
+/* ---- Tabs (scrollable on mobile) ---- */
+nav.tabs{position:sticky;top:0;z-index:20;display:flex;overflow-x:auto;
+  background:var(--surface);border-bottom:1px solid var(--line);
+  box-shadow:0 2px 8px rgba(10,27,51,.04);scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs button{flex:1 0 auto;appearance:none;border:0;background:none;cursor:pointer;
+  padding:13px 14px 11px;font:inherit;font-weight:600;font-size:13px;color:var(--muted);
+  border-bottom:3px solid transparent;white-space:nowrap;display:flex;gap:6px;align-items:center}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--pink)}
+
+main{padding:16px 14px 48px}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);font-weight:700;margin:2px 2px 12px}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:14px;
+  padding:22px;text-align:center;color:var(--muted);box-shadow:var(--shadow)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow);margin-bottom:14px;overflow:hidden}
+
+/* ---- Form / result badges (shared) ---- */
+.badge{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;
+  border-radius:6px;font-size:11px;font-weight:800;color:#fff}
+.badge.w{background:var(--green)} .badge.d{background:#9AA7BD} .badge.l{background:var(--red)}
+
+/* ============================================================
+   1) GROUP STAGE DASHBOARD
+   ============================================================ */
+.group{padding:12px 14px}
+.group h3{margin:0 0 8px;font-size:14px;display:flex;align-items:center;gap:8px}
+.group h3 .tag{background:var(--ink);color:#fff;border-radius:6px;font-size:11px;
+  padding:2px 8px;font-family:Anton}
+table.standings{width:100%;border-collapse:collapse;font-size:13px}
+table.standings th{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--muted);text-align:right;padding:4px 6px;font-weight:700}
+table.standings th.lft,table.standings td.lft{text-align:left}
+table.standings td{padding:7px 6px;text-align:right;border-top:1px solid var(--line)}
+table.standings tr.qual td{background:rgba(22,181,127,.06)}
+table.standings .pos{color:var(--muted);font-weight:700;width:18px}
+table.standings .tm{display:flex;align-items:center;gap:7px;font-weight:600}
+table.standings .pts{font-weight:800}
+.form-row{display:flex;gap:3px;justify-content:flex-end}
+.hint{font-size:11px;color:var(--muted);margin-top:8px;display:flex;gap:6px;align-items:center}
+.hint .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.hint.go .dot{background:var(--green)}
+
+/* ============================================================
+   3) TOURNAMENT BRACKET
+   Desktop: horizontal mirrored layout (R32 → … → Final → … → R32).
+   Mobile : rounds stack vertically.
+   ============================================================ */
+.bracket-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding:4px 2px 12px}
+.bracket{display:flex;gap:10px;align-items:stretch;min-width:min-content}
+.round{display:flex;flex-direction:column;justify-content:space-around;gap:8px;min-width:128px}
+.round.center{justify-content:center;min-width:150px}
+.round-title{font-size:10px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--muted);font-weight:700;text-align:center;margin-bottom:2px}
+.match{background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  box-shadow:var(--shadow);overflow:hidden}
+.match .slot{display:flex;align-items:center;gap:6px;padding:6px 8px;font-size:12px;font-weight:600}
+.match .slot + .slot{border-top:1px solid var(--line)}
+.match .slot .nm{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.match .slot .sc{font-variant-numeric:tabular-nums;color:var(--muted);min-width:16px;text-align:center}
+.match .slot.win{background:rgba(22,181,127,.12)}
+.match .slot.win .nm{font-weight:800;color:var(--ink)}
+.match .mcode{font-size:9px;color:var(--muted);text-align:center;padding:2px 0 3px}
+.match.final-match{border-color:var(--gold);box-shadow:0 0 0 2px rgba(245,183,0,.25),var(--shadow)}
+.final-label{text-align:center;font-family:Anton,Inter,sans-serif;font-size:18px;margin:0 0 6px}
+
+@media (max-width:760px){
+  .bracket{flex-direction:column}
+  .round{min-width:0;width:100%;justify-content:flex-start;gap:8px;
+    border-top:1px solid var(--line);padding-top:10px}
+  .round:first-child{border-top:0}
+  .round-title{text-align:left;font-size:12px;color:var(--ink)}
+}
+
+/* ============================================================
+   4) GLOBAL STATS (leaderboards)
+   ============================================================ */
+.lb{padding:4px 0 6px}
+.lb h3{margin:10px 14px 4px;font-size:14px}
+.lb-row{display:flex;align-items:center;gap:10px;padding:8px 14px;border-top:1px solid var(--line)}
+.lb h3 + .lb-row{border-top:0}
+.lb-rank{width:26px;text-align:center;font-weight:800;color:var(--muted);font-size:14px}
+.lb-who{flex:1;min-width:0}
+.lb-who .nm{font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lb-who .tm{font-size:11px;color:var(--muted)}
+.lb-val{font-family:Anton,Inter,sans-serif;font-size:18px}
+.lb-val small{font-size:10px;color:var(--muted);margin-left:1px}
+.lb-row.top{background:rgba(245,183,0,.07)}
+.lb-row.top .lb-val{color:var(--pink)}
+.cy,.cr{display:inline-block;min-width:18px;text-align:center;border-radius:5px;
+  font-size:12px;font-weight:800;padding:1px 4px;margin-left:3px}
+.cy{background:#FCE38A;color:#7a5b00} .cr{background:#F2B8BA;color:#8a1418}
+
+/* ============================================================
+   1) LIVE MATCH HUB
+   ============================================================ */
+.mchips{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
+.mchips::-webkit-scrollbar{display:none}
+.mchip{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);border-radius:999px;
+  padding:6px 12px;font:inherit;font-weight:700;font-size:13px;cursor:pointer}
+.mchip.on{border-color:var(--pink);color:var(--ink);box-shadow:0 0 0 2px rgba(229,0,109,.15)}
+.hub{padding:14px}
+.hub-score{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
+.hs-team{display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;font-size:26px}
+.hs-team span{font-size:12px;font-weight:700;text-align:center}
+.hs-sc{font-family:Anton,Inter,sans-serif;font-size:30px;text-align:center;line-height:1}
+.hs-sc small{color:var(--muted)}
+.hs-st{font-size:11px;color:var(--red);font-weight:700;font-family:Inter,sans-serif;margin-top:4px}
+.lineups{display:flex;gap:10px;border-top:1px solid var(--line);padding-top:12px}
+.lineup{flex:1;min-width:0}
+.lu-team{font-weight:800;font-size:12px;margin-bottom:6px}
+.pos{margin-bottom:7px}
+.pos-l{display:block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--muted);font-weight:700;margin-bottom:3px}
+.pl{display:inline-block;font-size:11.5px;background:var(--paper);border:1px solid var(--line);
+  border-radius:6px;padding:2px 6px;margin:0 3px 3px 0}
+.tl-title{font-weight:800;font-size:12px;margin:14px 0 6px;border-top:1px solid var(--line);padding-top:12px}
+.timeline{display:flex;flex-direction:column;gap:4px}
+.ev{display:flex;align-items:center;gap:8px;font-size:12.5px;padding:5px 8px;border-radius:8px}
+.ev .min{font-variant-numeric:tabular-nums;color:var(--muted);min-width:30px;font-weight:700}
+.ev.goal{background:rgba(22,181,127,.12);font-weight:700}
+.ev.a{flex-direction:row-reverse;text-align:right}
+
+/* ============================================================
+   5) CHAT FEED
+   ============================================================ */
+.chat{display:flex;flex-direction:column;height:62vh;background:var(--surface);
+  border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.chat-msgs{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px}
+.msg{max-width:82%;align-self:flex-start;background:var(--paper);border:1px solid var(--line);
+  border-radius:12px;padding:7px 10px}
+.msg.me{align-self:flex-end;background:rgba(229,0,109,.08);border-color:rgba(229,0,109,.25)}
+.msg .meta{font-size:10.5px;color:var(--muted);margin-bottom:2px}
+.msg .txt{font-size:13.5px;word-wrap:break-word}
+.chat-input{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line);background:var(--surface)}
+.chat-input input{flex:1;border:1px solid var(--line);border-radius:999px;padding:9px 14px;font:inherit}
+.chat-input input:focus{outline:none;border-color:var(--pink)}
+.chat-input button{border:0;background:var(--pink);color:#fff;font-weight:700;
+  border-radius:999px;padding:9px 16px;cursor:pointer;font:inherit}
+.chat-hint{color:var(--muted);text-align:center;font-size:13px;margin:auto;padding:20px}
+
+/* ============================================================
+   SHARED: crests, info notes, empty leaderboards
+   ============================================================ */
+.crest{width:18px;height:18px;object-fit:contain;vertical-align:middle;border-radius:2px}
+.crest.ph{display:inline-block;background:var(--line)}
+.card.note{padding:11px 14px;font-size:12px;color:var(--muted);line-height:1.5}
+.lb-empty{padding:16px 14px;color:var(--muted);font-size:13px;text-align:center}
+
+/* Match list (real fixtures/results) */
+.match-list{display:flex;flex-direction:column;gap:8px}
+.mrow{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;box-shadow:var(--shadow);padding:10px 12px}
+.mt{flex:1;display:flex;align-items:center;gap:7px;min-width:0;font-size:13px;font-weight:600}
+.mt.rev{flex-direction:row-reverse;text-align:right}
+.mt .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mt.win .nm{font-weight:800}
+.msc{flex:0 0 auto;text-align:center;font-family:Anton,Inter,sans-serif;font-size:18px;min-width:58px;line-height:1}
+.mst{font-family:Inter,sans-serif;font-size:10px;font-weight:700;color:var(--muted);margin-top:3px}
+.mst.live{color:var(--red)}

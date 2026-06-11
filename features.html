@@ -1,0 +1,251 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Match Center · World Cup 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/features.css">
+
+<div class="wrap">
+  <header class="board">
+    <a class="back" href="index.html">← Back to the pool</a>
+    <h1>Match <span class="yr">Center</span></h1>
+  </header>
+  <nav class="tabs" id="tabs" role="tablist"></nav>
+  <main id="feature-view"></main>
+</div>
+
+<script>
+"use strict";
+
+/* ============================================================
+   Real data is generated server-side by the GitHub Action
+   (scripts/fetch-features.js) into data/*.json, then read here.
+   Everything is empty until the tournament is played.
+   ============================================================ */
+
+var view = document.getElementById("feature-view");
+
+// ---- small helpers ----
+function eyebrow(t){ return '<div class="eyebrow">'+t+'</div>'; }
+function emptyState(msg){ return '<div class="empty">'+msg+'</div>'; }
+function crest(t){ return t && t.crest ? '<img class="crest" src="'+t.crest+'" alt="" loading="lazy">' : '<span class="crest ph"></span>'; }
+function num(x){ return x==null ? '–' : x; }
+function sign(x){ if(x==null) return '0'; return (x>0?'+':'')+x; }
+function formB(form){
+  return '<div class="form-row">'+(form||[]).map(function(x){
+    var c=String(x).toLowerCase();
+    return '<span class="badge '+c+'">'+x+'</span>';
+  }).join("")+'</div>';
+}
+function fmtDate(s){
+  if(!s) return '';
+  var d=new Date(s);
+  return d.toLocaleDateString(undefined,{month:'short',day:'numeric'})
+    +' '+d.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
+}
+async function loadJSON(url){
+  try{ var r=await fetch(url,{cache:'no-store'}); if(!r.ok) return null; return await r.json(); }
+  catch(e){ return null; }
+}
+
+/* ============================================================
+   GROUP STAGE DASHBOARD  (data/standings.json)
+   ============================================================ */
+async function renderGroups(){
+  view.innerHTML = eyebrow('Group stage · standings') + emptyState('Loading…');
+  var d = await loadJSON('data/standings.json');
+  var groups = d && d.groups || [];
+  if(!groups.length){
+    view.innerHTML = eyebrow('Group stage · standings')
+      + emptyState('<b>No standings yet.</b><br>Group tables fill in automatically once matches are played.');
+    return;
+  }
+  var html = groups.map(function(g){
+    var rows = (g.table||[]).map(function(t,i){
+      return '<tr class="'+(i<2?'qual':'')+'">'
+        +'<td class="lft pos">'+(i+1)+'</td>'
+        +'<td class="lft"><span class="tm">'+crest(t)+(t.name||t.tla||'')+'</span></td>'
+        +'<td class="nums">'+num(t.played)+'</td>'
+        +'<td class="nums">'+sign(t.gd)+'</td>'
+        +'<td class="nums pts">'+num(t.points)+'</td>'
+        +'<td>'+formB(t.form)+'</td></tr>';
+    }).join("");
+    return '<section class="card group"><h3><span class="tag">Group '+g.name+'</span></h3>'
+      +'<table class="standings"><thead><tr><th class="lft">#</th><th class="lft">Team</th>'
+      +'<th>P</th><th>GD</th><th>Pts</th><th>Form</th></tr></thead><tbody>'+rows+'</tbody></table></section>';
+  }).join("");
+  view.innerHTML = eyebrow('Group stage · standings') + html;
+}
+
+/* ============================================================
+   GLOBAL STATS  (data/scorers.json) — cards have no free source
+   ============================================================ */
+function lb(title, rows, fmt){
+  var body = rows.map(function(r,i){
+    var medal = i<3 ? ["🥇","🥈","🥉"][i] : (i+1);
+    return '<div class="lb-row'+(i<3?' top':'')+'"><div class="lb-rank">'+medal+'</div>'
+      +'<div class="lb-who"><div class="nm">'+(r.name||'')+'</div><div class="tm">'+crest(r)+' '+(r.team||'')+'</div></div>'
+      +'<div class="lb-val">'+fmt(r)+'</div></div>';
+  }).join("");
+  return '<section class="card lb"><h3>'+title+'</h3>'+body+'</section>';
+}
+function lbEmpty(title, msg){
+  return '<section class="card lb"><h3>'+title+'</h3><div class="lb-empty">'+msg+'</div></section>';
+}
+async function renderStats(){
+  view.innerHTML = eyebrow('Global stats · leaderboards') + emptyState('Loading…');
+  var d = await loadJSON('data/scorers.json');
+  var s = d && d.scorers || [];
+  var scorers = s.filter(function(x){return x.goals>0;}).sort(function(a,b){return b.goals-a.goals;}).slice(0,10);
+  var assists = s.filter(function(x){return x.assists>0;}).sort(function(a,b){return b.assists-a.assists;}).slice(0,10);
+  var html = eyebrow('Global stats · leaderboards');
+  html += scorers.length ? lb('⚽ Top scorers', scorers, function(r){return r.goals+'<small>g</small>';})
+                         : lbEmpty('⚽ Top scorers', 'No goals scored yet.');
+  html += assists.length ? lb('🅰️ Top assists', assists, function(r){return r.assists+'<small>a</small>';})
+                         : lbEmpty('🅰️ Top assists', 'No assists recorded yet.');
+  html += lbEmpty('🟨 Most cards', 'Card stats aren’t available on the free data plan.');
+  view.innerHTML = html;
+}
+
+/* ============================================================
+   MATCH HUB  (data/matches.json) — real fixtures/results.
+   Lineups & minute-by-minute timelines need a premium source.
+   ============================================================ */
+function matchRow(m){
+  var hs=m.home.score, as=m.away.score, played = hs!=null && as!=null;
+  var live = m.status==='IN_PLAY' || m.status==='PAUSED';
+  var st = live ? '🔴 LIVE' : (m.status==='FINISHED' ? 'FT' : fmtDate(m.utcDate));
+  var winH = m.winner==='HOME_TEAM', winA = m.winner==='AWAY_TEAM';
+  return '<div class="mrow">'
+    +'<div class="mt'+(winH?' win':'')+'">'+crest(m.home)+'<span class="nm">'+(m.home.name||'TBD')+'</span></div>'
+    +'<div class="msc">'+(played ? hs+' – '+as : 'v')+'<div class="mst'+(live?' live':'')+'">'+st+'</div></div>'
+    +'<div class="mt rev'+(winA?' win':'')+'">'+crest(m.away)+'<span class="nm">'+(m.away.name||'TBD')+'</span></div>'
+    +'</div>';
+}
+async function renderHub(){
+  view.innerHTML = eyebrow('Matches') + emptyState('Loading…');
+  var d = await loadJSON('data/matches.json');
+  var ms = d && d.matches || [];
+  if(!ms.length){
+    view.innerHTML = eyebrow('Matches')
+      + emptyState('<b>No fixtures yet.</b><br>Matches appear here as soon as the schedule is published.');
+    return;
+  }
+  ms = ms.slice().sort(function(a,b){ return new Date(a.utcDate)-new Date(b.utcDate); });
+  // Show live/today first by simple date order; cap the list so it stays light.
+  var rows = ms.slice(0,60).map(matchRow).join("");
+  view.innerHTML = eyebrow('Matches · fixtures & results')
+    + '<div class="card note">🔴 Live lineups and minute-by-minute timelines aren’t available on the free data plan — showing real fixtures, scores and status instead.</div>'
+    + '<div class="match-list">' + rows + '</div>';
+}
+
+/* ============================================================
+   TOURNAMENT BRACKET — official 2026 structure (placeholder
+   seeds). Real knockout results slot in once that stage begins.
+   ============================================================ */
+var BRACKET = {
+  left: {
+    "Round of 32": [["1E","3ABCDF","M74"],["1I","3CDFGH","M77"],["2A","2B","M73"],["1F","2C","M75"],["2K","2L","M83"],["1H","2J","M84"],["1D","3BEFIJ","M81"],["1G","3AEHIJ","M82"]],
+    "Round of 16": [["W74","W77","M89"],["W73","W75","M90"],["W83","W84","M93"],["W81","W82","M94"]],
+    "Quarter-final": [["W89","W90","M97"],["W93","W94","M98"]],
+    "Semi-final": [["W97","W98","M101"]]
+  },
+  right: {
+    "Semi-final": [["W99","W100","M102"]],
+    "Quarter-final": [["W91","W92","M99"],["W95","W96","M100"]],
+    "Round of 16": [["W76","W78","M91"],["W79","W80","M92"],["W86","W88","M95"],["W85","W87","M96"]],
+    "Round of 32": [["1C","2F","M76"],["2E","2I","M78"],["1A","3CEFHI","M79"],["1L","3EHIJK","M80"],["1J","2H","M86"],["2D","2G","M88"],["1B","3EFGIJ","M85"],["1K","3DEIJL","M87"]]
+  },
+  final: ["W101","W102","M104"]
+};
+function matchBox(m, isFinal){
+  var o=m[3]||{}, s1=(o.s1!=null?o.s1:"–"), s2=(o.s2!=null?o.s2:"–");
+  return '<div class="match'+(isFinal?' final-match':'')+'">'
+    +'<div class="slot'+(o.winner==="a"?" win":"")+'"><span class="nm">'+m[0]+'</span><span class="sc">'+s1+'</span></div>'
+    +'<div class="slot'+(o.winner==="b"?" win":"")+'"><span class="nm">'+m[1]+'</span><span class="sc">'+s2+'</span></div>'
+    +'<div class="mcode">'+m[2]+'</div></div>';
+}
+function column(title, matches){
+  return '<div class="round"><div class="round-title">'+title+'</div>'
+    + matches.map(function(m){return matchBox(m,false);}).join("") + '</div>';
+}
+function renderBracket(){
+  var L=BRACKET.left, R=BRACKET.right;
+  var cols = [
+    column("Round of 32", L["Round of 32"]),
+    column("Round of 16", L["Round of 16"]),
+    column("Quarter-final", L["Quarter-final"]),
+    column("Semi-final", L["Semi-final"]),
+    '<div class="round center"><div class="final-label">🏆 Final</div>'+matchBox(BRACKET.final,true)+'</div>',
+    column("Semi-final", R["Semi-final"]),
+    column("Quarter-final", R["Quarter-final"]),
+    column("Round of 16", R["Round of 16"]),
+    column("Round of 32", R["Round of 32"])
+  ];
+  view.innerHTML = eyebrow('Knockout bracket · official 2026 structure')
+    + '<div class="card note">Seeds (e.g. <b>1E</b> = winner of Group E, <b>3ABCDF</b> = a third-placed team) and results fill in as the knockout stage is played.</div>'
+    + '<div class="bracket-wrap"><div class="bracket">'+cols.join("")+'</div></div>';
+}
+
+/* ============================================================
+   CHAT — local only (no backend). Messages live in this browser.
+   ============================================================ */
+var ME = "You";
+var CHAT = [];   // starts empty — no fake messages
+function pad2(n){ n=""+n; return n.length<2?"0"+n:n; }
+function nowHM(){ var d=new Date(); return pad2(d.getHours())+":"+pad2(d.getMinutes()); }
+function escapeHtml(s){ return s.replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+function msgNode(m){
+  return '<div class="msg'+(m.user===ME?" me":"")+'"><div class="meta"><b>'+m.user+'</b> · '+m.ts+'</div>'
+    +'<div class="txt">'+escapeHtml(m.text)+'</div></div>';
+}
+function renderChat(){
+  var msgs = CHAT.length ? CHAT.map(msgNode).join("") : '<div class="chat-hint">No messages yet — say something! (Stored only in this browser.)</div>';
+  view.innerHTML = eyebrow('Pool chat · local only')
+    +'<div class="chat"><div class="chat-msgs" id="chatMsgs">'+msgs+'</div>'
+    +'<form class="chat-input" id="chatForm">'
+    +'<input id="chatIn" type="text" placeholder="Message the pool…" autocomplete="off" maxlength="240">'
+    +'<button type="submit">Send</button></form></div>';
+  var box=document.getElementById("chatMsgs"); box.scrollTop=box.scrollHeight;
+  document.getElementById("chatForm").onsubmit=function(e){
+    e.preventDefault();
+    var inp=document.getElementById("chatIn"), txt=inp.value.trim(); if(!txt) return;
+    CHAT.push({user:ME,ts:nowHM(),text:txt}); inp.value="";
+    var b=document.getElementById("chatMsgs");
+    if(CHAT.length===1) b.innerHTML="";
+    b.insertAdjacentHTML("beforeend", msgNode(CHAT[CHAT.length-1]));
+    b.scrollTop=b.scrollHeight; inp.focus();
+  };
+}
+
+/* ============================================================
+   TABS / ROUTER
+   ============================================================ */
+function renderSoon(tab){ return function(){ view.innerHTML = emptyState('<b>'+tab.icon+' '+tab.label+'</b><br>Coming soon.'); }; }
+var TABS = [
+  {key:"groups",  label:"Groups",    icon:"📊", render:renderGroups},
+  {key:"stats",   label:"Stats",     icon:"🏅", render:renderStats},
+  {key:"hub",     label:"Matches",   icon:"🔴", render:renderHub},
+  {key:"bracket", label:"Bracket",   icon:"🏆", render:renderBracket},
+  {key:"chat",    label:"Chat",      icon:"💬", render:renderChat}
+];
+var nav = document.getElementById("tabs");
+function show(key){
+  var tab = TABS.filter(function(t){return t.key===key;})[0] || TABS[0];
+  [].forEach.call(nav.children, function(b){ b.setAttribute("aria-selected", b.dataset.tab===tab.key?"true":"false"); });
+  location.hash = tab.key;
+  (tab.render || renderSoon(tab))();
+  window.scrollTo(0,0);
+}
+TABS.forEach(function(t){
+  var b=document.createElement("button");
+  b.dataset.tab=t.key; b.setAttribute("role","tab");
+  b.innerHTML='<span class="ico">'+t.icon+'</span>'+t.label;
+  b.onclick=function(){ show(t.key); };
+  nav.appendChild(b);
+});
+var start=(location.hash||"").replace("#","");
+show(TABS.some(function(t){return t.key===start;}) ? start : "groups");
+</script>

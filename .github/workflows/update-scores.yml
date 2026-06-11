@@ -24,19 +24,24 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch latest results from football-data.org
+      - name: Fetch pool results from football-data.org
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: node scripts/fetch-results.js
 
-      - name: Commit results.json if it changed
+      - name: Fetch Match Center data (standings, scorers, matches)
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: node scripts/fetch-features.js
+
+      - name: Commit data if it changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add results.json
+          git add results.json data/standings.json data/scorers.json data/matches.json
           if git diff --staged --quiet; then
-            echo "No changes — results.json is already up to date."
+            echo "No changes — data is already up to date."
           else
-            git commit -m "chore: update results [skip ci]"
+            git commit -m "chore: update results & match data [skip ci]"
             git push
           fi
