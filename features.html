@@ -45,37 +45,67 @@ function etDayKey(s){ return new Date(s).toLocaleDateString('en-CA',{timeZone:ET
 function etDayLabel(s){ return new Date(s).toLocaleDateString('en-US',{timeZone:ET,weekday:'short',month:'short',day:'numeric'}); }
 function etTime(s){ return new Date(s).toLocaleTimeString('en-US',{timeZone:ET,hour:'numeric',minute:'2-digit'})+' ET'; }
 async function loadJSON(url){
-  try{ var r=await fetch(url,{cache:'no-store'}); if(!r.ok) return null; return await r.json(); }
-  catch(e){ return null; }
+  try{
+    // Append a unique query param to dodge GitHub's CDN + browser caching of the JSON.
+    var bust = url + (url.indexOf('?')<0 ? '?' : '&') + 't=' + Date.now();
+    var r = await fetch(bust, {cache:'no-store'});
+    if(!r.ok) return null;
+    return await r.json();
+  }catch(e){ return null; }
 }
 
 /* ============================================================
    GROUP STAGE DASHBOARD  (data/standings.json)
    ============================================================ */
+// One group's standings table (teams). Empty string if no table data.
+function groupTable(g){
+  if(!g || !(g.table||[]).length) return '';
+  var rows = g.table.map(function(t,i){
+    return '<tr class="'+(i<2?'qual':'')+'">'
+      +'<td class="lft pos">'+(i+1)+'</td>'
+      +'<td class="lft"><span class="tm">'+crest(t)+(t.name||t.tla||'')+'</span></td>'
+      +'<td class="nums">'+num(t.played)+'</td>'
+      +'<td class="nums">'+sign(t.gd)+'</td>'
+      +'<td class="nums pts">'+num(t.points)+'</td>'
+      +'<td>'+formB(t.form)+'</td></tr>';
+  }).join("");
+  return '<table class="standings"><thead><tr><th class="lft">#</th><th class="lft">Team</th>'
+    +'<th>P</th><th>GD</th><th>Pts</th><th>Form</th></tr></thead><tbody>'+rows+'</tbody></table>';
+}
+// One fixture row: day · teams · (kickoff time in ET, or the score once FINISHED).
+function groupFixtureRow(m){
+  var fin = m.status==='FINISHED', live = m.status==='IN_PLAY' || m.status==='PAUSED';
+  var right = fin ? (num(m.home.score)+'–'+num(m.away.score)) : (live ? '🔴 LIVE' : etTime(m.utcDate));
+  return '<div class="gfx"><span class="gfx-d">'+etDayLabel(m.utcDate)+'</span>'
+    +'<span class="gfx-m">'+(m.home.name||m.home.tla||'TBD')+' <i>v</i> '+(m.away.name||m.away.tla||'TBD')+'</span>'
+    +'<span class="gfx-r'+(fin?' fin':'')+(live?' live':'')+'">'+right+'</span></div>';
+}
 async function renderGroups(){
-  view.innerHTML = eyebrow('Group stage · standings') + emptyState('Loading…');
-  var d = await loadJSON('data/standings.json');
-  var groups = d && d.groups || [];
-  if(!groups.length){
-    view.innerHTML = eyebrow('Group stage · standings')
-      + emptyState('<b>No standings yet.</b><br>Group tables fill in automatically once matches are played.');
+  view.innerHTML = eyebrow('Group stage') + emptyState('Loading…');
+  var sd = await loadJSON('data/standings.json');
+  var md = await loadJSON('data/matches.json');
+  var standings = (sd && sd.groups) || [];
+  // Bucket group-stage fixtures by their group letter.
+  var byGroup = {};
+  ((md && md.matches) || []).forEach(function(m){
+    if(!m.group) return;
+    var L = String(m.group).replace(/group[_\s]*/i,'').toUpperCase();
+    (byGroup[L] = byGroup[L] || []).push(m);
+  });
+  var stMap = {}; standings.forEach(function(g){ stMap[g.name]=g; });
+  // Use the standings group order if we have it; otherwise derive from fixtures.
+  var letters = standings.length ? standings.map(function(g){return g.name;}) : Object.keys(byGroup).sort();
+  if(!letters.length){
+    view.innerHTML = eyebrow('Group stage') + emptyState('Groups appear here once the schedule is published.');
     return;
   }
-  var html = groups.map(function(g){
-    var rows = (g.table||[]).map(function(t,i){
-      return '<tr class="'+(i<2?'qual':'')+'">'
-        +'<td class="lft pos">'+(i+1)+'</td>'
-        +'<td class="lft"><span class="tm">'+crest(t)+(t.name||t.tla||'')+'</span></td>'
-        +'<td class="nums">'+num(t.played)+'</td>'
-        +'<td class="nums">'+sign(t.gd)+'</td>'
-        +'<td class="nums pts">'+num(t.points)+'</td>'
-        +'<td>'+formB(t.form)+'</td></tr>';
-    }).join("");
-    return '<section class="card group"><h3><span class="tag">Group '+g.name+'</span></h3>'
-      +'<table class="standings"><thead><tr><th class="lft">#</th><th class="lft">Team</th>'
-      +'<th>P</th><th>GD</th><th>Pts</th><th>Form</th></tr></thead><tbody>'+rows+'</tbody></table></section>';
+  var html = letters.map(function(L){
+    var fixtures = (byGroup[L]||[]).slice().sort(function(a,b){ return new Date(a.utcDate)-new Date(b.utcDate); });
+    var fixHtml = fixtures.length ? '<div class="g-fixtures">'+fixtures.map(groupFixtureRow).join("")+'</div>' : '';
+    return '<section class="card group"><h3><span class="tag">Group '+L+'</span></h3>'
+      + groupTable(stMap[L]) + fixHtml + '</section>';
   }).join("");
-  view.innerHTML = eyebrow('Group stage · standings') + html;
+  view.innerHTML = eyebrow('Group stage · teams & fixtures (times in ET)') + html;
 }
 
 /* ============================================================

@@ -68,6 +68,16 @@ table.standings .pos{color:var(--muted);font-weight:700;width:18px}
 table.standings .tm{display:flex;align-items:center;gap:7px;font-weight:600}
 table.standings .pts{font-weight:800}
 .form-row{display:flex;gap:3px;justify-content:flex-end}
+/* Per-group fixtures under each table */
+.g-fixtures{margin-top:10px;border-top:1px solid var(--line)}
+.gfx{display:flex;align-items:center;gap:8px;padding:7px 0;border-top:1px solid var(--line);font-size:12px}
+.gfx:first-child{border-top:0}
+.gfx-d{flex:0 0 auto;min-width:78px;color:var(--muted);font-weight:700;font-size:10.5px}
+.gfx-m{flex:1;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gfx-m i{color:var(--muted);font-style:normal;font-weight:400;margin:0 2px}
+.gfx-r{flex:0 0 auto;font-weight:800;font-variant-numeric:tabular-nums;color:var(--muted)}
+.gfx-r.fin{color:var(--ink)}
+.gfx-r.live{color:var(--red)}
 .hint{font-size:11px;color:var(--muted);margin-top:8px;display:flex;gap:6px;align-items:center}
 .hint .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
 .hint.go .dot{background:var(--green)}
