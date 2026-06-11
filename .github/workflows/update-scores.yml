@@ -1,0 +1,42 @@
+name: Update scores
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours (UTC)
+  workflow_dispatch:          # lets you run it on demand from the Actions tab
+
+permissions:
+  contents: write             # needed to commit & push the updated results.json
+
+concurrency:
+  group: update-scores
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch latest results from API-Football
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: node scripts/fetch-results.js
+
+      - name: Commit results.json if it changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results.json
+          if git diff --staged --quiet; then
+            echo "No changes — results.json is already up to date."
+          else
+            git commit -m "chore: update results [skip ci]"
+            git push
+          fi

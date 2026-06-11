@@ -1,0 +1,444 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>World Cup Pool 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A1B33;          /* deep stadium navy */
+    --ink-2:#13294B;
+    --surface:#FFFFFF;
+    --paper:#F4F6FA;
+    --line:#E4E8F0;
+    --muted:#6A7790;
+    --gold:#F5B700;         /* leader */
+    --green:#16B57F;        /* wins / positive */
+    --pink:#E5006D;         /* accent — 2026 energy */
+    --blue:#2F6BFF;
+    --shadow:0 1px 2px rgba(10,27,51,.06), 0 8px 24px rgba(10,27,51,.08);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--ink); background:var(--paper);
+    -webkit-font-smoothing:antialiased; line-height:1.45;
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+  .wrap{max-width:560px;margin:0 auto;min-height:100vh;background:var(--paper)}
+  .nums{font-variant-numeric:tabular-nums}
+
+  /* ---- Scoreboard header ---- */
+  header.board{
+    background:linear-gradient(160deg,var(--ink),var(--ink-2));
+    color:#fff; padding:18px 18px 16px;
+    border-bottom:3px solid var(--gold);
+  }
+  .kicker{display:flex;justify-content:space-between;align-items:center;font-size:11px;
+    letter-spacing:.14em;text-transform:uppercase;color:#9FB2D6;font-weight:600}
+  h1{font-family:Anton,Inter,sans-serif;font-weight:400;margin:6px 0 0;
+    font-size:34px;line-height:.98;letter-spacing:.5px;text-transform:uppercase}
+  h1 .yr{color:var(--gold)}
+  .board-meta{display:flex;gap:14px;margin-top:12px;flex-wrap:wrap}
+  .chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
+    border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600;display:flex;gap:6px;align-items:center}
+  .chip b{color:var(--gold)}
+
+  /* ---- Tabs ---- */
+  nav.tabs{position:sticky;top:0;z-index:20;display:flex;background:var(--surface);
+    border-bottom:1px solid var(--line);box-shadow:0 2px 8px rgba(10,27,51,.04)}
+  nav.tabs button{flex:1;appearance:none;border:0;background:none;cursor:pointer;
+    padding:13px 6px 11px;font:inherit;font-weight:600;font-size:13.5px;color:var(--muted);
+    border-bottom:3px solid transparent;display:flex;flex-direction:column;align-items:center;gap:3px}
+  nav.tabs button .ico{font-size:16px;line-height:1}
+  nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--pink)}
+
+  main{padding:16px 14px 40px}
+  .section-eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);font-weight:700;margin:2px 4px 12px}
+
+  /* ---- Leaderboard ---- */
+  .row{background:var(--surface);border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px;margin-bottom:11px;cursor:pointer;
+    display:grid;grid-template-columns:auto 1fr auto;gap:13px;align-items:center;
+    transition:transform .12s ease, box-shadow .12s ease}
+  .row:hover{transform:translateY(-1px)}
+  .row:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+  .rank{width:34px;height:34px;border-radius:10px;background:var(--paper);
+    display:grid;place-items:center;font-family:Anton;font-size:18px;color:var(--ink)}
+  .row.leader{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold),0 10px 26px rgba(245,183,0,.22)}
+  .row.leader .rank{background:var(--gold);color:#3a2c00}
+  .who{min-width:0}
+  .who .name{font-weight:800;font-size:17px;display:flex;align-items:center;gap:7px}
+  .crown{font-size:14px}
+  .flags{margin-top:5px;font-size:14px;letter-spacing:1px;white-space:nowrap;overflow:hidden;
+    text-overflow:ellipsis;filter:saturate(1.05)}
+  .total{text-align:right}
+  .total .pts{font-family:Anton;font-size:30px;line-height:.9}
+  .total .lbl{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .split{display:flex;gap:8px;justify-content:flex-end;margin-top:4px}
+  .split span{font-size:11px;color:var(--muted);font-weight:600}
+  .split b{color:var(--ink)}
+
+  .empty{background:var(--surface);border:1px dashed var(--line);border-radius:16px;
+    padding:22px 18px;text-align:center;color:var(--muted);font-size:14px;margin-top:6px}
+  .empty b{color:var(--ink)}
+
+  /* ---- Player detail ---- */
+  .back{appearance:none;border:0;background:none;color:var(--pink);font:inherit;font-weight:700;
+    cursor:pointer;padding:4px 0 12px;display:flex;align-items:center;gap:6px}
+  .pdetail-head{background:linear-gradient(160deg,var(--ink),var(--ink-2));color:#fff;
+    border-radius:18px;padding:16px 18px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:flex-end}
+  .pdetail-head .name{font-family:Anton;font-size:26px;text-transform:uppercase}
+  .pdetail-head .sub{font-size:12px;color:#9FB2D6;margin-top:2px}
+  .pdetail-head .big{font-family:Anton;font-size:40px;line-height:.85;color:var(--gold);text-align:right}
+  .pdetail-head .big small{display:block;font-family:Inter;font-size:10px;letter-spacing:.12em;
+    text-transform:uppercase;color:#9FB2D6;font-weight:700;margin-top:3px}
+
+  .team{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+    padding:11px 13px;margin-bottom:9px;box-shadow:var(--shadow)}
+  .team-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .team-name{font-weight:700;display:flex;align-items:center;gap:9px;font-size:15px}
+  .team-name .fl{font-size:19px}
+  .team-pts{font-family:Anton;font-size:20px}
+  .team-pts.zero{color:var(--line)}
+  .team-detail{margin-top:7px;display:flex;gap:6px;flex-wrap:wrap;font-size:11.5px}
+  .pill{border-radius:999px;padding:3px 9px;font-weight:700;background:var(--paper);color:var(--muted)}
+  .pill.w{background:rgba(22,181,127,.14);color:#0c7a55}
+  .pill.d{background:rgba(245,183,0,.16);color:#8a6800}
+  .pill.l{background:rgba(229,0,109,.10);color:#a8004f}
+  .pill.ko{background:var(--ink);color:#fff}
+
+  /* ---- Admin ---- */
+  .gate{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;
+    box-shadow:var(--shadow);text-align:center}
+  .gate h3{margin:0 0 6px;font-size:18px}
+  .gate p{color:var(--muted);font-size:13.5px;margin:0 0 14px}
+  input[type=password],input[type=text]{font:inherit;padding:11px 13px;border:1px solid var(--line);
+    border-radius:11px;width:100%;max-width:220px;text-align:center;font-size:16px}
+  .btn{appearance:none;border:0;cursor:pointer;font:inherit;font-weight:700;border-radius:11px;
+    padding:11px 18px;font-size:14.5px;background:var(--ink);color:#fff;transition:filter .12s}
+  .btn:hover{filter:brightness(1.12)}
+  .btn.pink{background:var(--pink)}
+  .btn.ghost{background:var(--paper);color:var(--ink);border:1px solid var(--line)}
+  .btn:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+  .admin-bar{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap}
+  .admin-bar .note{font-size:12px;color:var(--muted)}
+  .ateam{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:11px 12px;margin-bottom:9px;box-shadow:var(--shadow)}
+  .ateam-name{font-weight:700;font-size:14.5px;display:flex;align-items:center;gap:8px;margin-bottom:9px}
+  .ateam-name .fl{font-size:18px}
+  .gs-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:9px}
+  .gs-row .glab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;width:100%}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+  .seg button{appearance:none;border:0;background:var(--surface);cursor:pointer;font:inherit;
+    font-weight:700;font-size:12px;padding:6px 0;width:34px;color:var(--muted);border-right:1px solid var(--line)}
+  .seg button:last-child{border-right:0}
+  .seg button[data-on="W"][aria-pressed="true"]{background:var(--green);color:#fff}
+  .seg button[data-on="D"][aria-pressed="true"]{background:var(--gold);color:#3a2c00}
+  .seg button[data-on="L"][aria-pressed="true"]{background:var(--pink);color:#fff}
+  .ko-row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .ko-row .glab{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;width:100%;margin-bottom:1px}
+  .ko-pill{appearance:none;border:1px solid var(--line);background:var(--surface);cursor:pointer;
+    font:inherit;font-weight:700;font-size:11.5px;padding:6px 10px;border-radius:999px;color:var(--muted)}
+  .ko-pill[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .ko-pill .v{opacity:.7;font-weight:600;margin-left:3px}
+  .group-label{font-family:Anton;font-size:15px;letter-spacing:.5px;color:var(--ink);
+    margin:18px 4px 9px;display:flex;align-items:center;gap:8px;text-transform:uppercase}
+  .group-label::after{content:"";flex:1;height:1px;background:var(--line)}
+  .saved{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);
+    background:var(--green);color:#fff;font-weight:700;font-size:13px;padding:10px 18px;border-radius:999px;
+    box-shadow:0 8px 24px rgba(22,181,127,.4);opacity:0;transition:.25s;z-index:50;pointer-events:none}
+  .saved.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  footer{padding:18px 16px 30px;text-align:center;color:var(--muted);font-size:11.5px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="board">
+    <div class="kicker"><span>Canada · USA · Mexico</span><span>Games begin June 11</span></div>
+    <h1>World Cup Pool <span class="yr">2026</span></h1>
+    <div class="board-meta">
+      <span class="chip">🏆 Total pot <b>$60</b></span>
+      <span class="chip">👥 6 players</span>
+      <span class="chip">⚽ 48 teams</span>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button id="t-standings" role="tab" aria-selected="true" onclick="show('standings')"><span class="ico">🏅</span>Standings</button>
+    <button id="t-players" role="tab" aria-selected="false" onclick="show('players')"><span class="ico">👤</span>Players</button>
+    <button id="t-admin" role="tab" aria-selected="false" onclick="show('admin')"><span class="ico">✏️</span>Enter results</button>
+  </nav>
+
+  <main id="view"></main>
+  <footer>Tap a player to see their teams. Results are entered under <b>Enter results</b> and update everyone instantly.</footer>
+</div>
+<div class="saved" id="toast">Saved ✓</div>
+
+<script>
+/* ============================================================
+   DATA — source of truth from the pool sheet
+   ============================================================ */
+const PLAYERS = {
+  Ardille:  ["Brazil","Argentina","Croatia","Turkiye","Egypt","Tunisia","New Zealand","Haiti"],
+  Ivancho:  ["Portugal","Germany","Ecuador","South Korea","Australia","Iran","Panama","Jordan"],
+  David:    ["France","Morocco","Uruguay","Canada","Austria","Bosnia","Saudi Arabia","Iraq"],
+  Fercho:   ["Spain","Norway","Japan","Sweden","Ivory Coast","Algeria","DR Congo","Curacao"],
+  Jeritz:   ["England","Belgium","United States","Switzerland","Scotland","Czech Republic","South Africa","Uzbekistan"],
+  Trulla:   ["Netherlands","Colombia","Mexico","Senegal","Ghana","Paraguay","Qatar","Cape Verde"],
+};
+
+const FLAG = {
+  "Brazil":"🇧🇷","Argentina":"🇦🇷","Croatia":"🇭🇷","Turkiye":"🇹🇷","Egypt":"🇪🇬","Tunisia":"🇹🇳","New Zealand":"🇳🇿","Haiti":"🇭🇹",
+  "Portugal":"🇵🇹","Germany":"🇩🇪","Ecuador":"🇪🇨","South Korea":"🇰🇷","Australia":"🇦🇺","Iran":"🇮🇷","Panama":"🇵🇦","Jordan":"🇯🇴",
+  "France":"🇫🇷","Morocco":"🇲🇦","Uruguay":"🇺🇾","Canada":"🇨🇦","Austria":"🇦🇹","Bosnia":"🇧🇦","Saudi Arabia":"🇸🇦","Iraq":"🇮🇶",
+  "Spain":"🇪🇸","Norway":"🇳🇴","Japan":"🇯🇵","Sweden":"🇸🇪","Ivory Coast":"🇨🇮","Algeria":"🇩🇿","DR Congo":"🇨🇩","Curacao":"🇨🇼",
+  "England":"🏴󠁧󠁢󠁥󠁮󠁧󠁿","Belgium":"🇧🇪","United States":"🇺🇸","Switzerland":"🇨🇭","Scotland":"🏴󠁧󠁢󠁳󠁣󠁴󠁿","Czech Republic":"🇨🇿","South Africa":"🇿🇦","Uzbekistan":"🇺🇿",
+  "Netherlands":"🇳🇱","Colombia":"🇨🇴","Mexico":"🇲🇽","Senegal":"🇸🇳","Ghana":"🇬🇭","Paraguay":"🇵🇾","Qatar":"🇶🇦","Cape Verde":"🇨🇻"
+};
+
+/* Scoring */
+const GS = {W:3, D:1, L:0};
+const KO_ROUNDS = [
+  {key:"r32",  label:"R32",  pts:3},
+  {key:"r16",  label:"R16",  pts:6},
+  {key:"qf",   label:"QF",   pts:9},
+  {key:"sf",   label:"SF",   pts:12},
+  {key:"final",label:"🏆",   pts:15},
+];
+
+const ADMIN_CODE = "1234"; // change this before sharing — light lock, not real security
+
+/* teamOwner lookup */
+const OWNER = {};
+Object.entries(PLAYERS).forEach(([p,ts])=>ts.forEach(t=>OWNER[t]=p));
+const ALL_TEAMS = Object.values(PLAYERS).flat();
+
+/* ============================================================
+   STORAGE — shared when hosted in Claude; localStorage when
+   self-hosted; in-memory as a last resort. Shape:
+   results[team] = { g:[null,null,null], ko:{r32,r16,qf,sf,final} }
+   ============================================================ */
+let results = {};
+function blankTeam(){return {g:[null,null,null], ko:{r32:false,r16:false,qf:false,sf:false,final:false}};}
+ALL_TEAMS.forEach(t=>results[t]=blankTeam());
+
+const STORE_KEY = "wcpool2026_results_v1";
+const hasClaudeStore = (typeof window!=="undefined" && window.storage && typeof window.storage.get==="function");
+
+async function loadResults(){
+  // 1) Local store (Claude host or this browser) — used for offline/admin preview.
+  try{
+    if(hasClaudeStore){
+      const r = await window.storage.get(STORE_KEY, true); // shared = true
+      if(r && r.value) merge(JSON.parse(r.value));
+    } else {
+      const raw = localStorage.getItem(STORE_KEY);
+      if(raw) merge(JSON.parse(raw));
+    }
+  }catch(e){ /* first run / unavailable — start blank */ }
+  // 2) Auto-generated results published by the GitHub Action are the shared
+  //    source of truth, so they are merged last (they win for every visitor).
+  try{
+    const res = await fetch('results.json', {cache:'no-store'});
+    if(res.ok) merge(await res.json());
+  }catch(e){ /* results.json not present yet — fine, board stays at 0 */ }
+}
+async function saveResults(){
+  const payload = JSON.stringify(results);
+  try{
+    if(hasClaudeStore){ await window.storage.set(STORE_KEY, payload, true); }
+    else { localStorage.setItem(STORE_KEY, payload); }
+  }catch(e){ /* in-memory only */ }
+}
+function merge(obj){
+  ALL_TEAMS.forEach(t=>{
+    if(obj && obj[t]){
+      results[t].g = Array.isArray(obj[t].g)? obj[t].g.slice(0,3) : [null,null,null];
+      while(results[t].g.length<3) results[t].g.push(null);
+      results[t].ko = Object.assign({r32:false,r16:false,qf:false,sf:false,final:false}, obj[t].ko||{});
+    }
+  });
+}
+
+/* ============================================================
+   SCORING
+   ============================================================ */
+function teamGS(t){ return results[t].g.reduce((s,r)=> s + (r?GS[r]:0), 0); }
+function teamKO(t){ return KO_ROUNDS.reduce((s,r)=> s + (results[t].ko[r.key]?r.pts:0), 0); }
+function teamTotal(t){ return teamGS(t)+teamKO(t); }
+function playerScore(p){
+  let gs=0, ko=0;
+  PLAYERS[p].forEach(t=>{ gs+=teamGS(t); ko+=teamKO(t); });
+  return {gs, ko, total:gs+ko};
+}
+function standings(){
+  return Object.keys(PLAYERS).map(p=>({name:p, ...playerScore(p)}))
+    .sort((a,b)=> b.total-a.total || a.name.localeCompare(b.name));
+}
+function anyResults(){ return ALL_TEAMS.some(t=> results[t].g.some(Boolean) || Object.values(results[t].ko).some(Boolean)); }
+
+/* ============================================================
+   VIEWS
+   ============================================================ */
+const view = document.getElementById('view');
+let current = 'standings';
+
+function show(tab){
+  current = tab;
+  ['standings','players','admin'].forEach(id=>{
+    document.getElementById('t-'+id).setAttribute('aria-selected', id===tab? 'true':'false');
+  });
+  if(tab==='standings') renderStandings();
+  if(tab==='players') renderPlayers();
+  if(tab==='admin') renderAdmin();
+  window.scrollTo({top:0});
+}
+
+function flagStrip(p){ return PLAYERS[p].map(t=>FLAG[t]||"🏳️").join(" "); }
+
+function renderStandings(){
+  const table = standings();
+  const medal = ["🥇","🥈","🥉"];
+  let html = `<div class="section-eyebrow">Live standings</div>`;
+  if(!anyResults()){
+    html += `<div class="empty"><b>The tournament kicks off June 11.</b><br>No results yet — everyone starts at 0.
+      Record group and knockout outcomes under <b>Enter results</b> and the board updates instantly.</div>`;
+  }
+  html += table.map((r,i)=>`
+    <div class="row ${i===0 && r.total>0?'leader':''}" tabindex="0" role="button"
+         onclick="openPlayer('${r.name}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPlayer('${r.name}')}">
+      <div class="rank">${r.total>0 && i<3? medal[i] : (i+1)}</div>
+      <div class="who">
+        <div class="name">${r.name}${i===0&&r.total>0?'<span class="crown">👑</span>':''}</div>
+        <div class="flags">${flagStrip(r.name)}</div>
+      </div>
+      <div class="total">
+        <div class="pts nums">${r.total}</div>
+        <div class="lbl">points</div>
+        <div class="split nums"><span>GS <b>${r.gs}</b></span><span>KO <b>${r.ko}</b></span></div>
+      </div>
+    </div>`).join('');
+  view.innerHTML = html;
+}
+
+function renderPlayers(){
+  view.innerHTML = `<div class="section-eyebrow">Choose a player</div>` +
+    standings().map(r=>`
+      <div class="row" tabindex="0" role="button" onclick="openPlayer('${r.name}')"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPlayer('${r.name}')}">
+        <div class="rank">${FLAG[PLAYERS[r.name][0]]||'⚽'}</div>
+        <div class="who"><div class="name">${r.name}</div><div class="flags">${flagStrip(r.name)}</div></div>
+        <div class="total"><div class="pts nums">${r.total}</div><div class="lbl">points</div></div>
+      </div>`).join('');
+}
+
+function openPlayer(p){
+  const s = playerScore(p);
+  const teams = PLAYERS[p].slice().sort((a,b)=> teamTotal(b)-teamTotal(a));
+  let html = `<button class="back" onclick="show('${current==='admin'?'admin':'standings'}')">← Back</button>`;
+  html += `<div class="pdetail-head">
+      <div><div class="name">${p}</div><div class="sub">8 teams · ${s.gs} group · ${s.ko} knockout</div></div>
+      <div class="big nums">${s.total}<small>points</small></div>
+    </div>`;
+  html += teams.map(t=>{
+    const gs=teamGS(t), ko=teamKO(t), tot=gs+ko;
+    const gpills = results[t].g.map((r,i)=> r? `<span class="pill ${r.toLowerCase()}">G${i+1} ${r}</span>` : `<span class="pill">G${i+1} –</span>`).join('');
+    const kpills = KO_ROUNDS.filter(r=>results[t].ko[r.key]).map(r=>`<span class="pill ko">${r.label} +${r.pts}</span>`).join('');
+    return `<div class="team">
+        <div class="team-top">
+          <div class="team-name"><span class="fl">${FLAG[t]||'🏳️'}</span>${t}</div>
+          <div class="team-pts ${tot===0?'zero':''} nums">${tot}</div>
+        </div>
+        <div class="team-detail">${gpills}${kpills}</div>
+      </div>`;
+  }).join('');
+  view.innerHTML = html;
+  window.scrollTo({top:0});
+}
+
+/* ---- Admin ---- */
+let unlocked = false;
+function renderAdmin(){
+  if(!unlocked){
+    view.innerHTML = `<div class="gate">
+        <h3>Enter results</h3>
+        <p>Only the pool host should record results. Enter the host code to continue.</p>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:12px">
+          <input id="code" type="password" inputmode="numeric" placeholder="••••" autocomplete="off">
+          <button class="btn pink" onclick="tryUnlock()">Unlock</button>
+        </div>
+        <p style="margin-top:14px;font-size:11.5px">Default code is <b>1234</b> — change <code>ADMIN_CODE</code> in the file before sharing.</p>
+      </div>`;
+    const inp = document.getElementById('code');
+    inp.addEventListener('keydown',e=>{if(e.key==='Enter')tryUnlock();});
+    inp.focus();
+    return;
+  }
+  let html = `<div class="admin-bar">
+      <span class="note">Tap to set each group game, then advance knockout rounds. Saves automatically.</span>
+      <button class="btn ghost" onclick="resetAll()">Reset all</button>
+    </div>`;
+  for(const p of Object.keys(PLAYERS)){
+    html += `<div class="group-label">${p}</div>`;
+    for(const t of PLAYERS[p]){
+      html += adminTeam(t);
+    }
+  }
+  view.innerHTML = html;
+}
+function adminTeam(t){
+  const g = results[t].g;
+  const segs = [0,1,2].map(i=>`
+    <div class="seg" role="group" aria-label="${t} group game ${i+1}">
+      ${["W","D","L"].map(o=>`<button data-on="${o}" aria-pressed="${g[i]===o}" onclick="setGame('${t}',${i},'${o}')">${o}</button>`).join('')}
+    </div>`).join('');
+  const ko = KO_ROUNDS.map(r=>`
+    <button class="ko-pill" aria-pressed="${results[t].ko[r.key]}" onclick="toggleKO('${t}','${r.key}')">
+      ${r.label}<span class="v">+${r.pts}</span></button>`).join('');
+  return `<div class="ateam">
+      <div class="ateam-name"><span class="fl">${FLAG[t]||'🏳️'}</span>${t} <span style="margin-left:auto;font-family:Anton;font-size:16px">${teamTotal(t)}</span></div>
+      <div class="gs-row"><span class="glab">Group games — Win 3 · Draw 1 · Loss 0</span>${segs}</div>
+      <div class="ko-row"><span class="glab">Knockout wins (each round adds more)</span>${ko}</div>
+    </div>`;
+}
+
+function tryUnlock(){
+  const v = document.getElementById('code').value.trim();
+  if(v===ADMIN_CODE){ unlocked=true; renderAdmin(); }
+  else { const i=document.getElementById('code'); i.value=''; i.placeholder='Wrong code'; i.focus(); }
+}
+async function setGame(t,i,o){
+  results[t].g[i] = (results[t].g[i]===o)? null : o; // tap again to clear
+  await saveResults(); refreshAdminTeam(t); toast();
+}
+async function toggleKO(t,key){
+  const idx = KO_ROUNDS.findIndex(r=>r.key===key);
+  const turningOn = !results[t].ko[key];
+  if(turningOn){ for(let i=0;i<=idx;i++) results[t].ko[KO_ROUNDS[i].key]=true; }   // winning a round implies earlier wins
+  else { for(let i=idx;i<KO_ROUNDS.length;i++) results[t].ko[KO_ROUNDS[i].key]=false; } // undo this round and later
+  await saveResults(); refreshAdminTeam(t); toast();
+}
+function refreshAdminTeam(t){
+  // re-render just the admin list to keep totals + pressed states correct
+  if(current==='admin' && unlocked) renderAdmin();
+}
+async function resetAll(){
+  if(!confirm("Clear every recorded result and set all players back to 0?")) return;
+  ALL_TEAMS.forEach(t=>results[t]=blankTeam());
+  await saveResults(); renderAdmin(); toast();
+}
+
+let toastTimer;
+function toast(){
+  const el=document.getElementById('toast');
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>el.classList.remove('show'),1100);
+}
+
+/* ---- boot ---- */
+(async function(){ await loadResults(); show('standings'); })();
+</script>

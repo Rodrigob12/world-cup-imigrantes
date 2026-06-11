@@ -1,0 +1,4 @@
+{
+  "_help": "Manual corrections. Anything here OVERRIDES what the API returns. Shape per team: \"TeamName\": { \"g\": [\"W\",\"D\",\"L\"], \"ko\": { \"r32\": true } }. Use null in g to leave a group game unset. Keys starting with _ are ignored.",
+  "_example": { "g": [null, null, null], "ko": { "r32": false } }
+}

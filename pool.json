@@ -1,0 +1,17 @@
+{
+  "tournament": "FIFA World Cup 2026",
+  "season": 2026,
+  "apiFootballLeagueId": 1,
+  "scoring": {
+    "group": { "W": 3, "D": 1, "L": 0 },
+    "knockout": { "r32": 3, "r16": 6, "qf": 9, "sf": 12, "final": 15 }
+  },
+  "players": {
+    "Ardille": ["Brazil", "Argentina", "Croatia", "Turkiye", "Egypt", "Tunisia", "New Zealand", "Haiti"],
+    "Ivancho": ["Portugal", "Germany", "Ecuador", "South Korea", "Australia", "Iran", "Panama", "Jordan"],
+    "David": ["France", "Morocco", "Uruguay", "Canada", "Austria", "Bosnia", "Saudi Arabia", "Iraq"],
+    "Fercho": ["Spain", "Norway", "Japan", "Sweden", "Ivory Coast", "Algeria", "DR Congo", "Curacao"],
+    "Jeritz": ["England", "Belgium", "United States", "Switzerland", "Scotland", "Czech Republic", "South Africa", "Uzbekistan"],
+    "Trulla": ["Netherlands", "Colombia", "Mexico", "Senegal", "Ghana", "Paraguay", "Qatar", "Cape Verde"]
+  }
+}
