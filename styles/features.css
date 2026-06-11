@@ -150,6 +150,10 @@ table.standings .pts{font-weight:800}
 
 /* Match list (real fixtures/results) */
 .match-list{display:flex;flex-direction:column;gap:8px}
+.day-head{position:sticky;top:46px;z-index:5;background:var(--paper);
+  font-weight:800;font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--muted);padding:8px 2px 4px;margin-top:6px}
+.day-head:first-child{margin-top:0}
 .mrow{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);
   border-radius:12px;box-shadow:var(--shadow);padding:10px 12px}
 .mt{flex:1;display:flex;align-items:center;gap:7px;min-width:0;font-size:13px;font-weight:600}

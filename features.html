@@ -39,12 +39,11 @@ function formB(form){
     return '<span class="badge '+c+'">'+x+'</span>';
   }).join("")+'</div>';
 }
-function fmtDate(s){
-  if(!s) return '';
-  var d=new Date(s);
-  return d.toLocaleDateString(undefined,{month:'short',day:'numeric'})
-    +' '+d.toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
-}
+// Eastern Time (America/New_York) helpers — match list is shown in ET.
+var ET = 'America/New_York';
+function etDayKey(s){ return new Date(s).toLocaleDateString('en-CA',{timeZone:ET}); }            // YYYY-MM-DD for grouping
+function etDayLabel(s){ return new Date(s).toLocaleDateString('en-US',{timeZone:ET,weekday:'short',month:'short',day:'numeric'}); }
+function etTime(s){ return new Date(s).toLocaleTimeString('en-US',{timeZone:ET,hour:'numeric',minute:'2-digit'})+' ET'; }
 async function loadJSON(url){
   try{ var r=await fetch(url,{cache:'no-store'}); if(!r.ok) return null; return await r.json(); }
   catch(e){ return null; }
@@ -114,7 +113,7 @@ async function renderStats(){
 function matchRow(m){
   var hs=m.home.score, as=m.away.score, played = hs!=null && as!=null;
   var live = m.status==='IN_PLAY' || m.status==='PAUSED';
-  var st = live ? '🔴 LIVE' : (m.status==='FINISHED' ? 'FT' : fmtDate(m.utcDate));
+  var st = live ? '🔴 LIVE' : (m.status==='FINISHED' ? 'FT' : etTime(m.utcDate));
   var winH = m.winner==='HOME_TEAM', winA = m.winner==='AWAY_TEAM';
   return '<div class="mrow">'
     +'<div class="mt'+(winH?' win':'')+'">'+crest(m.home)+'<span class="nm">'+(m.home.name||'TBD')+'</span></div>'
@@ -131,11 +130,16 @@ async function renderHub(){
       + emptyState('<b>No fixtures yet.</b><br>Matches appear here as soon as the schedule is published.');
     return;
   }
+  // Sort by kickoff (UTC instant), then group under ET day headers.
   ms = ms.slice().sort(function(a,b){ return new Date(a.utcDate)-new Date(b.utcDate); });
-  // Show live/today first by simple date order; cap the list so it stays light.
-  var rows = ms.slice(0,60).map(matchRow).join("");
-  view.innerHTML = eyebrow('Matches · fixtures & results')
-    + '<div class="match-list">' + rows + '</div>';
+  var lastDay = null, list = "";
+  ms.forEach(function(m){
+    var key = etDayKey(m.utcDate);
+    if(key !== lastDay){ lastDay = key; list += '<div class="day-head">'+etDayLabel(m.utcDate)+'</div>'; }
+    list += matchRow(m);
+  });
+  view.innerHTML = eyebrow('Matches · all '+ms.length+' fixtures · times in ET')
+    + '<div class="match-list">' + list + '</div>';
 }
 
 /* ============================================================
