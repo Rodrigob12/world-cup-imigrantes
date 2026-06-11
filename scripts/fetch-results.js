@@ -209,6 +209,20 @@ async function main() {
   catch (e) { /* no overrides file yet — fine */ }
   applyOverrides(results, overrides);
 
+  // Only rewrite results.json when the actual team data changed. This keeps the
+  // every-6-hours run from creating a no-op commit just because the timestamp moved.
+  let previousTeams = null;
+  try {
+    const prev = JSON.parse(fs.readFileSync(RESULTS_PATH, 'utf8'));
+    previousTeams = {};
+    for (const [k, v] of Object.entries(prev)) { if (!k.startsWith('_')) previousTeams[k] = v; }
+  } catch (e) { previousTeams = null; }
+
+  if (previousTeams && JSON.stringify(previousTeams) === JSON.stringify(results)) {
+    console.log(`No score changes — results.json left unchanged (${counted} team-result(s) from finished matches).`);
+    return;
+  }
+
   const output = Object.assign({
     _updated: new Date().toISOString(),
     _source: `football-data.org ${competition} season ${season}`,
