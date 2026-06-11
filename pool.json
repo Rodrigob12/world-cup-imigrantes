@@ -1,7 +1,7 @@
 {
   "tournament": "FIFA World Cup 2026",
   "season": 2026,
-  "apiFootballLeagueId": 1,
+  "footballDataCompetition": "WC",
   "scoring": {
     "group": { "W": 3, "D": 1, "L": 0 },
     "knockout": { "r32": 3, "r16": 6, "qf": 9, "sf": 12, "final": 15 }

@@ -12,7 +12,7 @@ Action, and are published as a static site on GitHub Pages.
 | `pool.json` | Source of truth: the 6 players and the 8 teams each one owns. |
 | `results.json` | **Auto-generated** scores. Do not edit by hand. |
 | `overrides.json` | Manual corrections you control (always win over the API). |
-| `scripts/fetch-results.js` | Pulls finished matches from API-Football, writes `results.json`. |
+| `scripts/fetch-results.js` | Pulls finished matches from football-data.org, writes `results.json`. |
 | `.github/workflows/update-scores.yml` | Runs the script every 6 hours and on demand. |
 
 ## Scoring
@@ -42,8 +42,9 @@ the next workflow run (or trigger one manually).
 ## Local development
 
 ```bash
-export API_FOOTBALL_KEY=your_key_here   # never commit this
-node scripts/fetch-results.js           # regenerates results.json
+export FOOTBALL_DATA_TOKEN=your_token_here   # never commit this
+node scripts/fetch-results.js                # regenerates results.json
 ```
 
-The API key lives **only** in GitHub Secrets (`API_FOOTBALL_KEY`) — never in the code.
+The token lives **only** in GitHub Secrets (`FOOTBALL_DATA_TOKEN`) — never in the code.
+Get a free token at https://www.football-data.org/client/register

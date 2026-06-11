@@ -1,13 +1,16 @@
 #!/usr/bin/env node
 /* ============================================================================
    fetch-results.js
-   Reads pool.json, pulls finished World Cup matches from API-Football, and
-   writes results.json in the EXACT shape index.html expects:
+   Reads pool.json, pulls finished World Cup matches from football-data.org,
+   and writes results.json in the EXACT shape index.html expects:
        results[team] = { g:[W|D|L|null, x3], ko:{r32,r16,qf,sf,final: bool} }
    Manual corrections in overrides.json are applied last and always win.
 
-   This file is safe to re-run: it rebuilds results from scratch each time,
-   so it never drifts. Before any match is played it simply writes all blanks.
+   Safe to re-run: it rebuilds results from scratch each time, so it never
+   drifts. Before any match is played it simply writes all blanks.
+
+   Auth: football-data.org free tier. Token comes from env FOOTBALL_DATA_TOKEN
+   (in GitHub Actions this is the repo secret of the same name).
    ============================================================================ */
 'use strict';
 
@@ -19,12 +22,12 @@ const POOL_PATH = path.join(ROOT, 'pool.json');
 const OVERRIDES_PATH = path.join(ROOT, 'overrides.json');
 const RESULTS_PATH = path.join(ROOT, 'results.json');
 
-const API_HOST = 'https://v3.football.api-sports.io';
+const API_HOST = 'https://api.football-data.org/v4';
 
-const KEY = process.env.API_FOOTBALL_KEY;
-if (!KEY) {
-  console.error('ERROR: API_FOOTBALL_KEY environment variable is not set.');
-  console.error('In GitHub Actions this comes from the repo secret API_FOOTBALL_KEY.');
+const TOKEN = process.env.FOOTBALL_DATA_TOKEN;
+if (!TOKEN) {
+  console.error('ERROR: FOOTBALL_DATA_TOKEN environment variable is not set.');
+  console.error('In GitHub Actions this comes from the repo secret FOOTBALL_DATA_TOKEN.');
   process.exit(1);
 }
 
@@ -32,7 +35,7 @@ if (!KEY) {
 
 // Normalise a team name for comparison: lowercase, strip accents & punctuation.
 function normalize(s) {
-  return String(s)
+  return String(s || '')
     .toLowerCase()
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '') // strip accents
@@ -42,14 +45,14 @@ function normalize(s) {
 // Alternate spellings the API might use -> canonical pool name.
 const ALIASES = {
   'United States': ['USA', 'United States of America', 'US'],
-  'South Korea': ['Korea Republic', 'Korea South'],
+  'South Korea': ['Korea Republic', 'Korea South', 'Republic of Korea'],
   'Turkiye': ['Turkey', 'Türkiye'],
   'Ivory Coast': ["Cote d'Ivoire", 'Côte d’Ivoire', 'Cote d Ivoire'],
   'Czech Republic': ['Czechia'],
-  'DR Congo': ['Congo DR', 'Congo-DR', 'Democratic Republic of Congo', 'Congo Democratic Republic'],
+  'DR Congo': ['Congo DR', 'Congo-DR', 'Democratic Republic of Congo', 'Congo Democratic Republic', 'DR Congo'],
   'Curacao': ['Curaçao'],
   'Cape Verde': ['Cabo Verde', 'Cape Verde Islands'],
-  'Bosnia': ['Bosnia and Herzegovina', 'Bosnia & Herzegovina'],
+  'Bosnia': ['Bosnia and Herzegovina', 'Bosnia & Herzegovina', 'Bosnia-Herzegovina'],
   'Saudi Arabia': ['KSA']
 };
 
@@ -62,47 +65,59 @@ function buildTeamIndex(teams) {
   return idx;
 }
 
-function resolveTeam(idx, apiName) {
-  return idx[normalize(apiName)] || null;
-}
-
-// Knockout round label -> our key. Returns null for group games / 3rd-place.
-function koKey(round) {
-  const r = String(round).toLowerCase();
-  if (r.includes('round of 32')) return 'r32';
-  if (r.includes('round of 16')) return 'r16';
-  if (r.includes('quarter')) return 'qf';
-  if (r.includes('semi')) return 'sf';
-  if (r.includes('3rd') || r.includes('third')) return null; // 3rd-place playoff: no points
-  if (r.includes('final')) return 'final';
+// Resolve a football-data team object to a pool team, trying name/shortName/tla.
+function resolveTeam(idx, teamObj) {
+  if (!teamObj) return null;
+  for (const candidate of [teamObj.name, teamObj.shortName, teamObj.tla]) {
+    const hit = idx[normalize(candidate)];
+    if (hit) return hit;
+  }
   return null;
 }
 
-// "Group Stage - 1" / "Group A - 2" -> 0-based index (0..2). null if not a group game.
-function groupGameIndex(round) {
-  const r = String(round).toLowerCase();
-  if (!r.includes('group')) return null;
-  const m = r.match(/(\d)/);
-  if (!m) return null;
-  return Math.min(Math.max(parseInt(m[1], 10) - 1, 0), 2);
-}
+// football-data "stage" -> our knockout key. null for group / 3rd-place.
+const STAGE_KO = {
+  LAST_32: 'r32',
+  LAST_16: 'r16',
+  QUARTER_FINALS: 'qf',
+  QUARTER_FINAL: 'qf',
+  SEMI_FINALS: 'sf',
+  SEMI_FINAL: 'sf',
+  FINAL: 'final'
+};
 
-const FINISHED = new Set(['FT', 'AET', 'PEN']); // full-time / after extra time / penalties
+const FINISHED = new Set(['FINISHED']);
 
 function blankTeam() {
   return { g: [null, null, null], ko: { r32: false, r16: false, qf: false, sf: false, final: false } };
 }
 
 async function apiGet(endpoint) {
-  const res = await fetch(`${API_HOST}${endpoint}`, { headers: { 'x-apisports-key': KEY } });
+  const res = await fetch(`${API_HOST}${endpoint}`, { headers: { 'X-Auth-Token': TOKEN } });
+  const text = await res.text();
+  let data;
+  try { data = JSON.parse(text); } catch (e) { data = null; }
   if (!res.ok) {
-    throw new Error(`API request failed: ${res.status} ${res.statusText} for ${endpoint}`);
+    const msg = (data && (data.message || data.error)) || text || res.statusText;
+    const err = new Error(`API ${res.status}: ${msg}`);
+    err.status = res.status;
+    throw err;
   }
-  const data = await res.json();
-  if (data.errors && Object.keys(data.errors).length) {
-    throw new Error(`API returned errors: ${JSON.stringify(data.errors)}`);
+  return data;
+}
+
+// Fetch WC matches. Try the requested season first; if the free tier rejects
+// the season filter, fall back to the competition's current season.
+async function fetchMatches(competition, season) {
+  try {
+    return await apiGet(`/competitions/${competition}/matches?season=${season}`);
+  } catch (e) {
+    if (e.status === 403 || e.status === 400) {
+      console.warn(`Season filter ${season} not allowed (${e.message}); falling back to current season.`);
+      return await apiGet(`/competitions/${competition}/matches`);
+    }
+    throw e;
   }
-  return data.response || [];
 }
 
 function applyOverrides(results, overrides) {
@@ -124,57 +139,62 @@ function applyOverrides(results, overrides) {
 
 async function main() {
   const pool = JSON.parse(fs.readFileSync(POOL_PATH, 'utf8'));
-  const leagueId = pool.apiFootballLeagueId || 1;
+  const competition = pool.footballDataCompetition || 'WC';
   const season = pool.season || 2026;
   const teams = Object.values(pool.players).flat();
   const teamIdx = buildTeamIndex(teams);
 
-  // Start everyone at blank, then fill from finished matches.
+  // Start everyone blank, then fill from finished matches.
   const results = {};
   for (const t of teams) results[t] = blankTeam();
 
-  console.log(`Fetching fixtures: league=${leagueId} season=${season} ...`);
-  const fixtures = await apiGet(`/fixtures?league=${leagueId}&season=${season}`);
-  console.log(`Received ${fixtures.length} fixtures from API-Football.`);
+  console.log(`Fetching matches: competition=${competition} season=${season} ...`);
+  const data = await fetchMatches(competition, season);
+  const matches = (data && data.matches) || [];
+  console.log(`Received ${matches.length} matches from football-data.org.`);
 
   let counted = 0;
   const unresolved = new Set();
 
-  for (const fx of fixtures) {
-    const status = fx.fixture && fx.fixture.status && fx.fixture.status.short;
-    if (!FINISHED.has(status)) continue; // only completed matches
+  for (const m of matches) {
+    if (!FINISHED.has(m.status)) continue; // only completed matches
 
-    const round = (fx.league && fx.league.round) || '';
-    const home = fx.teams && fx.teams.home;
-    const away = fx.teams && fx.teams.away;
-    const hg = fx.goals && fx.goals.home;
-    const ag = fx.goals && fx.goals.away;
+    const stage = m.stage || '';
+    const home = m.homeTeam, away = m.awayTeam;
+    const score = m.score || {};
+    const ft = score.fullTime || {};
+    const hg = ft.home, ag = ft.away;
 
-    const homeTeam = home && resolveTeam(teamIdx, home.name);
-    const awayTeam = away && resolveTeam(teamIdx, away.name);
+    const homeTeam = resolveTeam(teamIdx, home);
+    const awayTeam = resolveTeam(teamIdx, away);
     if (home && home.name && !homeTeam) unresolved.add(home.name);
     if (away && away.name && !awayTeam) unresolved.add(away.name);
 
-    const gi = groupGameIndex(round);
-    if (gi !== null) {
-      if (hg != null && ag != null) {
-        const homeRes = hg > ag ? 'W' : (hg < ag ? 'L' : 'D');
-        const awayRes = ag > hg ? 'W' : (ag < hg ? 'L' : 'D');
-        if (homeTeam) { results[homeTeam].g[gi] = homeRes; counted++; }
-        if (awayTeam) { results[awayTeam].g[gi] = awayRes; counted++; }
+    if (stage === 'GROUP_STAGE') {
+      const gi = Math.min(Math.max((m.matchday || 1) - 1, 0), 2);
+      let homeRes = null, awayRes = null;
+      if (score.winner === 'HOME_TEAM') { homeRes = 'W'; awayRes = 'L'; }
+      else if (score.winner === 'AWAY_TEAM') { homeRes = 'L'; awayRes = 'W'; }
+      else if (score.winner === 'DRAW') { homeRes = 'D'; awayRes = 'D'; }
+      else if (hg != null && ag != null) {
+        homeRes = hg > ag ? 'W' : (hg < ag ? 'L' : 'D');
+        awayRes = ag > hg ? 'W' : (ag < hg ? 'L' : 'D');
       }
+      if (homeTeam && homeRes) { results[homeTeam].g[gi] = homeRes; counted++; }
+      if (awayTeam && awayRes) { results[awayTeam].g[gi] = awayRes; counted++; }
       continue;
     }
 
-    const kk = koKey(round);
+    const kk = STAGE_KO[stage];
     if (kk) {
-      // Whoever wins a knockout match advances -> mark that round won.
+      // Winner of a knockout match advances -> mark that round won.
       let winner = null;
-      if (home && home.winner === true) winner = homeTeam;
-      else if (away && away.winner === true) winner = awayTeam;
+      if (score.winner === 'HOME_TEAM') winner = homeTeam;
+      else if (score.winner === 'AWAY_TEAM') winner = awayTeam;
       else if (hg != null && ag != null && hg !== ag) winner = (hg > ag ? homeTeam : awayTeam);
       if (winner) { results[winner].ko[kk] = true; counted++; }
     }
+    // THIRD_PLACE and anything else: no points.
   }
 
   if (unresolved.size) {
@@ -191,7 +211,7 @@ async function main() {
 
   const output = Object.assign({
     _updated: new Date().toISOString(),
-    _source: `api-football league ${leagueId} season ${season}`,
+    _source: `football-data.org ${competition} season ${season}`,
     _note: 'Auto-generated by scripts/fetch-results.js. Do not edit by hand — use overrides.json for manual corrections.'
   }, results);
 
