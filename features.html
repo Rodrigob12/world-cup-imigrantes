@@ -105,13 +105,11 @@ async function renderStats(){
                          : lbEmpty('⚽ Top scorers', 'No goals scored yet.');
   html += assists.length ? lb('🅰️ Top assists', assists, function(r){return r.assists+'<small>a</small>';})
                          : lbEmpty('🅰️ Top assists', 'No assists recorded yet.');
-  html += lbEmpty('🟨 Most cards', 'Card stats aren’t available on the free data plan.');
   view.innerHTML = html;
 }
 
 /* ============================================================
-   MATCH HUB  (data/matches.json) — real fixtures/results.
-   Lineups & minute-by-minute timelines need a premium source.
+   MATCHES  (data/matches.json) — real fixtures, scores & status.
    ============================================================ */
 function matchRow(m){
   var hs=m.home.score, as=m.away.score, played = hs!=null && as!=null;
@@ -137,7 +135,6 @@ async function renderHub(){
   // Show live/today first by simple date order; cap the list so it stays light.
   var rows = ms.slice(0,60).map(matchRow).join("");
   view.innerHTML = eyebrow('Matches · fixtures & results')
-    + '<div class="card note">🔴 Live lineups and minute-by-minute timelines aren’t available on the free data plan — showing real fixtures, scores and status instead.</div>'
     + '<div class="match-list">' + rows + '</div>';
 }
 

@@ -123,37 +123,7 @@ table.standings .pts{font-weight:800}
 .cy{background:#FCE38A;color:#7a5b00} .cr{background:#F2B8BA;color:#8a1418}
 
 /* ============================================================
-   1) LIVE MATCH HUB
-   ============================================================ */
-.mchips{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px;scrollbar-width:none}
-.mchips::-webkit-scrollbar{display:none}
-.mchip{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);border-radius:999px;
-  padding:6px 12px;font:inherit;font-weight:700;font-size:13px;cursor:pointer}
-.mchip.on{border-color:var(--pink);color:var(--ink);box-shadow:0 0 0 2px rgba(229,0,109,.15)}
-.hub{padding:14px}
-.hub-score{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
-.hs-team{display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;font-size:26px}
-.hs-team span{font-size:12px;font-weight:700;text-align:center}
-.hs-sc{font-family:Anton,Inter,sans-serif;font-size:30px;text-align:center;line-height:1}
-.hs-sc small{color:var(--muted)}
-.hs-st{font-size:11px;color:var(--red);font-weight:700;font-family:Inter,sans-serif;margin-top:4px}
-.lineups{display:flex;gap:10px;border-top:1px solid var(--line);padding-top:12px}
-.lineup{flex:1;min-width:0}
-.lu-team{font-weight:800;font-size:12px;margin-bottom:6px}
-.pos{margin-bottom:7px}
-.pos-l{display:block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
-  color:var(--muted);font-weight:700;margin-bottom:3px}
-.pl{display:inline-block;font-size:11.5px;background:var(--paper);border:1px solid var(--line);
-  border-radius:6px;padding:2px 6px;margin:0 3px 3px 0}
-.tl-title{font-weight:800;font-size:12px;margin:14px 0 6px;border-top:1px solid var(--line);padding-top:12px}
-.timeline{display:flex;flex-direction:column;gap:4px}
-.ev{display:flex;align-items:center;gap:8px;font-size:12.5px;padding:5px 8px;border-radius:8px}
-.ev .min{font-variant-numeric:tabular-nums;color:var(--muted);min-width:30px;font-weight:700}
-.ev.goal{background:rgba(22,181,127,.12);font-weight:700}
-.ev.a{flex-direction:row-reverse;text-align:right}
-
-/* ============================================================
-   5) CHAT FEED
+   CHAT FEED
    ============================================================ */
 .chat{display:flex;flex-direction:column;height:62vh;background:var(--surface);
   border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
