@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12T03:43:13.975Z",
+  "updated": "2026-06-12T10:08:40.183Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -24,13 +24,13 @@
           "tla": "KOR",
           "crest": "https://crests.football-data.org/772.png",
           "played": 1,
-          "w": 0,
-          "d": 1,
+          "w": 1,
+          "d": 0,
           "l": 0,
-          "gf": 1,
+          "gf": 2,
           "ga": 1,
-          "gd": 0,
-          "points": 1,
+          "gd": 1,
+          "points": 3,
           "form": []
         },
         {
@@ -39,12 +39,12 @@
           "crest": "https://crests.football-data.org/798.svg",
           "played": 1,
           "w": 0,
-          "d": 1,
-          "l": 0,
+          "d": 0,
+          "l": 1,
           "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "points": 1,
+          "ga": 2,
+          "gd": -1,
+          "points": 0,
           "form": []
         },
         {
