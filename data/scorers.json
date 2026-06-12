@@ -1,11 +1,43 @@
 {
-  "updated": "2026-06-11T20:19:00.670Z",
+  "updated": "2026-06-12T03:43:14.128Z",
   "source": "football-data.org WC",
   "scorers": [
     {
       "name": "Julián Quiñones",
       "team": "Mexico",
       "crest": "https://crests.football-data.org/769.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Raúl Jiménez",
+      "team": "Mexico",
+      "crest": "https://crests.football-data.org/769.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Ladislav Krejčí",
+      "team": "Czechia",
+      "crest": "https://crests.football-data.org/798.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "In-beom Hwang",
+      "team": "South Korea",
+      "crest": "https://crests.football-data.org/772.png",
+      "goals": 1,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Hyun-Gyu Oh",
+      "team": "South Korea",
+      "crest": "https://crests.football-data.org/772.png",
       "goals": 1,
       "assists": 0,
       "penalties": 0

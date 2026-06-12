@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-11T20:19:00.461Z",
+  "updated": "2026-06-12T03:43:13.975Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -13,9 +13,9 @@
           "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 1,
+          "gf": 2,
           "ga": 0,
-          "gd": 1,
+          "gd": 2,
           "points": 3,
           "form": []
         },
@@ -23,28 +23,28 @@
           "name": "South Korea",
           "tla": "KOR",
           "crest": "https://crests.football-data.org/772.png",
-          "played": 0,
+          "played": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "points": 0,
+          "points": 1,
           "form": []
         },
         {
           "name": "Czechia",
           "tla": "CZE",
           "crest": "https://crests.football-data.org/798.svg",
-          "played": 0,
+          "played": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "points": 0,
+          "points": 1,
           "form": []
         },
         {
@@ -56,8 +56,8 @@
           "d": 0,
           "l": 1,
           "gf": 0,
-          "ga": 1,
-          "gd": -1,
+          "ga": 2,
+          "gd": -2,
           "points": 0,
           "form": []
         }
@@ -555,20 +555,6 @@
       "name": "J",
       "table": [
         {
-          "name": "Argentina",
-          "tla": "ARG",
-          "crest": "https://crests.football-data.org/762.png",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
           "name": "Algeria",
           "tla": "ALG",
           "crest": "https://crests.football-data.org/algeria.svg",
@@ -583,9 +569,9 @@
           "form": []
         },
         {
-          "name": "Austria",
-          "tla": "AUT",
-          "crest": "https://crests.football-data.org/816.svg",
+          "name": "Argentina",
+          "tla": "ARG",
+          "crest": "https://crests.football-data.org/762.png",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -600,6 +586,20 @@
           "name": "Jordan",
           "tla": "JOR",
           "crest": "https://crests.football-data.org/8049.png",
+          "played": 0,
+          "w": 0,
+          "d": 0,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 0,
+          "form": []
+        },
+        {
+          "name": "Austria",
+          "tla": "AUT",
+          "crest": "https://crests.football-data.org/816.svg",
           "played": 0,
           "w": 0,
           "d": 0,
