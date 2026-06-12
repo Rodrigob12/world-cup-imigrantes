@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12T14:54:09.794Z",
+  "updated": "2026-06-12T20:07:39.779Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -70,28 +70,14 @@
           "name": "Bosnia-Herzegovina",
           "tla": "BIH",
           "crest": "https://crests.football-data.org/bosnia.svg",
-          "played": 0,
-          "w": 0,
+          "played": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
+          "gf": 1,
           "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
-          "name": "Canada",
-          "tla": "CAN",
-          "crest": "https://crests.football-data.org/canada.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
+          "gd": 1,
+          "points": 3,
           "form": []
         },
         {
@@ -119,6 +105,20 @@
           "gf": 0,
           "ga": 0,
           "gd": 0,
+          "points": 0,
+          "form": []
+        },
+        {
+          "name": "Canada",
+          "tla": "CAN",
+          "crest": "https://crests.football-data.org/canada.svg",
+          "played": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 0,
+          "ga": 1,
+          "gd": -1,
           "points": 0,
           "form": []
         }
