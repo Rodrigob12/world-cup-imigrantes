@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12T20:07:40.227Z",
+  "updated": "2026-06-13T03:31:49.969Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -46,14 +46,14 @@
     {
       "id": 537333,
       "utcDate": "2026-06-12T19:00:00Z",
-      "status": "PAUSED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "home": {
         "name": "Canada",
         "tla": "CAN",
         "crest": "https://crests.football-data.org/canada.svg",
-        "score": 0
+        "score": 1
       },
       "away": {
         "name": "Bosnia-Herzegovina",
@@ -61,27 +61,27 @@
         "crest": "https://crests.football-data.org/bosnia.svg",
         "score": 1
       },
-      "winner": "AWAY_TEAM"
+      "winner": "DRAW"
     },
     {
       "id": 537345,
       "utcDate": "2026-06-13T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
       "home": {
         "name": "United States",
         "tla": "USA",
         "crest": "https://crests.football-data.org/usa.svg",
-        "score": null
+        "score": 4
       },
       "away": {
         "name": "Paraguay",
         "tla": "PAR",
         "crest": "https://crests.football-data.org/761.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537334,

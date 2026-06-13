@@ -1,7 +1,15 @@
 {
-  "updated": "2026-06-12T20:07:39.999Z",
+  "updated": "2026-06-13T03:31:49.799Z",
   "source": "football-data.org WC",
   "scorers": [
+    {
+      "name": "Folarin Balogun",
+      "team": "United States",
+      "crest": "https://crests.football-data.org/usa.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
     {
       "name": "Julián Quiñones",
       "team": "Mexico",
@@ -46,6 +54,30 @@
       "name": "Jovo Lukić",
       "team": "Bosnia-Herzegovina",
       "crest": "https://crests.football-data.org/bosnia.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Cyle Larin",
+      "team": "Canada",
+      "crest": "https://crests.football-data.org/canada.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Mauricio",
+      "team": "Paraguay",
+      "crest": "https://crests.football-data.org/761.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Gio Reyna",
+      "team": "United States",
+      "crest": "https://crests.football-data.org/usa.svg",
       "goals": 1,
       "assists": 0,
       "penalties": 0

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12T20:07:39.779Z",
+  "updated": "2026-06-13T03:31:49.629Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -71,13 +71,27 @@
           "tla": "BIH",
           "crest": "https://crests.football-data.org/bosnia.svg",
           "played": 1,
-          "w": 1,
-          "d": 0,
+          "w": 0,
+          "d": 1,
           "l": 0,
           "gf": 1,
-          "ga": 0,
-          "gd": 1,
-          "points": 3,
+          "ga": 1,
+          "gd": 0,
+          "points": 1,
+          "form": []
+        },
+        {
+          "name": "Canada",
+          "tla": "CAN",
+          "crest": "https://crests.football-data.org/canada.svg",
+          "played": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "gd": 0,
+          "points": 1,
           "form": []
         },
         {
@@ -105,20 +119,6 @@
           "gf": 0,
           "ga": 0,
           "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
-          "name": "Canada",
-          "tla": "CAN",
-          "crest": "https://crests.football-data.org/canada.svg",
-          "played": 1,
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "gf": 0,
-          "ga": 1,
-          "gd": -1,
           "points": 0,
           "form": []
         }
@@ -189,23 +189,23 @@
       "name": "D",
       "table": [
         {
-          "name": "Australia",
-          "tla": "AUS",
-          "crest": "https://crests.football-data.org/779.svg",
-          "played": 0,
-          "w": 0,
+          "name": "United States",
+          "tla": "USA",
+          "crest": "https://crests.football-data.org/usa.svg",
+          "played": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
+          "gf": 4,
+          "ga": 1,
+          "gd": 3,
+          "points": 3,
           "form": []
         },
         {
-          "name": "Paraguay",
-          "tla": "PAR",
-          "crest": "https://crests.football-data.org/761.svg",
+          "name": "Australia",
+          "tla": "AUS",
+          "crest": "https://crests.football-data.org/779.svg",
           "played": 0,
           "w": 0,
           "d": 0,
@@ -231,16 +231,16 @@
           "form": []
         },
         {
-          "name": "United States",
-          "tla": "USA",
-          "crest": "https://crests.football-data.org/usa.svg",
-          "played": 0,
+          "name": "Paraguay",
+          "tla": "PAR",
+          "crest": "https://crests.football-data.org/761.svg",
+          "played": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 4,
+          "gd": -3,
           "points": 0,
           "form": []
         }
