@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-13T13:55:05.843Z",
+  "updated": "2026-06-13T19:22:44.148Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -98,28 +98,28 @@
           "name": "Qatar",
           "tla": "QAT",
           "crest": "https://crests.football-data.org/8030.svg",
-          "played": 0,
+          "played": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
           "gf": 0,
           "ga": 0,
           "gd": 0,
-          "points": 0,
+          "points": 1,
           "form": []
         },
         {
           "name": "Switzerland",
           "tla": "SUI",
           "crest": "https://crests.football-data.org/788.svg",
-          "played": 0,
+          "played": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
           "gf": 0,
           "ga": 0,
           "gd": 0,
-          "points": 0,
+          "points": 1,
           "form": []
         }
       ]
