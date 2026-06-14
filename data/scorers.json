@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T13:58:44.163Z",
+  "updated": "2026-06-14T19:23:40.422Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -9,6 +9,14 @@
       "goals": 2,
       "assists": 0,
       "penalties": 0
+    },
+    {
+      "name": "Kai Havertz",
+      "team": "Germany",
+      "crest": "https://crests.football-data.org/759.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 1
     },
     {
       "name": "Julián Quiñones",
@@ -134,6 +142,22 @@
       "name": "Connor Metcalfe",
       "team": "Australia",
       "crest": "https://crests.football-data.org/779.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Felix Kalu Nmecha",
+      "team": "Germany",
+      "crest": "https://crests.football-data.org/759.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Livano Comenencia",
+      "team": "Curaçao",
+      "crest": "https://crests.football-data.org/curacao.svg",
       "goals": 1,
       "assists": 0,
       "penalties": 0

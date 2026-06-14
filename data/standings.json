@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T13:58:43.983Z",
+  "updated": "2026-06-14T19:23:40.233Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -250,31 +250,17 @@
       "name": "E",
       "table": [
         {
-          "name": "Curaçao",
-          "tla": "CUW",
-          "crest": "https://crests.football-data.org/curacao.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
           "name": "Germany",
           "tla": "GER",
           "crest": "https://crests.football-data.org/759.svg",
-          "played": 0,
-          "w": 0,
+          "played": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
+          "gf": 7,
+          "ga": 1,
+          "gd": 6,
+          "points": 3,
           "form": []
         },
         {
@@ -302,6 +288,20 @@
           "gf": 0,
           "ga": 0,
           "gd": 0,
+          "points": 0,
+          "form": []
+        },
+        {
+          "name": "Curaçao",
+          "tla": "CUW",
+          "crest": "https://crests.football-data.org/curacao.svg",
+          "played": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 7,
+          "gd": -6,
           "points": 0,
           "form": []
         }

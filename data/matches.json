@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T13:58:44.375Z",
+  "updated": "2026-06-14T19:23:40.620Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -166,22 +166,22 @@
     {
       "id": 537351,
       "utcDate": "2026-06-14T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
       "home": {
         "name": "Germany",
         "tla": "GER",
         "crest": "https://crests.football-data.org/759.svg",
-        "score": null
+        "score": 7
       },
       "away": {
         "name": "Curaçao",
         "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537357,
