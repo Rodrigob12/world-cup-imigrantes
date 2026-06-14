@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-13T19:22:44.511Z",
+  "updated": "2026-06-14T03:51:55.818Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -86,62 +86,62 @@
     {
       "id": 537334,
       "utcDate": "2026-06-13T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "home": {
         "name": "Qatar",
         "tla": "QAT",
         "crest": "https://crests.football-data.org/8030.svg",
-        "score": 0
+        "score": 1
       },
       "away": {
         "name": "Switzerland",
         "tla": "SUI",
         "crest": "https://crests.football-data.org/788.svg",
-        "score": 0
+        "score": 1
       },
       "winner": "DRAW"
     },
     {
       "id": 537339,
       "utcDate": "2026-06-13T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "home": {
         "name": "Brazil",
         "tla": "BRA",
         "crest": "https://crests.football-data.org/764.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Morocco",
         "tla": "MAR",
         "crest": "https://crests.football-data.org/morocco.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537340,
       "utcDate": "2026-06-14T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "home": {
         "name": "Haiti",
         "tla": "HAI",
         "crest": "https://crests.football-data.org/haiti.svg",
-        "score": null
+        "score": 0
       },
       "away": {
         "name": "Scotland",
         "tla": "SCO",
         "crest": "https://crests.football-data.org/814.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537346,
@@ -177,7 +177,7 @@
       },
       "away": {
         "name": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "crest": "https://crests.football-data.org/curacao.svg",
         "score": null
       },
@@ -206,7 +206,7 @@
     {
       "id": 537352,
       "utcDate": "2026-06-14T23:00:00Z",
-      "status": "TIMED",
+      "status": "SCHEDULED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
       "home": {
@@ -697,7 +697,7 @@
       },
       "away": {
         "name": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "crest": "https://crests.football-data.org/curacao.svg",
         "score": null
       },
@@ -1111,7 +1111,7 @@
       "group": "GROUP_E",
       "home": {
         "name": "Curaçao",
-        "tla": "CUW",
+        "tla": "CUR",
         "crest": "https://crests.football-data.org/curacao.svg",
         "score": null
       },

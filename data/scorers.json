@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-13T19:22:44.323Z",
+  "updated": "2026-06-14T03:51:55.601Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -78,6 +78,46 @@
       "name": "Gio Reyna",
       "team": "United States",
       "crest": "https://crests.football-data.org/usa.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Breel Embolo",
+      "team": "Switzerland",
+      "crest": "https://crests.football-data.org/788.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 1
+    },
+    {
+      "name": "Boualem Khoukhi",
+      "team": "Qatar",
+      "crest": "https://crests.football-data.org/8030.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Ismael Saibari",
+      "team": "Morocco",
+      "crest": "https://crests.football-data.org/morocco.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Vinicius Junior",
+      "team": "Brazil",
+      "crest": "https://crests.football-data.org/764.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "John McGinn",
+      "team": "Scotland",
+      "crest": "https://crests.football-data.org/814.svg",
       "goals": 1,
       "assists": 0,
       "penalties": 0
