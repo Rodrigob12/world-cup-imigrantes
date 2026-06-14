@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T03:51:55.364Z",
+  "updated": "2026-06-14T09:30:48.250Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -67,9 +67,9 @@
       "name": "B",
       "table": [
         {
-          "name": "Bosnia-Herzegovina",
-          "tla": "BIH",
-          "crest": "https://crests.football-data.org/bosnia.svg",
+          "name": "Switzerland",
+          "tla": "SUI",
+          "crest": "https://crests.football-data.org/788.svg",
           "played": 1,
           "w": 0,
           "d": 1,
@@ -109,9 +109,9 @@
           "form": []
         },
         {
-          "name": "Switzerland",
-          "tla": "SUI",
-          "crest": "https://crests.football-data.org/788.svg",
+          "name": "Bosnia-Herzegovina",
+          "tla": "BIH",
+          "crest": "https://crests.football-data.org/bosnia.svg",
           "played": 1,
           "w": 0,
           "d": 1,
@@ -142,9 +142,9 @@
           "form": []
         },
         {
-          "name": "Brazil",
-          "tla": "BRA",
-          "crest": "https://crests.football-data.org/764.svg",
+          "name": "Morocco",
+          "tla": "MAR",
+          "crest": "https://crests.football-data.org/morocco.svg",
           "played": 1,
           "w": 0,
           "d": 1,
@@ -156,9 +156,9 @@
           "form": []
         },
         {
-          "name": "Morocco",
-          "tla": "MAR",
-          "crest": "https://crests.football-data.org/morocco.svg",
+          "name": "Brazil",
+          "tla": "BRA",
+          "crest": "https://crests.football-data.org/764.svg",
           "played": 1,
           "w": 0,
           "d": 1,
@@ -206,27 +206,27 @@
           "name": "Australia",
           "tla": "AUS",
           "crest": "https://crests.football-data.org/779.svg",
-          "played": 0,
-          "w": 0,
+          "played": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
+          "gf": 2,
           "ga": 0,
-          "gd": 0,
-          "points": 0,
+          "gd": 2,
+          "points": 3,
           "form": []
         },
         {
           "name": "Turkey",
           "tla": "TUR",
           "crest": "https://crests.football-data.org/803.svg",
-          "played": 0,
+          "played": 1,
           "w": 0,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "ga": 2,
+          "gd": -2,
           "points": 0,
           "form": []
         },

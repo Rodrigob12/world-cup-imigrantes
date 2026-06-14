@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T03:51:55.601Z",
+  "updated": "2026-06-14T09:30:48.453Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -118,6 +118,22 @@
       "name": "John McGinn",
       "team": "Scotland",
       "crest": "https://crests.football-data.org/814.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Nestor Irankunda",
+      "team": "Australia",
+      "crest": "https://crests.football-data.org/779.svg",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Connor Metcalfe",
+      "team": "Australia",
+      "crest": "https://crests.football-data.org/779.svg",
       "goals": 1,
       "assists": 0,
       "penalties": 0
