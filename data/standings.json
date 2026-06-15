@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T12:09:11.413Z",
+  "updated": "2026-06-15T20:53:28.063Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -59,6 +59,25 @@
           "ga": 2,
           "gd": -2,
           "points": 0,
+          "form": []
+        }
+      ]
+    },
+    {
+      "name": "ATLANTIC DIVISION",
+      "table": [
+        {
+          "name": "Cape Verde Islands",
+          "tla": "CPV",
+          "crest": "https://crests.football-data.org/cape_verde.svg",
+          "played": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 1,
           "form": []
         }
       ]
@@ -181,6 +200,25 @@
           "ga": 1,
           "gd": -1,
           "points": 0,
+          "form": []
+        }
+      ]
+    },
+    {
+      "name": "CENTRAL DIVISION",
+      "table": [
+        {
+          "name": "Spain",
+          "tla": "ESP",
+          "crest": "https://crests.football-data.org/760.svg",
+          "played": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 1,
           "form": []
         }
       ]
@@ -375,28 +413,28 @@
           "name": "Egypt",
           "tla": "EGY",
           "crest": "https://crests.football-data.org/825.svg",
-          "played": 0,
+          "played": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "points": 0,
+          "points": 1,
           "form": []
         },
         {
           "name": "Belgium",
           "tla": "BEL",
           "crest": "https://crests.football-data.org/805.svg",
-          "played": 0,
+          "played": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "points": 0,
+          "points": 1,
           "form": []
         },
         {
@@ -417,67 +455,6 @@
           "name": "New Zealand",
           "tla": "NZL",
           "crest": "https://crests.football-data.org/783.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        }
-      ]
-    },
-    {
-      "name": "H",
-      "table": [
-        {
-          "name": "Cape Verde Islands",
-          "tla": "CPV",
-          "crest": "https://crests.football-data.org/cape_verde.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
-          "name": "Saudi Arabia",
-          "tla": "KSA",
-          "crest": "https://crests.football-data.org/saudi_arabia.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
-          "name": "Spain",
-          "tla": "ESP",
-          "crest": "https://crests.football-data.org/760.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
-          "name": "Uruguay",
-          "tla": "URY",
-          "crest": "https://crests.football-data.org/758.svg",
           "played": 0,
           "w": 0,
           "d": 0,
