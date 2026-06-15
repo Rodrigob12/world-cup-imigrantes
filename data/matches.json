@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T04:04:08.787Z",
+  "updated": "2026-06-15T12:09:11.894Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -177,7 +177,7 @@
       },
       "away": {
         "name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg",
         "score": 1
       },
@@ -697,7 +697,7 @@
       },
       "away": {
         "name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg",
         "score": null
       },
@@ -1111,7 +1111,7 @@
       "group": "GROUP_E",
       "home": {
         "name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg",
         "score": null
       },
