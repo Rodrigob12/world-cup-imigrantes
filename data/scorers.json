@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-14T19:23:40.422Z",
+  "updated": "2026-06-15T04:04:08.560Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -17,6 +17,14 @@
       "goals": 2,
       "assists": 0,
       "penalties": 1
+    },
+    {
+      "name": "Yasin Ayari",
+      "team": "Sweden",
+      "crest": "https://crests.football-data.org/792.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
     },
     {
       "name": "Julián Quiñones",
@@ -150,14 +158,6 @@
       "name": "Felix Kalu Nmecha",
       "team": "Germany",
       "crest": "https://crests.football-data.org/759.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Livano Comenencia",
-      "team": "Curaçao",
-      "crest": "https://crests.football-data.org/curacao.svg",
       "goals": 1,
       "assists": 0,
       "penalties": 0
