@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16T03:54:24.875Z",
+  "updated": "2026-06-16T11:07:26.562Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -372,9 +372,9 @@
       "name": "G",
       "table": [
         {
-          "name": "Iran",
-          "tla": "IRN",
-          "crest": "https://crests.football-data.org/iran.svg",
+          "name": "New Zealand",
+          "tla": "NZL",
+          "crest": "https://crests.football-data.org/783.svg",
           "played": 1,
           "w": 0,
           "d": 1,
@@ -386,9 +386,9 @@
           "form": []
         },
         {
-          "name": "New Zealand",
-          "tla": "NZL",
-          "crest": "https://crests.football-data.org/783.svg",
+          "name": "Iran",
+          "tla": "IRN",
+          "crest": "https://crests.football-data.org/iran.svg",
           "played": 1,
           "w": 0,
           "d": 1,
@@ -433,9 +433,9 @@
       "name": "H",
       "table": [
         {
-          "name": "Saudi Arabia",
-          "tla": "KSA",
-          "crest": "https://crests.football-data.org/saudi_arabia.svg",
+          "name": "Uruguay",
+          "tla": "URU",
+          "crest": "https://crests.football-data.org/758.svg",
           "played": 1,
           "w": 0,
           "d": 1,
@@ -447,9 +447,9 @@
           "form": []
         },
         {
-          "name": "Uruguay",
-          "tla": "URU",
-          "crest": "https://crests.football-data.org/758.svg",
+          "name": "Saudi Arabia",
+          "tla": "KSA",
+          "crest": "https://crests.football-data.org/saudi_arabia.svg",
           "played": 1,
           "w": 0,
           "d": 1,
