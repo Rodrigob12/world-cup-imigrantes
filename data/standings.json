@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16T16:47:46.784Z",
+  "updated": "2026-06-16T20:48:14.029Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -497,14 +497,28 @@
           "name": "France",
           "tla": "FRA",
           "crest": "https://crests.football-data.org/773.svg",
-          "played": 0,
+          "played": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
           "gf": 0,
           "ga": 0,
           "gd": 0,
-          "points": 0,
+          "points": 1,
+          "form": []
+        },
+        {
+          "name": "Senegal",
+          "tla": "SEN",
+          "crest": "https://crests.football-data.org/senegal.svg",
+          "played": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 1,
           "form": []
         },
         {
@@ -525,20 +539,6 @@
           "name": "Norway",
           "tla": "NOR",
           "crest": "https://crests.football-data.org/813.svg",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
-          "name": "Senegal",
-          "tla": "SEN",
-          "crest": "https://crests.football-data.org/senegal.svg",
           "played": 0,
           "w": 0,
           "d": 0,

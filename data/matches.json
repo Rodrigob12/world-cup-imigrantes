@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-16T16:47:47.126Z",
+  "updated": "2026-06-16T20:48:14.398Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -326,22 +326,22 @@
     {
       "id": 537391,
       "utcDate": "2026-06-16T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
       "home": {
         "name": "France",
         "tla": "FRA",
         "crest": "https://crests.football-data.org/773.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Senegal",
         "tla": "SEN",
         "crest": "https://crests.football-data.org/senegal.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537392,
