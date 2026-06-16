@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T20:53:28.063Z",
+  "updated": "2026-06-16T03:54:24.875Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -59,25 +59,6 @@
           "ga": 2,
           "gd": -2,
           "points": 0,
-          "form": []
-        }
-      ]
-    },
-    {
-      "name": "ATLANTIC DIVISION",
-      "table": [
-        {
-          "name": "Cape Verde Islands",
-          "tla": "CPV",
-          "crest": "https://crests.football-data.org/cape_verde.svg",
-          "played": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 1,
           "form": []
         }
       ]
@@ -200,25 +181,6 @@
           "ga": 1,
           "gd": -1,
           "points": 0,
-          "form": []
-        }
-      ]
-    },
-    {
-      "name": "CENTRAL DIVISION",
-      "table": [
-        {
-          "name": "Spain",
-          "tla": "ESP",
-          "crest": "https://crests.football-data.org/760.svg",
-          "played": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 1,
           "form": []
         }
       ]
@@ -410,15 +372,29 @@
       "name": "G",
       "table": [
         {
-          "name": "Egypt",
-          "tla": "EGY",
-          "crest": "https://crests.football-data.org/825.svg",
+          "name": "Iran",
+          "tla": "IRN",
+          "crest": "https://crests.football-data.org/iran.svg",
           "played": 1,
           "w": 0,
           "d": 1,
           "l": 0,
-          "gf": 1,
-          "ga": 1,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0,
+          "points": 1,
+          "form": []
+        },
+        {
+          "name": "New Zealand",
+          "tla": "NZL",
+          "crest": "https://crests.football-data.org/783.svg",
+          "played": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
           "gd": 0,
           "points": 1,
           "form": []
@@ -438,31 +414,78 @@
           "form": []
         },
         {
-          "name": "Iran",
-          "tla": "IRN",
-          "crest": "https://crests.football-data.org/iran.svg",
-          "played": 0,
+          "name": "Egypt",
+          "tla": "EGY",
+          "crest": "https://crests.football-data.org/825.svg",
+          "played": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "points": 0,
+          "points": 1,
+          "form": []
+        }
+      ]
+    },
+    {
+      "name": "H",
+      "table": [
+        {
+          "name": "Saudi Arabia",
+          "tla": "KSA",
+          "crest": "https://crests.football-data.org/saudi_arabia.svg",
+          "played": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "gd": 0,
+          "points": 1,
           "form": []
         },
         {
-          "name": "New Zealand",
-          "tla": "NZL",
-          "crest": "https://crests.football-data.org/783.svg",
-          "played": 0,
+          "name": "Uruguay",
+          "tla": "URU",
+          "crest": "https://crests.football-data.org/758.svg",
+          "played": 1,
           "w": 0,
-          "d": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "gd": 0,
+          "points": 1,
+          "form": []
+        },
+        {
+          "name": "Spain",
+          "tla": "ESP",
+          "crest": "https://crests.football-data.org/760.svg",
+          "played": 1,
+          "w": 0,
+          "d": 1,
           "l": 0,
           "gf": 0,
           "ga": 0,
           "gd": 0,
-          "points": 0,
+          "points": 1,
+          "form": []
+        },
+        {
+          "name": "Cape Verde Islands",
+          "tla": "CPV",
+          "crest": "https://crests.football-data.org/cape_verde.svg",
+          "played": 1,
+          "w": 0,
+          "d": 1,
+          "l": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "points": 1,
           "form": []
         }
       ]

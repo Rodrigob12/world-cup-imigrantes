@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T20:53:28.479Z",
+  "updated": "2026-06-16T03:54:25.232Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -266,7 +266,7 @@
     {
       "id": 537363,
       "utcDate": "2026-06-15T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "home": {
@@ -286,42 +286,42 @@
     {
       "id": 537370,
       "utcDate": "2026-06-15T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
       "home": {
         "name": "Saudi Arabia",
         "tla": "KSA",
         "crest": "https://crests.football-data.org/saudi_arabia.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537364,
       "utcDate": "2026-06-16T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "home": {
         "name": "Iran",
         "tla": "IRN",
         "crest": "https://crests.football-data.org/iran.svg",
-        "score": null
+        "score": 2
       },
       "away": {
         "name": "New Zealand",
         "tla": "NZL",
         "crest": "https://crests.football-data.org/783.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537391,
@@ -771,7 +771,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg",
         "score": null
       },
@@ -1251,7 +1251,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg",
         "score": null
       },

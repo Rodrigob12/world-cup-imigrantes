@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T20:53:28.264Z",
+  "updated": "2026-06-16T03:54:25.061Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -22,6 +22,14 @@
       "name": "Yasin Ayari",
       "team": "Sweden",
       "crest": "https://crests.football-data.org/792.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Elijah Just",
+      "team": "New Zealand",
+      "crest": "https://crests.football-data.org/783.svg",
       "goals": 2,
       "assists": 0,
       "penalties": 0
@@ -150,14 +158,6 @@
       "name": "Connor Metcalfe",
       "team": "Australia",
       "crest": "https://crests.football-data.org/779.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Felix Kalu Nmecha",
-      "team": "Germany",
-      "crest": "https://crests.football-data.org/759.svg",
       "goals": 1,
       "assists": 0,
       "penalties": 0
