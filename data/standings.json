@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T03:55:34.280Z",
+  "updated": "2026-06-17T10:51:54.057Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -569,30 +569,30 @@
           "form": []
         },
         {
-          "name": "Jordan",
-          "tla": "JOR",
-          "crest": "https://crests.football-data.org/8049.png",
-          "played": 0,
-          "w": 0,
-          "d": 0,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "points": 0,
-          "form": []
-        },
-        {
           "name": "Austria",
           "tla": "AUT",
           "crest": "https://crests.football-data.org/816.svg",
-          "played": 0,
-          "w": 0,
+          "played": 1,
+          "w": 1,
           "d": 0,
           "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "gf": 3,
+          "ga": 1,
+          "gd": 2,
+          "points": 3,
+          "form": []
+        },
+        {
+          "name": "Jordan",
+          "tla": "JOR",
+          "crest": "https://crests.football-data.org/8049.png",
+          "played": 1,
+          "w": 0,
+          "d": 0,
+          "l": 1,
+          "gf": 1,
+          "ga": 3,
+          "gd": -2,
           "points": 0,
           "form": []
         },

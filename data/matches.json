@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T03:55:34.618Z",
+  "updated": "2026-06-17T10:51:54.511Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -386,22 +386,22 @@
     {
       "id": 537398,
       "utcDate": "2026-06-17T04:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
       "home": {
         "name": "Austria",
         "tla": "AUT",
         "crest": "https://crests.football-data.org/816.svg",
-        "score": null
+        "score": 3
       },
       "away": {
         "name": "Jordan",
         "tla": "JOR",
         "crest": "https://crests.football-data.org/8049.png",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537403,
