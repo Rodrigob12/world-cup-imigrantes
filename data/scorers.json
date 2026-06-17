@@ -1,7 +1,15 @@
 {
-  "updated": "2026-06-16T20:48:14.201Z",
+  "updated": "2026-06-17T03:55:34.448Z",
   "source": "football-data.org WC",
   "scorers": [
+    {
+      "name": "Lionel Messi",
+      "team": "Argentina",
+      "crest": "https://crests.football-data.org/762.png",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0
+    },
     {
       "name": "Folarin Balogun",
       "team": "United States",
@@ -30,6 +38,22 @@
       "name": "Elijah Just",
       "team": "New Zealand",
       "crest": "https://crests.football-data.org/783.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Kylian Mbappé",
+      "team": "France",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Erling Haaland",
+      "team": "Norway",
+      "crest": "https://crests.football-data.org/813.svg",
       "goals": 2,
       "assists": 0,
       "penalties": 0
@@ -134,30 +158,6 @@
       "name": "Vinicius Junior",
       "team": "Brazil",
       "crest": "https://crests.football-data.org/764.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "John McGinn",
-      "team": "Scotland",
-      "crest": "https://crests.football-data.org/814.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Nestor Irankunda",
-      "team": "Australia",
-      "crest": "https://crests.football-data.org/779.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Connor Metcalfe",
-      "team": "Australia",
-      "crest": "https://crests.football-data.org/779.svg",
       "goals": 1,
       "assists": 0,
       "penalties": 0
