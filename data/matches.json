@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T15:22:55.148Z",
+  "updated": "2026-06-17T20:10:14.572Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -297,7 +297,7 @@
       },
       "away": {
         "name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg",
         "score": 1
       },
@@ -406,42 +406,42 @@
     {
       "id": 537403,
       "utcDate": "2026-06-17T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
       "home": {
         "name": "Portugal",
         "tla": "POR",
         "crest": "https://crests.football-data.org/765.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Congo DR",
         "tla": "COD",
         "crest": "https://crests.football-data.org/congo_dr.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537409,
       "utcDate": "2026-06-17T20:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_L",
       "home": {
         "name": "England",
         "tla": "ENG",
         "crest": "https://crests.football-data.org/770.svg",
-        "score": null
+        "score": 0
       },
       "away": {
         "name": "Croatia",
         "tla": "CRO",
         "crest": "https://crests.football-data.org/799.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537410,
@@ -771,7 +771,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg",
         "score": null
       },
@@ -1251,7 +1251,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg",
         "score": null
       },
