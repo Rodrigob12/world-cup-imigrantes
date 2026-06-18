@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T15:19:52.452Z",
+  "updated": "2026-06-18T20:23:45.718Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -486,27 +486,27 @@
     {
       "id": 537329,
       "utcDate": "2026-06-18T16:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
       "home": {
         "name": "Czechia",
         "tla": "CZE",
         "crest": "https://crests.football-data.org/798.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "South Africa",
         "tla": "RSA",
         "crest": "https://crests.football-data.org/9396.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537335,
       "utcDate": "2026-06-18T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "home": {
