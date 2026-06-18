@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T10:18:10.057Z",
+  "updated": "2026-06-18T15:19:52.452Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -297,7 +297,7 @@
       },
       "away": {
         "name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg",
         "score": 1
       },
@@ -446,7 +446,7 @@
     {
       "id": 537410,
       "utcDate": "2026-06-17T23:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_L",
       "home": {
@@ -771,7 +771,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg",
         "score": null
       },
@@ -1251,7 +1251,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg",
         "score": null
       },
