@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-17T20:10:14.323Z",
+  "updated": "2026-06-18T03:42:35.057Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -57,6 +57,14 @@
       "goals": 2,
       "assists": 0,
       "penalties": 0
+    },
+    {
+      "name": "Harry Kane",
+      "team": "England",
+      "crest": "https://crests.football-data.org/770.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 1
     },
     {
       "name": "Julián Quiñones",
@@ -150,14 +158,6 @@
       "name": "Ismael Saibari",
       "team": "Morocco",
       "crest": "https://crests.football-data.org/morocco.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Vinicius Junior",
-      "team": "Brazil",
-      "crest": "https://crests.football-data.org/764.svg",
       "goals": 1,
       "assists": 0,
       "penalties": 0
