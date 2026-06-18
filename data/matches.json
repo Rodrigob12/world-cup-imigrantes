@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T03:42:35.293Z",
+  "updated": "2026-06-18T10:18:10.057Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -466,7 +466,7 @@
     {
       "id": 537404,
       "utcDate": "2026-06-18T02:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
       "home": {
@@ -479,7 +479,7 @@
         "name": "Colombia",
         "tla": "COL",
         "crest": "https://crests.football-data.org/818.svg",
-        "score": 2
+        "score": 3
       },
       "winner": "AWAY_TEAM"
     },
