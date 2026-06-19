@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T20:23:45.718Z",
+  "updated": "2026-06-19T04:06:02.786Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -506,62 +506,62 @@
     {
       "id": 537335,
       "utcDate": "2026-06-18T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "home": {
         "name": "Switzerland",
         "tla": "SUI",
         "crest": "https://crests.football-data.org/788.svg",
-        "score": null
+        "score": 4
       },
       "away": {
         "name": "Bosnia-Herzegovina",
         "tla": "BIH",
         "crest": "https://crests.football-data.org/bosnia.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537336,
       "utcDate": "2026-06-18T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "home": {
         "name": "Canada",
         "tla": "CAN",
         "crest": "https://crests.football-data.org/canada.svg",
-        "score": null
+        "score": 6
       },
       "away": {
         "name": "Qatar",
         "tla": "QAT",
         "crest": "https://crests.football-data.org/8030.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537330,
       "utcDate": "2026-06-19T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
       "home": {
         "name": "Mexico",
         "tla": "MEX",
         "crest": "https://crests.football-data.org/769.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "South Korea",
         "tla": "KOR",
         "crest": "https://crests.football-data.org/772.png",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537348,

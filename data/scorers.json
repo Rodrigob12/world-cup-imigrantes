@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-18T20:23:45.506Z",
+  "updated": "2026-06-19T04:06:02.571Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -7,6 +7,22 @@
       "team": "Argentina",
       "crest": "https://crests.football-data.org/762.png",
       "goals": 3,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Jonathan David",
+      "team": "Canada",
+      "crest": "https://crests.football-data.org/canada.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Cyle Larin",
+      "team": "Canada",
+      "crest": "https://crests.football-data.org/canada.svg",
+      "goals": 2,
       "assists": 0,
       "penalties": 0
     },
@@ -67,6 +83,14 @@
       "penalties": 1
     },
     {
+      "name": "Johan Manzambi",
+      "team": "Switzerland",
+      "crest": "https://crests.football-data.org/788.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
       "name": "Julián Quiñones",
       "team": "Mexico",
       "crest": "https://crests.football-data.org/769.svg",
@@ -115,14 +139,6 @@
       "penalties": 0
     },
     {
-      "name": "Cyle Larin",
-      "team": "Canada",
-      "crest": "https://crests.football-data.org/canada.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
       "name": "Mauricio",
       "team": "Paraguay",
       "crest": "https://crests.football-data.org/761.svg",
@@ -143,24 +159,8 @@
       "team": "Switzerland",
       "crest": "https://crests.football-data.org/788.svg",
       "goals": 1,
-      "assists": 0,
+      "assists": 1,
       "penalties": 1
-    },
-    {
-      "name": "Boualem Khoukhi",
-      "team": "Qatar",
-      "crest": "https://crests.football-data.org/8030.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Ismael Saibari",
-      "team": "Morocco",
-      "crest": "https://crests.football-data.org/morocco.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
     }
   ]
 }
