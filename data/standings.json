@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-19T15:10:43.607Z",
+  "updated": "2026-06-19T19:47:15.898Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -192,27 +192,27 @@
           "name": "United States",
           "tla": "USA",
           "crest": "https://crests.football-data.org/usa.svg",
-          "played": 1,
-          "w": 1,
+          "played": 2,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "gf": 4,
+          "gf": 5,
           "ga": 1,
-          "gd": 3,
-          "points": 3,
+          "gd": 4,
+          "points": 6,
           "form": []
         },
         {
           "name": "Australia",
           "tla": "AUS",
           "crest": "https://crests.football-data.org/779.svg",
-          "played": 1,
+          "played": 2,
           "w": 1,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 2,
-          "ga": 0,
-          "gd": 2,
+          "ga": 1,
+          "gd": 1,
           "points": 3,
           "form": []
         },

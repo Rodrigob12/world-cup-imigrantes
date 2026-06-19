@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-19T15:10:44.021Z",
+  "updated": "2026-06-19T19:47:16.469Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -53,15 +53,15 @@
         "name": "Canada",
         "tla": "CAN",
         "crest": "https://crests.football-data.org/canada.svg",
-        "score": 1
+        "score": null
       },
       "away": {
         "name": "Bosnia-Herzegovina",
         "tla": "BIH",
         "crest": "https://crests.football-data.org/bosnia.svg",
-        "score": 1
+        "score": null
       },
-      "winner": "DRAW"
+      "winner": null
     },
     {
       "id": 537345,
@@ -566,22 +566,22 @@
     {
       "id": 537348,
       "utcDate": "2026-06-19T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_D",
       "home": {
         "name": "United States",
         "tla": "USA",
         "crest": "https://crests.football-data.org/usa.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Australia",
         "tla": "AUS",
         "crest": "https://crests.football-data.org/779.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537342,
