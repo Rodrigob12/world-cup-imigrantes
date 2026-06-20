@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T03:29:06.733Z",
+  "updated": "2026-06-20T08:52:43.797Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -217,31 +217,31 @@
           "form": []
         },
         {
+          "name": "Paraguay",
+          "tla": "PAR",
+          "crest": "https://crests.football-data.org/761.svg",
+          "played": 2,
+          "w": 1,
+          "d": 0,
+          "l": 1,
+          "gf": 2,
+          "ga": 4,
+          "gd": -2,
+          "points": 3,
+          "form": []
+        },
+        {
           "name": "Turkey",
           "tla": "TUR",
           "crest": "https://crests.football-data.org/803.svg",
           "played": 2,
           "w": 0,
-          "d": 1,
-          "l": 1,
+          "d": 0,
+          "l": 2,
           "gf": 0,
-          "ga": 2,
-          "gd": -2,
-          "points": 1,
-          "form": []
-        },
-        {
-          "name": "Paraguay",
-          "tla": "PAR",
-          "crest": "https://crests.football-data.org/761.svg",
-          "played": 2,
-          "w": 0,
-          "d": 1,
-          "l": 1,
-          "gf": 1,
-          "ga": 4,
+          "ga": 3,
           "gd": -3,
-          "points": 1,
+          "points": 0,
           "form": []
         }
       ]
