@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T13:58:13.693Z",
+  "updated": "2026-06-20T19:22:53.624Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -115,6 +115,22 @@
       "penalties": 0
     },
     {
+      "name": "Brian Brobbey",
+      "team": "Netherlands",
+      "crest": "https://crests.football-data.org/8601.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Cody Gakpo",
+      "team": "Netherlands",
+      "crest": "https://crests.football-data.org/8601.svg",
+      "goals": 2,
+      "assists": 2,
+      "penalties": 0
+    },
+    {
       "name": "Julián Quiñones",
       "team": "Mexico",
       "crest": "https://crests.football-data.org/769.svg",
@@ -144,22 +160,6 @@
       "crest": "https://crests.football-data.org/772.png",
       "goals": 1,
       "assists": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Hyun-Gyu Oh",
-      "team": "South Korea",
-      "crest": "https://crests.football-data.org/772.png",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Jovo Lukić",
-      "team": "Bosnia-Herzegovina",
-      "crest": "https://crests.football-data.org/bosnia.svg",
-      "goals": 1,
-      "assists": 0,
       "penalties": 0
     }
   ]
