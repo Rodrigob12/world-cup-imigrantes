@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-19T19:47:16.170Z",
+  "updated": "2026-06-20T03:29:07.012Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -32,6 +32,22 @@
       "crest": "https://crests.football-data.org/usa.svg",
       "goals": 2,
       "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Ismael Saibari",
+      "team": "Morocco",
+      "crest": "https://crests.football-data.org/morocco.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Vinicius Junior",
+      "team": "Brazil",
+      "crest": "https://crests.football-data.org/764.svg",
+      "goals": 2,
+      "assists": 2,
       "penalties": 0
     },
     {
@@ -91,6 +107,14 @@
       "penalties": 0
     },
     {
+      "name": "Matheus Cunha",
+      "team": "Brazil",
+      "crest": "https://crests.football-data.org/764.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
       "name": "Julián Quiñones",
       "team": "Mexico",
       "crest": "https://crests.football-data.org/769.svg",
@@ -137,30 +161,6 @@
       "goals": 1,
       "assists": 0,
       "penalties": 0
-    },
-    {
-      "name": "Mauricio",
-      "team": "Paraguay",
-      "crest": "https://crests.football-data.org/761.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Gio Reyna",
-      "team": "United States",
-      "crest": "https://crests.football-data.org/usa.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Breel Embolo",
-      "team": "Switzerland",
-      "crest": "https://crests.football-data.org/788.svg",
-      "goals": 1,
-      "assists": 1,
-      "penalties": 1
     }
   ]
 }
