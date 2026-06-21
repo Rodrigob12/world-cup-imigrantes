@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T03:59:20.174Z",
+  "updated": "2026-06-21T09:46:44.335Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -65,6 +65,14 @@
       "goals": 2,
       "assists": 0,
       "penalties": 1
+    },
+    {
+      "name": "Daichi Kamada",
+      "team": "Japan",
+      "crest": "https://crests.football-data.org/766.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
     },
     {
       "name": "Yasin Ayari",
@@ -139,25 +147,17 @@
       "penalties": 0
     },
     {
+      "name": "Ayase Ueda",
+      "team": "Japan",
+      "crest": "https://crests.football-data.org/766.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
       "name": "Julián Quiñones",
       "team": "Mexico",
       "crest": "https://crests.football-data.org/769.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Raúl Jiménez",
-      "team": "Mexico",
-      "crest": "https://crests.football-data.org/769.svg",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Ladislav Krejčí",
-      "team": "Czechia",
-      "crest": "https://crests.football-data.org/798.svg",
       "goals": 1,
       "assists": 0,
       "penalties": 0
