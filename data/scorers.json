@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T14:05:33.623Z",
+  "updated": "2026-06-21T19:27:09.016Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -155,11 +155,11 @@
       "penalties": 0
     },
     {
-      "name": "Julián Quiñones",
-      "team": "Mexico",
-      "crest": "https://crests.football-data.org/769.svg",
-      "goals": 1,
-      "assists": 0,
+      "name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "crest": "https://crests.football-data.org/760.svg",
+      "goals": 2,
+      "assists": 1,
       "penalties": 0
     }
   ]

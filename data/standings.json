@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T14:05:33.127Z",
+  "updated": "2026-06-21T19:27:08.696Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -372,6 +372,34 @@
       "name": "G",
       "table": [
         {
+          "name": "Iran",
+          "tla": "IRN",
+          "crest": "https://crests.football-data.org/iran.svg",
+          "played": 2,
+          "w": 0,
+          "d": 2,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0,
+          "points": 2,
+          "form": []
+        },
+        {
+          "name": "Belgium",
+          "tla": "BEL",
+          "crest": "https://crests.football-data.org/805.svg",
+          "played": 2,
+          "w": 0,
+          "d": 2,
+          "l": 0,
+          "gf": 1,
+          "ga": 1,
+          "gd": 0,
+          "points": 2,
+          "form": []
+        },
+        {
           "name": "New Zealand",
           "tla": "NZL",
           "crest": "https://crests.football-data.org/783.svg",
@@ -381,34 +409,6 @@
           "l": 0,
           "gf": 2,
           "ga": 2,
-          "gd": 0,
-          "points": 1,
-          "form": []
-        },
-        {
-          "name": "Iran",
-          "tla": "IRN",
-          "crest": "https://crests.football-data.org/iran.svg",
-          "played": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0,
-          "points": 1,
-          "form": []
-        },
-        {
-          "name": "Belgium",
-          "tla": "BEL",
-          "crest": "https://crests.football-data.org/805.svg",
-          "played": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
           "gd": 0,
           "points": 1,
           "form": []
@@ -433,6 +433,20 @@
       "name": "H",
       "table": [
         {
+          "name": "Spain",
+          "tla": "ESP",
+          "crest": "https://crests.football-data.org/760.svg",
+          "played": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 0,
+          "gd": 4,
+          "points": 4,
+          "form": []
+        },
+        {
           "name": "Uruguay",
           "tla": "URU",
           "crest": "https://crests.football-data.org/758.svg",
@@ -450,27 +464,13 @@
           "name": "Saudi Arabia",
           "tla": "KSA",
           "crest": "https://crests.football-data.org/saudi_arabia.svg",
-          "played": 1,
+          "played": 2,
           "w": 0,
           "d": 1,
-          "l": 0,
+          "l": 1,
           "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "points": 1,
-          "form": []
-        },
-        {
-          "name": "Spain",
-          "tla": "ESP",
-          "crest": "https://crests.football-data.org/760.svg",
-          "played": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
+          "ga": 5,
+          "gd": -4,
           "points": 1,
           "form": []
         },
