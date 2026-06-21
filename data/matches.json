@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T19:22:53.839Z",
+  "updated": "2026-06-21T03:59:20.410Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -666,42 +666,42 @@
     {
       "id": 537353,
       "utcDate": "2026-06-20T20:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
       "home": {
         "name": "Germany",
         "tla": "GER",
         "crest": "https://crests.football-data.org/759.svg",
-        "score": null
+        "score": 2
       },
       "away": {
         "name": "Ivory Coast",
         "tla": "CIV",
         "crest": "https://crests.football-data.org/787.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537354,
       "utcDate": "2026-06-21T00:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_E",
       "home": {
         "name": "Ecuador",
         "tla": "ECU",
         "crest": "https://crests.football-data.org/791.svg",
-        "score": null
+        "score": 0
       },
       "away": {
         "name": "Curaçao",
         "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537360,
