@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T16:52:21.838Z",
+  "updated": "2026-06-22T20:44:55.790Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -558,27 +558,27 @@
           "name": "Argentina",
           "tla": "ARG",
           "crest": "https://crests.football-data.org/762.png",
-          "played": 1,
-          "w": 1,
+          "played": 2,
+          "w": 2,
           "d": 0,
           "l": 0,
-          "gf": 3,
+          "gf": 5,
           "ga": 0,
-          "gd": 3,
-          "points": 3,
+          "gd": 5,
+          "points": 6,
           "form": []
         },
         {
           "name": "Austria",
           "tla": "AUT",
           "crest": "https://crests.football-data.org/816.svg",
-          "played": 1,
+          "played": 2,
           "w": 1,
           "d": 0,
-          "l": 0,
+          "l": 1,
           "gf": 3,
-          "ga": 1,
-          "gd": 2,
+          "ga": 3,
+          "gd": 0,
           "points": 3,
           "form": []
         },

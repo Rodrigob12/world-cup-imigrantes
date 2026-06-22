@@ -1,21 +1,21 @@
 {
-  "updated": "2026-06-22T16:52:22.116Z",
+  "updated": "2026-06-22T20:44:56.007Z",
   "source": "football-data.org WC",
   "scorers": [
+    {
+      "name": "Lionel Messi",
+      "team": "Argentina",
+      "crest": "https://crests.football-data.org/762.png",
+      "goals": 5,
+      "assists": 0,
+      "penalties": 0
+    },
     {
       "name": "Deniz Undav",
       "team": "Germany",
       "crest": "https://crests.football-data.org/759.svg",
       "goals": 3,
       "assists": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Lionel Messi",
-      "team": "Argentina",
-      "crest": "https://crests.football-data.org/762.png",
-      "goals": 3,
-      "assists": 0,
       "penalties": 0
     },
     {
