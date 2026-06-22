@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T19:27:09.211Z",
+  "updated": "2026-06-22T04:00:44.289Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -733,7 +733,7 @@
         "name": "Spain",
         "tla": "ESP",
         "crest": "https://crests.football-data.org/760.svg",
-        "score": 5
+        "score": 4
       },
       "away": {
         "name": "Saudi Arabia",
@@ -746,7 +746,7 @@
     {
       "id": 537365,
       "utcDate": "2026-06-21T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "home": {
@@ -766,42 +766,42 @@
     {
       "id": 537372,
       "utcDate": "2026-06-21T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
         "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg",
-        "score": null
+        "score": 2
       },
       "away": {
         "name": "Cape Verde Islands",
         "tla": "CPV",
         "crest": "https://crests.football-data.org/cape_verde.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537366,
       "utcDate": "2026-06-22T01:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "home": {
         "name": "New Zealand",
         "tla": "NZL",
         "crest": "https://crests.football-data.org/783.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Egypt",
         "tla": "EGY",
         "crest": "https://crests.football-data.org/825.svg",
-        "score": null
+        "score": 3
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537399,

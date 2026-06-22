@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T19:27:08.696Z",
+  "updated": "2026-06-22T04:00:43.766Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -372,6 +372,20 @@
       "name": "G",
       "table": [
         {
+          "name": "Egypt",
+          "tla": "EGY",
+          "crest": "https://crests.football-data.org/825.svg",
+          "played": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 4,
+          "ga": 2,
+          "gd": 2,
+          "points": 4,
+          "form": []
+        },
+        {
           "name": "Iran",
           "tla": "IRN",
           "crest": "https://crests.football-data.org/iran.svg",
@@ -403,27 +417,13 @@
           "name": "New Zealand",
           "tla": "NZL",
           "crest": "https://crests.football-data.org/783.svg",
-          "played": 1,
+          "played": 2,
           "w": 0,
           "d": 1,
-          "l": 0,
-          "gf": 2,
-          "ga": 2,
-          "gd": 0,
-          "points": 1,
-          "form": []
-        },
-        {
-          "name": "Egypt",
-          "tla": "EGY",
-          "crest": "https://crests.football-data.org/825.svg",
-          "played": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
+          "l": 1,
+          "gf": 3,
+          "ga": 5,
+          "gd": -2,
           "points": 1,
           "form": []
         }
@@ -450,14 +450,28 @@
           "name": "Uruguay",
           "tla": "URU",
           "crest": "https://crests.football-data.org/758.svg",
-          "played": 1,
+          "played": 2,
           "w": 0,
-          "d": 1,
+          "d": 2,
           "l": 0,
-          "gf": 1,
-          "ga": 1,
+          "gf": 3,
+          "ga": 3,
           "gd": 0,
-          "points": 1,
+          "points": 2,
+          "form": []
+        },
+        {
+          "name": "Cape Verde Islands",
+          "tla": "CPV",
+          "crest": "https://crests.football-data.org/cape_verde.svg",
+          "played": 2,
+          "w": 0,
+          "d": 2,
+          "l": 0,
+          "gf": 2,
+          "ga": 2,
+          "gd": 0,
+          "points": 2,
           "form": []
         },
         {
@@ -471,20 +485,6 @@
           "gf": 1,
           "ga": 5,
           "gd": -4,
-          "points": 1,
-          "form": []
-        },
-        {
-          "name": "Cape Verde Islands",
-          "tla": "CPV",
-          "crest": "https://crests.football-data.org/cape_verde.svg",
-          "played": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
           "points": 1,
           "form": []
         }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-21T19:27:09.016Z",
+  "updated": "2026-06-22T04:00:44.056Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -83,6 +83,14 @@
       "penalties": 0
     },
     {
+      "name": "Maximiliano Araújo",
+      "team": "Uruguay",
+      "crest": "https://crests.football-data.org/758.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
       "name": "Elijah Just",
       "team": "New Zealand",
       "crest": "https://crests.football-data.org/783.svg",
@@ -150,14 +158,6 @@
       "name": "Ayase Ueda",
       "team": "Japan",
       "crest": "https://crests.football-data.org/766.svg",
-      "goals": 2,
-      "assists": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Mikel Oyarzabal",
-      "team": "Spain",
-      "crest": "https://crests.football-data.org/760.svg",
       "goals": 2,
       "assists": 1,
       "penalties": 0
