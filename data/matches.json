@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T02:58:20.090Z",
+  "updated": "2026-06-23T09:35:09.446Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -866,22 +866,22 @@
     {
       "id": 537400,
       "utcDate": "2026-06-23T03:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_J",
       "home": {
         "name": "Jordan",
         "tla": "JOR",
         "crest": "https://crests.football-data.org/8049.png",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Algeria",
         "tla": "ALG",
         "crest": "https://crests.football-data.org/algeria.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537405,

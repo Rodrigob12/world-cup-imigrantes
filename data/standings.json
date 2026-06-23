@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T02:58:19.569Z",
+  "updated": "2026-06-23T09:35:08.931Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -583,29 +583,29 @@
           "form": []
         },
         {
-          "name": "Jordan",
-          "tla": "JOR",
-          "crest": "https://crests.football-data.org/8049.png",
-          "played": 1,
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "gf": 1,
-          "ga": 3,
-          "gd": -2,
-          "points": 0,
-          "form": []
-        },
-        {
           "name": "Algeria",
           "tla": "ALG",
           "crest": "https://crests.football-data.org/algeria.svg",
-          "played": 1,
-          "w": 0,
+          "played": 2,
+          "w": 1,
           "d": 0,
           "l": 1,
-          "gf": 0,
-          "ga": 3,
+          "gf": 2,
+          "ga": 4,
+          "gd": -2,
+          "points": 3,
+          "form": []
+        },
+        {
+          "name": "Jordan",
+          "tla": "JOR",
+          "crest": "https://crests.football-data.org/8049.png",
+          "played": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 2,
+          "ga": 5,
           "gd": -3,
           "points": 0,
           "form": []
