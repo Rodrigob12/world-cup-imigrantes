@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T14:43:45.573Z",
+  "updated": "2026-06-23T20:00:39.685Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -616,6 +616,20 @@
       "name": "K",
       "table": [
         {
+          "name": "Portugal",
+          "tla": "POR",
+          "crest": "https://crests.football-data.org/765.svg",
+          "played": 2,
+          "w": 1,
+          "d": 1,
+          "l": 0,
+          "gf": 6,
+          "ga": 1,
+          "gd": 5,
+          "points": 4,
+          "form": []
+        },
+        {
           "name": "Colombia",
           "tla": "COL",
           "crest": "https://crests.football-data.org/818.svg",
@@ -644,30 +658,16 @@
           "form": []
         },
         {
-          "name": "Portugal",
-          "tla": "POR",
-          "crest": "https://crests.football-data.org/765.svg",
-          "played": 1,
-          "w": 0,
-          "d": 1,
-          "l": 0,
-          "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "points": 1,
-          "form": []
-        },
-        {
           "name": "Uzbekistan",
           "tla": "UZB",
           "crest": "https://crests.football-data.org/8070.png",
-          "played": 1,
+          "played": 2,
           "w": 0,
           "d": 0,
-          "l": 1,
+          "l": 2,
           "gf": 1,
-          "ga": 3,
-          "gd": -2,
+          "ga": 8,
+          "gd": -7,
           "points": 0,
           "form": []
         }
@@ -680,28 +680,28 @@
           "name": "England",
           "tla": "ENG",
           "crest": "https://crests.football-data.org/770.svg",
-          "played": 1,
+          "played": 2,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 0,
           "gf": 4,
           "ga": 2,
           "gd": 2,
-          "points": 3,
+          "points": 4,
           "form": []
         },
         {
           "name": "Ghana",
           "tla": "GHA",
           "crest": "https://crests.football-data.org/ghana.svg",
-          "played": 1,
+          "played": 2,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 0,
           "gf": 1,
           "ga": 0,
           "gd": 1,
-          "points": 3,
+          "points": 4,
           "form": []
         },
         {

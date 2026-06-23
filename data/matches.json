@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T14:43:46.122Z",
+  "updated": "2026-06-23T20:00:40.257Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -886,22 +886,22 @@
     {
       "id": 537405,
       "utcDate": "2026-06-23T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
       "home": {
         "name": "Portugal",
         "tla": "POR",
         "crest": "https://crests.football-data.org/765.svg",
-        "score": null
+        "score": 5
       },
       "away": {
         "name": "Uzbekistan",
         "tla": "UZB",
         "crest": "https://crests.football-data.org/8070.png",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537411,
@@ -1490,9 +1490,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": "Germany",
-        "tla": "GER",
-        "crest": "https://crests.football-data.org/759.svg",
+        "name": null,
+        "tla": null,
+        "crest": null,
         "score": null
       },
       "away": {
@@ -1570,9 +1570,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": "Mexico",
-        "tla": "MEX",
-        "crest": "https://crests.football-data.org/769.svg",
+        "name": null,
+        "tla": null,
+        "crest": null,
         "score": null
       },
       "away": {
@@ -1630,9 +1630,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": "United States",
-        "tla": "USA",
-        "crest": "https://crests.football-data.org/usa.svg",
+        "name": null,
+        "tla": null,
+        "crest": null,
         "score": null
       },
       "away": {

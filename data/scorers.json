@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T14:43:45.883Z",
+  "updated": "2026-06-23T20:00:39.966Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -71,7 +71,7 @@
       "team": "Brazil",
       "crest": "https://crests.football-data.org/764.svg",
       "goals": 2,
-      "assists": 2,
+      "assists": 1,
       "penalties": 0
     },
     {
