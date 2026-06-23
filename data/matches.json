@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T20:44:56.182Z",
+  "updated": "2026-06-23T02:58:20.090Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -177,7 +177,7 @@
       },
       "away": {
         "name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg",
         "score": 1
       },
@@ -697,7 +697,7 @@
       },
       "away": {
         "name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg",
         "score": 0
       },
@@ -826,42 +826,42 @@
     {
       "id": 537393,
       "utcDate": "2026-06-22T21:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
       "home": {
         "name": "France",
         "tla": "FRA",
         "crest": "https://crests.football-data.org/773.svg",
-        "score": null
+        "score": 3
       },
       "away": {
         "name": "Iraq",
         "tla": "IRQ",
         "crest": "https://crests.football-data.org/iraq.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537394,
       "utcDate": "2026-06-23T00:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_I",
       "home": {
         "name": "Norway",
         "tla": "NOR",
         "crest": "https://crests.football-data.org/813.svg",
-        "score": null
+        "score": 3
       },
       "away": {
         "name": "Senegal",
         "tla": "SEN",
         "crest": "https://crests.football-data.org/senegal.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537400,
@@ -1111,7 +1111,7 @@
       "group": "GROUP_E",
       "home": {
         "name": "Curaçao",
-        "tla": "CUR",
+        "tla": "CUW",
         "crest": "https://crests.football-data.org/curacao.svg",
         "score": null
       },

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22T20:44:56.007Z",
+  "updated": "2026-06-23T02:58:19.832Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -7,6 +7,22 @@
       "team": "Argentina",
       "crest": "https://crests.football-data.org/762.png",
       "goals": 5,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Kylian Mbappé",
+      "team": "France",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 4,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Erling Haaland",
+      "team": "Norway",
+      "crest": "https://crests.football-data.org/813.svg",
+      "goals": 4,
       "assists": 0,
       "penalties": 0
     },
@@ -94,22 +110,6 @@
       "name": "Elijah Just",
       "team": "New Zealand",
       "crest": "https://crests.football-data.org/783.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Kylian Mbappé",
-      "team": "France",
-      "crest": "https://crests.football-data.org/773.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Erling Haaland",
-      "team": "Norway",
-      "crest": "https://crests.football-data.org/813.svg",
       "goals": 2,
       "assists": 0,
       "penalties": 0
