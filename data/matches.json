@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T09:35:09.446Z",
+  "updated": "2026-06-23T14:43:46.122Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -297,7 +297,7 @@
       },
       "away": {
         "name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg",
         "score": 1
       },
@@ -771,7 +771,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg",
         "score": 2
       },
@@ -1251,7 +1251,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URY",
+        "tla": "URU",
         "crest": "https://crests.football-data.org/758.svg",
         "score": null
       },
@@ -1490,9 +1490,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
         "score": null
       },
       "away": {
@@ -1570,9 +1570,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Mexico",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/769.svg",
         "score": null
       },
       "away": {
@@ -1630,9 +1630,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "United States",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg",
         "score": null
       },
       "away": {

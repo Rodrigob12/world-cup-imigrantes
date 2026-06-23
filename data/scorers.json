@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T09:35:09.235Z",
+  "updated": "2026-06-23T14:43:45.883Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -83,6 +83,14 @@
       "penalties": 1
     },
     {
+      "name": "Crysencio Summerville",
+      "team": "Netherlands",
+      "crest": "https://crests.football-data.org/8601.svg",
+      "goals": 2,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
       "name": "Daichi Kamada",
       "team": "Japan",
       "crest": "https://crests.football-data.org/766.svg",
@@ -150,14 +158,6 @@
       "name": "Cody Gakpo",
       "team": "Netherlands",
       "crest": "https://crests.football-data.org/8601.svg",
-      "goals": 2,
-      "assists": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Ayase Ueda",
-      "team": "Japan",
-      "crest": "https://crests.football-data.org/766.svg",
       "goals": 2,
       "assists": 1,
       "penalties": 0
