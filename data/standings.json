@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T20:00:39.685Z",
+  "updated": "2026-06-24T03:23:59.661Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -633,28 +633,28 @@
           "name": "Colombia",
           "tla": "COL",
           "crest": "https://crests.football-data.org/818.svg",
-          "played": 1,
+          "played": 2,
           "w": 1,
-          "d": 0,
+          "d": 1,
           "l": 0,
           "gf": 3,
           "ga": 1,
           "gd": 2,
-          "points": 3,
+          "points": 4,
           "form": []
         },
         {
           "name": "Congo DR",
           "tla": "COD",
           "crest": "https://crests.football-data.org/congo_dr.svg",
-          "played": 1,
+          "played": 2,
           "w": 0,
-          "d": 1,
+          "d": 2,
           "l": 0,
           "gf": 1,
           "ga": 1,
           "gd": 0,
-          "points": 1,
+          "points": 2,
           "form": []
         },
         {
@@ -705,29 +705,29 @@
           "form": []
         },
         {
-          "name": "Panama",
-          "tla": "PAN",
-          "crest": "https://crests.football-data.org/panama.svg",
-          "played": 1,
-          "w": 0,
-          "d": 0,
-          "l": 1,
-          "gf": 0,
-          "ga": 1,
-          "gd": -1,
-          "points": 0,
-          "form": []
-        },
-        {
           "name": "Croatia",
           "tla": "CRO",
           "crest": "https://crests.football-data.org/799.svg",
-          "played": 1,
-          "w": 0,
+          "played": 2,
+          "w": 1,
           "d": 0,
           "l": 1,
-          "gf": 2,
+          "gf": 3,
           "ga": 4,
+          "gd": -1,
+          "points": 3,
+          "form": []
+        },
+        {
+          "name": "Panama",
+          "tla": "PAN",
+          "crest": "https://crests.football-data.org/panama.svg",
+          "played": 2,
+          "w": 0,
+          "d": 0,
+          "l": 2,
+          "gf": 0,
+          "ga": 2,
           "gd": -2,
           "points": 0,
           "form": []
