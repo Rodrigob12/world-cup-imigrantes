@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T03:23:59.878Z",
+  "updated": "2026-06-24T09:25:17.186Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -131,6 +131,14 @@
       "penalties": 1
     },
     {
+      "name": "Daniel Muñoz",
+      "team": "Colombia",
+      "crest": "https://crests.football-data.org/818.svg",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
       "name": "Johan Manzambi",
       "team": "Switzerland",
       "crest": "https://crests.football-data.org/788.svg",
@@ -152,14 +160,6 @@
       "crest": "https://crests.football-data.org/8601.svg",
       "goals": 2,
       "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Cody Gakpo",
-      "team": "Netherlands",
-      "crest": "https://crests.football-data.org/8601.svg",
-      "goals": 2,
-      "assists": 1,
       "penalties": 0
     }
   ]

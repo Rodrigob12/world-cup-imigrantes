@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T03:24:00.124Z",
+  "updated": "2026-06-24T09:25:17.412Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -297,7 +297,7 @@
       },
       "away": {
         "name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg",
         "score": 1
       },
@@ -771,7 +771,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg",
         "score": 2
       },
@@ -946,14 +946,14 @@
     {
       "id": 537406,
       "utcDate": "2026-06-24T02:00:00Z",
-      "status": "LIVE",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_K",
       "home": {
         "name": "Colombia",
         "tla": "COL",
         "crest": "https://crests.football-data.org/818.svg",
-        "score": 0
+        "score": 1
       },
       "away": {
         "name": "Congo DR",
@@ -961,7 +961,7 @@
         "crest": "https://crests.football-data.org/congo_dr.svg",
         "score": 0
       },
-      "winner": "DRAW"
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537337,
@@ -1251,7 +1251,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg",
         "score": null
       },

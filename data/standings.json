@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T03:23:59.661Z",
+  "updated": "2026-06-24T09:25:16.941Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -616,6 +616,20 @@
       "name": "K",
       "table": [
         {
+          "name": "Colombia",
+          "tla": "COL",
+          "crest": "https://crests.football-data.org/818.svg",
+          "played": 2,
+          "w": 2,
+          "d": 0,
+          "l": 0,
+          "gf": 4,
+          "ga": 1,
+          "gd": 3,
+          "points": 6,
+          "form": []
+        },
+        {
           "name": "Portugal",
           "tla": "POR",
           "crest": "https://crests.football-data.org/765.svg",
@@ -630,31 +644,17 @@
           "form": []
         },
         {
-          "name": "Colombia",
-          "tla": "COL",
-          "crest": "https://crests.football-data.org/818.svg",
-          "played": 2,
-          "w": 1,
-          "d": 1,
-          "l": 0,
-          "gf": 3,
-          "ga": 1,
-          "gd": 2,
-          "points": 4,
-          "form": []
-        },
-        {
           "name": "Congo DR",
           "tla": "COD",
           "crest": "https://crests.football-data.org/congo_dr.svg",
           "played": 2,
           "w": 0,
-          "d": 2,
-          "l": 0,
+          "d": 1,
+          "l": 1,
           "gf": 1,
-          "ga": 1,
-          "gd": 0,
-          "points": 2,
+          "ga": 2,
+          "gd": -1,
+          "points": 1,
           "form": []
         },
         {
