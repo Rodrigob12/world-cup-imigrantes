@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T19:43:24.626Z",
+  "updated": "2026-06-25T02:58:27.221Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -966,122 +966,122 @@
     {
       "id": 537337,
       "utcDate": "2026-06-24T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "home": {
         "name": "Switzerland",
         "tla": "SUI",
         "crest": "https://crests.football-data.org/788.svg",
-        "score": 0
+        "score": 2
       },
       "away": {
         "name": "Canada",
         "tla": "CAN",
         "crest": "https://crests.football-data.org/canada.svg",
-        "score": 0
+        "score": 1
       },
-      "winner": "DRAW"
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537338,
       "utcDate": "2026-06-24T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_B",
       "home": {
         "name": "Bosnia-Herzegovina",
         "tla": "BIH",
         "crest": "https://crests.football-data.org/bosnia.svg",
-        "score": 2
+        "score": 3
       },
       "away": {
         "name": "Qatar",
         "tla": "QAT",
         "crest": "https://crests.football-data.org/8030.svg",
-        "score": 0
+        "score": 1
       },
       "winner": "HOME_TEAM"
     },
     {
       "id": 537344,
       "utcDate": "2026-06-24T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "home": {
         "name": "Morocco",
         "tla": "MAR",
         "crest": "https://crests.football-data.org/morocco.svg",
-        "score": null
+        "score": 4
       },
       "away": {
         "name": "Haiti",
         "tla": "HAI",
         "crest": "https://crests.football-data.org/haiti.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537343,
       "utcDate": "2026-06-24T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_C",
       "home": {
         "name": "Scotland",
         "tla": "SCO",
         "crest": "https://crests.football-data.org/814.svg",
-        "score": null
+        "score": 0
       },
       "away": {
         "name": "Brazil",
         "tla": "BRA",
         "crest": "https://crests.football-data.org/764.svg",
-        "score": null
+        "score": 3
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537331,
       "utcDate": "2026-06-25T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
       "home": {
         "name": "Czechia",
         "tla": "CZE",
         "crest": "https://crests.football-data.org/798.svg",
-        "score": null
+        "score": 0
       },
       "away": {
         "name": "Mexico",
         "tla": "MEX",
         "crest": "https://crests.football-data.org/769.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537332,
       "utcDate": "2026-06-25T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
       "home": {
         "name": "South Africa",
         "tla": "RSA",
         "crest": "https://crests.football-data.org/9396.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "South Korea",
         "tla": "KOR",
         "crest": "https://crests.football-data.org/772.png",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537355,

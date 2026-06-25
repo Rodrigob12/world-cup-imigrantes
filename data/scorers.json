@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T19:43:24.343Z",
+  "updated": "2026-06-25T02:58:27.008Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -8,6 +8,14 @@
       "crest": "https://crests.football-data.org/762.png",
       "goals": 5,
       "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Vinicius Junior",
+      "team": "Brazil",
+      "crest": "https://crests.football-data.org/764.svg",
+      "goals": 4,
+      "assists": 1,
       "penalties": 0
     },
     {
@@ -27,6 +35,14 @@
       "penalties": 0
     },
     {
+      "name": "Ismael Saibari",
+      "team": "Morocco",
+      "crest": "https://crests.football-data.org/morocco.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
       "name": "Deniz Undav",
       "team": "Germany",
       "crest": "https://crests.football-data.org/759.svg",
@@ -35,10 +51,34 @@
       "penalties": 0
     },
     {
+      "name": "Johan Manzambi",
+      "team": "Switzerland",
+      "crest": "https://crests.football-data.org/788.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
       "name": "Jonathan David",
       "team": "Canada",
       "crest": "https://crests.football-data.org/canada.svg",
       "goals": 3,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Matheus Cunha",
+      "team": "Brazil",
+      "crest": "https://crests.football-data.org/764.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Julián Quiñones",
+      "team": "Mexico",
+      "crest": "https://crests.football-data.org/769.svg",
+      "goals": 2,
       "assists": 0,
       "penalties": 0
     },
@@ -56,22 +96,6 @@
       "crest": "https://crests.football-data.org/usa.svg",
       "goals": 2,
       "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Ismael Saibari",
-      "team": "Morocco",
-      "crest": "https://crests.football-data.org/morocco.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Vinicius Junior",
-      "team": "Brazil",
-      "crest": "https://crests.football-data.org/764.svg",
-      "goals": 2,
-      "assists": 1,
       "penalties": 0
     },
     {
@@ -134,30 +158,6 @@
       "name": "Daniel Muñoz",
       "team": "Colombia",
       "crest": "https://crests.football-data.org/818.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Johan Manzambi",
-      "team": "Switzerland",
-      "crest": "https://crests.football-data.org/788.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Matheus Cunha",
-      "team": "Brazil",
-      "crest": "https://crests.football-data.org/764.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Brian Brobbey",
-      "team": "Netherlands",
-      "crest": "https://crests.football-data.org/8601.svg",
       "goals": 2,
       "assists": 0,
       "penalties": 0
