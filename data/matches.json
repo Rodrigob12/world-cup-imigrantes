@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T02:58:27.221Z",
+  "updated": "2026-06-25T08:58:19.860Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -297,7 +297,7 @@
       },
       "away": {
         "name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg",
         "score": 1
       },
@@ -771,7 +771,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg",
         "score": 2
       },
@@ -1046,7 +1046,7 @@
     {
       "id": 537331,
       "utcDate": "2026-06-25T01:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
       "home": {
@@ -1059,14 +1059,14 @@
         "name": "Mexico",
         "tla": "MEX",
         "crest": "https://crests.football-data.org/769.svg",
-        "score": 2
+        "score": 3
       },
       "winner": "AWAY_TEAM"
     },
     {
       "id": 537332,
       "utcDate": "2026-06-25T01:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_A",
       "home": {
@@ -1251,7 +1251,7 @@
       "group": "GROUP_H",
       "home": {
         "name": "Uruguay",
-        "tla": "URU",
+        "tla": "URY",
         "crest": "https://crests.football-data.org/758.svg",
         "score": null
       },
@@ -1490,9 +1490,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": "Germany",
-        "tla": "GER",
-        "crest": "https://crests.football-data.org/759.svg",
+        "name": null,
+        "tla": null,
+        "crest": null,
         "score": null
       },
       "away": {
@@ -1570,9 +1570,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": "Mexico",
-        "tla": "MEX",
-        "crest": "https://crests.football-data.org/769.svg",
+        "name": null,
+        "tla": null,
+        "crest": null,
         "score": null
       },
       "away": {
@@ -1630,9 +1630,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": "United States",
-        "tla": "USA",
-        "crest": "https://crests.football-data.org/usa.svg",
+        "name": null,
+        "tla": null,
+        "crest": null,
         "score": null
       },
       "away": {
@@ -1730,9 +1730,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": "Argentina",
-        "tla": "ARG",
-        "crest": "https://crests.football-data.org/762.png",
+        "name": null,
+        "tla": null,
+        "crest": null,
         "score": null
       },
       "away": {
