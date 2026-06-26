@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-25T19:57:40.048Z",
+  "updated": "2026-06-26T03:30:15.731Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -70,6 +70,14 @@
       "name": "Matheus Cunha",
       "team": "Brazil",
       "crest": "https://crests.football-data.org/764.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Brian Brobbey",
+      "team": "Netherlands",
+      "crest": "https://crests.football-data.org/8601.svg",
       "goals": 3,
       "assists": 0,
       "penalties": 0
@@ -153,14 +161,6 @@
       "goals": 2,
       "assists": 0,
       "penalties": 1
-    },
-    {
-      "name": "Daniel Muñoz",
-      "team": "Colombia",
-      "crest": "https://crests.football-data.org/818.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
     }
   ]
 }
