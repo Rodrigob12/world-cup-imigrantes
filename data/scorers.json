@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T14:20:39.923Z",
+  "updated": "2026-06-26T19:43:51.561Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -23,7 +23,7 @@
       "team": "France",
       "crest": "https://crests.football-data.org/773.svg",
       "goals": 4,
-      "assists": 0,
+      "assists": 2,
       "penalties": 0
     },
     {
@@ -32,6 +32,14 @@
       "crest": "https://crests.football-data.org/813.svg",
       "goals": 4,
       "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "team": "France",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 4,
+      "assists": 1,
       "penalties": 0
     },
     {
@@ -153,14 +161,6 @@
       "goals": 2,
       "assists": 0,
       "penalties": 0
-    },
-    {
-      "name": "Harry Kane",
-      "team": "England",
-      "crest": "https://crests.football-data.org/770.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 1
     }
   ]
 }
