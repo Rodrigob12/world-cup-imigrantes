@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T03:30:15.309Z",
+  "updated": "2026-06-26T09:21:23.954Z",
   "source": "football-data.org WC",
   "groups": [
     {
@@ -194,12 +194,12 @@
           "crest": "https://crests.football-data.org/usa.svg",
           "played": 3,
           "w": 2,
-          "d": 1,
-          "l": 0,
+          "d": 0,
+          "l": 1,
           "gf": 8,
-          "ga": 3,
-          "gd": 5,
-          "points": 7,
+          "ga": 4,
+          "gd": 4,
+          "points": 6,
           "form": []
         },
         {
@@ -235,13 +235,13 @@
           "tla": "TUR",
           "crest": "https://crests.football-data.org/803.svg",
           "played": 3,
-          "w": 0,
-          "d": 1,
+          "w": 1,
+          "d": 0,
           "l": 2,
-          "gf": 2,
+          "gf": 3,
           "ga": 5,
-          "gd": -3,
-          "points": 1,
+          "gd": -2,
+          "points": 3,
           "form": []
         }
       ]
