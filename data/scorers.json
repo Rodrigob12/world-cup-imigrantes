@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26T19:43:51.561Z",
+  "updated": "2026-06-27T02:53:27.909Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -91,6 +91,14 @@
       "penalties": 0
     },
     {
+      "name": "Ismaïla Sarr",
+      "team": "Senegal",
+      "crest": "https://crests.football-data.org/senegal.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
       "name": "Julián Quiñones",
       "team": "Mexico",
       "crest": "https://crests.football-data.org/769.svg",
@@ -152,14 +160,6 @@
       "crest": "https://crests.football-data.org/758.svg",
       "goals": 2,
       "assists": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Elijah Just",
-      "team": "New Zealand",
-      "crest": "https://crests.football-data.org/783.svg",
-      "goals": 2,
-      "assists": 0,
       "penalties": 0
     }
   ]
