@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T02:53:27.909Z",
+  "updated": "2026-06-27T08:33:31.160Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -56,6 +56,14 @@
       "crest": "https://crests.football-data.org/759.svg",
       "goals": 3,
       "assists": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Elijah Just",
+      "team": "New Zealand",
+      "crest": "https://crests.football-data.org/783.svg",
+      "goals": 3,
+      "assists": 0,
       "penalties": 0
     },
     {
@@ -152,14 +160,6 @@
       "crest": "https://crests.football-data.org/792.svg",
       "goals": 2,
       "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Maximiliano Araújo",
-      "team": "Uruguay",
-      "crest": "https://crests.football-data.org/758.svg",
-      "goals": 2,
-      "assists": 1,
       "penalties": 0
     }
   ]

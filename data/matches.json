@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T02:53:28.143Z",
+  "updated": "2026-06-27T08:33:31.438Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1286,42 +1286,42 @@
     {
       "id": 537367,
       "utcDate": "2026-06-27T03:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "home": {
         "name": "New Zealand",
         "tla": "NZL",
         "crest": "https://crests.football-data.org/783.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Belgium",
         "tla": "BEL",
         "crest": "https://crests.football-data.org/805.svg",
-        "score": null
+        "score": 5
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537368,
       "utcDate": "2026-06-27T03:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "GROUP_STAGE",
       "group": "GROUP_G",
       "home": {
         "name": "Egypt",
         "tla": "EGY",
         "crest": "https://crests.football-data.org/825.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Iran",
         "tla": "IRN",
         "crest": "https://crests.football-data.org/iran.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537413,
@@ -1450,15 +1450,15 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "South Africa",
+        "tla": "RSA",
+        "crest": "https://crests.football-data.org/9396.svg",
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Canada",
+        "tla": "CAN",
+        "crest": "https://crests.football-data.org/canada.svg",
         "score": null
       },
       "winner": null
@@ -1470,15 +1470,15 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Brazil",
+        "tla": "BRA",
+        "crest": "https://crests.football-data.org/764.svg",
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Japan",
+        "tla": "JPN",
+        "crest": "https://crests.football-data.org/766.svg",
         "score": null
       },
       "winner": null
@@ -1490,9 +1490,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Germany",
+        "tla": "GER",
+        "crest": "https://crests.football-data.org/759.svg",
         "score": null
       },
       "away": {
@@ -1510,15 +1510,15 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Netherlands",
+        "tla": "NED",
+        "crest": "https://crests.football-data.org/8601.svg",
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Morocco",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/morocco.svg",
         "score": null
       },
       "winner": null
@@ -1530,9 +1530,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Ivory Coast",
+        "tla": "CIV",
+        "crest": "https://crests.football-data.org/787.svg",
         "score": null
       },
       "away": {
@@ -1570,9 +1570,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Mexico",
+        "tla": "MEX",
+        "crest": "https://crests.football-data.org/769.svg",
         "score": null
       },
       "away": {
@@ -1630,15 +1630,15 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "United States",
+        "tla": "USA",
+        "crest": "https://crests.football-data.org/usa.svg",
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Bosnia-Herzegovina",
+        "tla": "BIH",
+        "crest": "https://crests.football-data.org/bosnia.svg",
         "score": null
       },
       "winner": null
@@ -1690,9 +1690,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Switzerland",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg",
         "score": null
       },
       "away": {
@@ -1710,9 +1710,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Australia",
+        "tla": "AUS",
+        "crest": "https://crests.football-data.org/779.svg",
         "score": null
       },
       "away": {
@@ -1730,9 +1730,9 @@
       "stage": "LAST_32",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Argentina",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png",
         "score": null
       },
       "away": {
