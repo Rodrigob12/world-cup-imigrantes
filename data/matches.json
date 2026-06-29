@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T15:42:12.842Z",
+  "updated": "2026-06-29T19:54:10.481Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1466,22 +1466,22 @@
     {
       "id": 537423,
       "utcDate": "2026-06-29T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Brazil",
         "tla": "BRA",
         "crest": "https://crests.football-data.org/764.svg",
-        "score": null
+        "score": 2
       },
       "away": {
         "name": "Japan",
         "tla": "JPN",
         "crest": "https://crests.football-data.org/766.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537415,
