@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T19:16:38.525Z",
+  "updated": "2026-06-29T03:40:39.196Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1446,7 +1446,7 @@
     {
       "id": 537417,
       "utcDate": "2026-06-28T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
@@ -1459,9 +1459,9 @@
         "name": "Canada",
         "tla": "CAN",
         "crest": "https://crests.football-data.org/canada.svg",
-        "score": 0
+        "score": 1
       },
-      "winner": "DRAW"
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537423,
