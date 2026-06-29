@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T03:40:39.196Z",
+  "updated": "2026-06-29T10:53:47.262Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1770,9 +1770,9 @@
       "stage": "LAST_16",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Canada",
+        "tla": "CAN",
+        "crest": "https://crests.football-data.org/canada.svg",
         "score": null
       },
       "away": {
