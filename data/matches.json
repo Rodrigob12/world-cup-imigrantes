@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T03:28:23.810Z",
+  "updated": "2026-06-30T09:30:40.477Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1501,27 +1501,27 @@
         "crest": "https://crests.football-data.org/761.svg",
         "score": 5
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537418,
       "utcDate": "2026-06-30T01:00:00Z",
-      "status": "PAUSED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Netherlands",
         "tla": "NED",
         "crest": "https://crests.football-data.org/8601.svg",
-        "score": 1
+        "score": 3
       },
       "away": {
         "name": "Morocco",
         "tla": "MAR",
         "crest": "https://crests.football-data.org/morocco.svg",
-        "score": 1
+        "score": 4
       },
-      "winner": "DRAW"
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537424,
@@ -1776,9 +1776,9 @@
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Morocco",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/morocco.svg",
         "score": null
       },
       "winner": null
@@ -1790,9 +1790,9 @@
       "stage": "LAST_16",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Paraguay",
+        "tla": "PAR",
+        "crest": "https://crests.football-data.org/761.svg",
         "score": null
       },
       "away": {
@@ -1810,9 +1810,9 @@
       "stage": "LAST_16",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Brazil",
+        "tla": "BRA",
+        "crest": "https://crests.football-data.org/764.svg",
         "score": null
       },
       "away": {
