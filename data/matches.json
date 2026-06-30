@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T14:14:22.706Z",
+  "updated": "2026-06-30T19:52:28.443Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1526,22 +1526,22 @@
     {
       "id": 537424,
       "utcDate": "2026-06-30T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Ivory Coast",
         "tla": "CIV",
         "crest": "https://crests.football-data.org/787.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Norway",
         "tla": "NOR",
         "crest": "https://crests.football-data.org/813.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537416,

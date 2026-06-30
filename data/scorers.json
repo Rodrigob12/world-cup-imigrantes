@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T14:14:22.498Z",
+  "updated": "2026-06-30T19:52:28.161Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -7,6 +7,14 @@
       "team": "Argentina",
       "crest": "https://crests.football-data.org/762.png",
       "goals": 6,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Erling Haaland",
+      "team": "Norway",
+      "crest": "https://crests.football-data.org/813.svg",
+      "goals": 5,
       "assists": 0,
       "penalties": 0
     },
@@ -24,14 +32,6 @@
       "crest": "https://crests.football-data.org/773.svg",
       "goals": 4,
       "assists": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Erling Haaland",
-      "team": "Norway",
-      "crest": "https://crests.football-data.org/813.svg",
-      "goals": 4,
-      "assists": 0,
       "penalties": 0
     },
     {
