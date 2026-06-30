@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T19:54:10.481Z",
+  "updated": "2026-06-30T03:28:23.810Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1486,42 +1486,42 @@
     {
       "id": 537415,
       "utcDate": "2026-06-29T20:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Germany",
         "tla": "GER",
         "crest": "https://crests.football-data.org/759.svg",
-        "score": null
+        "score": 4
       },
       "away": {
         "name": "Paraguay",
         "tla": "PAR",
         "crest": "https://crests.football-data.org/761.svg",
-        "score": null
+        "score": 5
       },
       "winner": null
     },
     {
       "id": 537418,
       "utcDate": "2026-06-30T01:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Netherlands",
         "tla": "NED",
         "crest": "https://crests.football-data.org/8601.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Morocco",
         "tla": "MAR",
         "crest": "https://crests.football-data.org/morocco.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537424,

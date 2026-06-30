@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T19:54:10.239Z",
+  "updated": "2026-06-30T03:28:23.622Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -49,6 +49,14 @@
       "goals": 3,
       "assists": 0,
       "penalties": 0
+    },
+    {
+      "name": "Kai Havertz",
+      "team": "Germany",
+      "crest": "https://crests.football-data.org/759.svg",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 1
     },
     {
       "name": "Deniz Undav",
@@ -115,6 +123,14 @@
       "penalties": 0
     },
     {
+      "name": "Cody Gakpo",
+      "team": "Netherlands",
+      "crest": "https://crests.football-data.org/8601.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
       "name": "Ismaïla Sarr",
       "team": "Senegal",
       "crest": "https://crests.football-data.org/senegal.svg",
@@ -144,22 +160,6 @@
       "crest": "https://crests.football-data.org/usa.svg",
       "goals": 2,
       "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Kai Havertz",
-      "team": "Germany",
-      "crest": "https://crests.football-data.org/759.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 1
-    },
-    {
-      "name": "Crysencio Summerville",
-      "team": "Netherlands",
-      "crest": "https://crests.football-data.org/8601.svg",
-      "goals": 2,
-      "assists": 1,
       "penalties": 0
     }
   ]
