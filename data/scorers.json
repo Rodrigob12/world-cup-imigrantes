@@ -1,7 +1,15 @@
 {
-  "updated": "2026-06-30T19:52:28.161Z",
+  "updated": "2026-07-01T03:37:11.200Z",
   "source": "football-data.org WC",
   "scorers": [
+    {
+      "name": "Kylian Mbappé",
+      "team": "France",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 6,
+      "assists": 2,
+      "penalties": 0
+    },
     {
       "name": "Lionel Messi",
       "team": "Argentina",
@@ -27,7 +35,7 @@
       "penalties": 0
     },
     {
-      "name": "Kylian Mbappé",
+      "name": "Ousmane Dembélé",
       "team": "France",
       "crest": "https://crests.football-data.org/773.svg",
       "goals": 4,
@@ -35,10 +43,10 @@
       "penalties": 0
     },
     {
-      "name": "Ousmane Dembélé",
-      "team": "France",
-      "crest": "https://crests.football-data.org/773.svg",
-      "goals": 4,
+      "name": "Julián Quiñones",
+      "team": "Mexico",
+      "crest": "https://crests.football-data.org/769.svg",
+      "goals": 3,
       "assists": 1,
       "penalties": 0
     },
@@ -139,7 +147,7 @@
       "penalties": 0
     },
     {
-      "name": "Julián Quiñones",
+      "name": "Raúl Jiménez",
       "team": "Mexico",
       "crest": "https://crests.football-data.org/769.svg",
       "goals": 2,
@@ -150,14 +158,6 @@
       "name": "Cyle Larin",
       "team": "Canada",
       "crest": "https://crests.football-data.org/canada.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Folarin Balogun",
-      "team": "United States",
-      "crest": "https://crests.football-data.org/usa.svg",
       "goals": 2,
       "assists": 0,
       "penalties": 0

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T19:52:28.443Z",
+  "updated": "2026-07-01T03:37:11.430Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1546,42 +1546,42 @@
     {
       "id": 537416,
       "utcDate": "2026-06-30T21:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "France",
         "tla": "FRA",
         "crest": "https://crests.football-data.org/773.svg",
-        "score": null
+        "score": 3
       },
       "away": {
         "name": "Sweden",
         "tla": "SWE",
         "crest": "https://crests.football-data.org/792.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537425,
       "utcDate": "2026-07-01T01:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Mexico",
         "tla": "MEX",
         "crest": "https://crests.football-data.org/769.svg",
-        "score": null
+        "score": 2
       },
       "away": {
         "name": "Ecuador",
         "tla": "ECU",
         "crest": "https://crests.football-data.org/791.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537426,
