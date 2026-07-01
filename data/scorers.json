@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T14:30:28.975Z",
+  "updated": "2026-07-01T19:51:17.619Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -25,6 +25,14 @@
       "goals": 5,
       "assists": 0,
       "penalties": 0
+    },
+    {
+      "name": "Harry Kane",
+      "team": "England",
+      "crest": "https://crests.football-data.org/770.svg",
+      "goals": 5,
+      "assists": 0,
+      "penalties": 1
     },
     {
       "name": "Vinicius Junior",
@@ -86,14 +94,6 @@
       "name": "Yoane Wissa",
       "team": "Congo DR",
       "crest": "https://crests.football-data.org/congo_dr.svg",
-      "goals": 3,
-      "assists": 0,
-      "penalties": 1
-    },
-    {
-      "name": "Harry Kane",
-      "team": "England",
-      "crest": "https://crests.football-data.org/770.svg",
       "goals": 3,
       "assists": 0,
       "penalties": 1
