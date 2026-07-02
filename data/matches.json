@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T19:51:17.845Z",
+  "updated": "2026-07-02T03:22:30.218Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1606,42 +1606,42 @@
     {
       "id": 537422,
       "utcDate": "2026-07-01T20:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Belgium",
         "tla": "BEL",
         "crest": "https://crests.football-data.org/805.svg",
-        "score": null
+        "score": 3
       },
       "away": {
         "name": "Senegal",
         "tla": "SEN",
         "crest": "https://crests.football-data.org/senegal.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537421,
       "utcDate": "2026-07-02T00:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "United States",
         "tla": "USA",
         "crest": "https://crests.football-data.org/usa.svg",
-        "score": null
+        "score": 2
       },
       "away": {
         "name": "Bosnia-Herzegovina",
         "tla": "BIH",
         "crest": "https://crests.football-data.org/bosnia.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537420,

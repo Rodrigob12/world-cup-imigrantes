@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T19:51:17.619Z",
+  "updated": "2026-07-02T03:22:30.024Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -51,11 +51,27 @@
       "penalties": 0
     },
     {
+      "name": "Ismaïla Sarr",
+      "team": "Senegal",
+      "crest": "https://crests.football-data.org/senegal.svg",
+      "goals": 4,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
       "name": "Julián Quiñones",
       "team": "Mexico",
       "crest": "https://crests.football-data.org/769.svg",
       "goals": 3,
       "assists": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Folarin Balogun",
+      "team": "United States",
+      "crest": "https://crests.football-data.org/usa.svg",
+      "goals": 3,
+      "assists": 0,
       "penalties": 0
     },
     {
@@ -139,25 +155,9 @@
       "penalties": 0
     },
     {
-      "name": "Ismaïla Sarr",
-      "team": "Senegal",
-      "crest": "https://crests.football-data.org/senegal.svg",
-      "goals": 3,
-      "assists": 1,
-      "penalties": 0
-    },
-    {
       "name": "Raúl Jiménez",
       "team": "Mexico",
       "crest": "https://crests.football-data.org/769.svg",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Cyle Larin",
-      "team": "Canada",
-      "crest": "https://crests.football-data.org/canada.svg",
       "goals": 2,
       "assists": 0,
       "penalties": 0
