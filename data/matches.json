@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T02:45:08.357Z",
+  "updated": "2026-07-03T08:59:01.099Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1686,22 +1686,22 @@
     {
       "id": 537429,
       "utcDate": "2026-07-03T03:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Switzerland",
         "tla": "SUI",
         "crest": "https://crests.football-data.org/788.svg",
-        "score": null
+        "score": 2
       },
       "away": {
         "name": "Algeria",
         "tla": "ALG",
         "crest": "https://crests.football-data.org/algeria.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537428,

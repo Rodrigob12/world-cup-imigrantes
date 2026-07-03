@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T02:45:07.966Z",
+  "updated": "2026-07-03T08:59:00.798Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -127,7 +127,7 @@
       "team": "Switzerland",
       "crest": "https://crests.football-data.org/788.svg",
       "goals": 3,
-      "assists": 1,
+      "assists": 2,
       "penalties": 0
     },
     {
