@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T19:21:06.690Z",
+  "updated": "2026-07-03T02:45:08.357Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1646,42 +1646,42 @@
     {
       "id": 537420,
       "utcDate": "2026-07-02T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Spain",
         "tla": "ESP",
         "crest": "https://crests.football-data.org/760.svg",
-        "score": null
+        "score": 3
       },
       "away": {
         "name": "Austria",
         "tla": "AUT",
         "crest": "https://crests.football-data.org/816.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537419,
       "utcDate": "2026-07-02T23:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Portugal",
         "tla": "POR",
         "crest": "https://crests.football-data.org/765.svg",
-        "score": null
+        "score": 2
       },
       "away": {
         "name": "Croatia",
         "tla": "CRO",
         "crest": "https://crests.football-data.org/799.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537429,
