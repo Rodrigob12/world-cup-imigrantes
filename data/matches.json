@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T13:58:26.960Z",
+  "updated": "2026-07-03T19:17:55.170Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1706,22 +1706,22 @@
     {
       "id": 537428,
       "utcDate": "2026-07-03T18:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Australia",
         "tla": "AUS",
         "crest": "https://crests.football-data.org/779.svg",
-        "score": null
+        "score": 0
       },
       "away": {
         "name": "Egypt",
         "tla": "EGY",
         "crest": "https://crests.football-data.org/825.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537427,
