@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T19:17:55.170Z",
+  "updated": "2026-07-04T02:40:59.636Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1706,62 +1706,62 @@
     {
       "id": 537428,
       "utcDate": "2026-07-03T18:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Australia",
         "tla": "AUS",
         "crest": "https://crests.football-data.org/779.svg",
-        "score": 0
+        "score": 3
       },
       "away": {
         "name": "Egypt",
         "tla": "EGY",
         "crest": "https://crests.football-data.org/825.svg",
-        "score": 1
+        "score": 5
       },
-      "winner": "AWAY_TEAM"
+      "winner": null
     },
     {
       "id": 537427,
       "utcDate": "2026-07-03T22:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Argentina",
         "tla": "ARG",
         "crest": "https://crests.football-data.org/762.png",
-        "score": null
+        "score": 3
       },
       "away": {
         "name": "Cape Verde Islands",
         "tla": "CPV",
         "crest": "https://crests.football-data.org/cape_verde.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537430,
       "utcDate": "2026-07-04T01:30:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "stage": "LAST_32",
       "group": null,
       "home": {
         "name": "Colombia",
         "tla": "COL",
         "crest": "https://crests.football-data.org/818.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Ghana",
         "tla": "GHA",
         "crest": "https://crests.football-data.org/ghana.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537376,
