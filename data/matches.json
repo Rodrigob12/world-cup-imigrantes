@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T13:19:53.600Z",
+  "updated": "2026-07-04T19:08:07.111Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1766,22 +1766,22 @@
     {
       "id": 537376,
       "utcDate": "2026-07-04T17:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "LAST_16",
       "group": null,
       "home": {
         "name": "Canada",
         "tla": "CAN",
         "crest": "https://crests.football-data.org/canada.svg",
-        "score": null
+        "score": 0
       },
       "away": {
         "name": "Morocco",
         "tla": "MAR",
         "crest": "https://crests.football-data.org/morocco.svg",
-        "score": null
+        "score": 3
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537375,
