@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T02:40:59.636Z",
+  "updated": "2026-07-04T08:33:47.140Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1721,7 +1721,7 @@
         "crest": "https://crests.football-data.org/825.svg",
         "score": 5
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537427,
@@ -1746,7 +1746,7 @@
     {
       "id": 537430,
       "utcDate": "2026-07-04T01:30:00Z",
-      "status": "PAUSED",
+      "status": "FINISHED",
       "stage": "LAST_32",
       "group": null,
       "home": {
@@ -1850,15 +1850,15 @@
       "stage": "LAST_16",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Portugal",
+        "tla": "POR",
+        "crest": "https://crests.football-data.org/765.svg",
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg",
         "score": null
       },
       "winner": null
@@ -1890,15 +1890,15 @@
       "stage": "LAST_16",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Argentina",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png",
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Egypt",
+        "tla": "EGY",
+        "crest": "https://crests.football-data.org/825.svg",
         "score": null
       },
       "winner": null
@@ -1910,15 +1910,15 @@
       "stage": "LAST_16",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Switzerland",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg",
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Colombia",
+        "tla": "COL",
+        "crest": "https://crests.football-data.org/818.svg",
         "score": null
       },
       "winner": null
