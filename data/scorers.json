@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T08:33:46.937Z",
+  "updated": "2026-07-04T13:19:53.338Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -7,7 +7,7 @@
       "team": "Argentina",
       "crest": "https://crests.football-data.org/762.png",
       "goals": 7,
-      "assists": 1,
+      "assists": 0,
       "penalties": 0
     },
     {
