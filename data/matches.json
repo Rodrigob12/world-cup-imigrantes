@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T19:08:07.111Z",
+  "updated": "2026-07-05T02:51:56.269Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1766,7 +1766,7 @@
     {
       "id": 537376,
       "utcDate": "2026-07-04T17:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "home": {
@@ -1786,22 +1786,22 @@
     {
       "id": 537375,
       "utcDate": "2026-07-04T21:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "home": {
         "name": "Paraguay",
         "tla": "PAR",
         "crest": "https://crests.football-data.org/761.svg",
-        "score": null
+        "score": 0
       },
       "away": {
         "name": "France",
         "tla": "FRA",
         "crest": "https://crests.football-data.org/773.svg",
-        "score": null
+        "score": 1
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537377,

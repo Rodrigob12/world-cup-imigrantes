@@ -1,21 +1,21 @@
 {
-  "updated": "2026-07-04T19:08:06.646Z",
+  "updated": "2026-07-05T02:51:56.097Z",
   "source": "football-data.org WC",
   "scorers": [
+    {
+      "name": "Kylian Mbappé",
+      "team": "France",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 7,
+      "assists": 2,
+      "penalties": 1
+    },
     {
       "name": "Lionel Messi",
       "team": "Argentina",
       "crest": "https://crests.football-data.org/762.png",
       "goals": 7,
       "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Kylian Mbappé",
-      "team": "France",
-      "crest": "https://crests.football-data.org/773.svg",
-      "goals": 6,
-      "assists": 2,
       "penalties": 0
     },
     {
