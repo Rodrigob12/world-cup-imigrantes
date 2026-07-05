@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T02:51:56.269Z",
+  "updated": "2026-07-05T08:49:46.742Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1930,15 +1930,15 @@
       "stage": "QUARTER_FINALS",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg",
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Morocco",
+        "tla": "MAR",
+        "crest": "https://crests.football-data.org/morocco.svg",
         "score": null
       },
       "winner": null
