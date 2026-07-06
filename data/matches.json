@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T15:27:09.200Z",
+  "updated": "2026-07-06T19:52:28.964Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1846,22 +1846,22 @@
     {
       "id": 537379,
       "utcDate": "2026-07-06T19:00:00Z",
-      "status": "TIMED",
+      "status": "LIVE",
       "stage": "LAST_16",
       "group": null,
       "home": {
         "name": "Portugal",
         "tla": "POR",
         "crest": "https://crests.football-data.org/765.svg",
-        "score": null
+        "score": 0
       },
       "away": {
         "name": "Spain",
         "tla": "ESP",
         "crest": "https://crests.football-data.org/760.svg",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537380,
