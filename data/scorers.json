@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T19:14:14.550Z",
+  "updated": "2026-07-06T02:58:34.713Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -11,6 +11,14 @@
       "penalties": 1
     },
     {
+      "name": "Erling Haaland",
+      "team": "Norway",
+      "crest": "https://crests.football-data.org/813.svg",
+      "goals": 7,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
       "name": "Lionel Messi",
       "team": "Argentina",
       "crest": "https://crests.football-data.org/762.png",
@@ -19,25 +27,33 @@
       "penalties": 0
     },
     {
-      "name": "Erling Haaland",
-      "team": "Norway",
-      "crest": "https://crests.football-data.org/813.svg",
-      "goals": 5,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
       "name": "Harry Kane",
       "team": "England",
       "crest": "https://crests.football-data.org/770.svg",
-      "goals": 5,
-      "assists": 0,
-      "penalties": 1
+      "goals": 6,
+      "assists": 1,
+      "penalties": 2
+    },
+    {
+      "name": "Julián Quiñones",
+      "team": "Mexico",
+      "crest": "https://crests.football-data.org/769.svg",
+      "goals": 4,
+      "assists": 1,
+      "penalties": 0
     },
     {
       "name": "Vinicius Junior",
       "team": "Brazil",
       "crest": "https://crests.football-data.org/764.svg",
+      "goals": 4,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Jude Bellingham",
+      "team": "England",
+      "crest": "https://crests.football-data.org/770.svg",
       "goals": 4,
       "assists": 1,
       "penalties": 0
@@ -67,12 +83,12 @@
       "penalties": 0
     },
     {
-      "name": "Julián Quiñones",
+      "name": "Raúl Jiménez",
       "team": "Mexico",
       "crest": "https://crests.football-data.org/769.svg",
       "goals": 3,
-      "assists": 1,
-      "penalties": 0
+      "assists": 0,
+      "penalties": 1
     },
     {
       "name": "Folarin Balogun",
@@ -144,22 +160,6 @@
       "crest": "https://crests.football-data.org/764.svg",
       "goals": 3,
       "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Brian Brobbey",
-      "team": "Netherlands",
-      "crest": "https://crests.football-data.org/8601.svg",
-      "goals": 3,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Cody Gakpo",
-      "team": "Netherlands",
-      "crest": "https://crests.football-data.org/8601.svg",
-      "goals": 3,
-      "assists": 1,
       "penalties": 0
     }
   ]

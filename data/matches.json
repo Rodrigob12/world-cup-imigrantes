@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T19:14:14.806Z",
+  "updated": "2026-07-06T02:58:34.999Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1806,42 +1806,42 @@
     {
       "id": 537377,
       "utcDate": "2026-07-05T20:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "home": {
         "name": "Brazil",
         "tla": "BRA",
         "crest": "https://crests.football-data.org/764.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Norway",
         "tla": "NOR",
         "crest": "https://crests.football-data.org/813.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537378,
-      "utcDate": "2026-07-06T00:00:00Z",
-      "status": "TIMED",
+      "utcDate": "2026-07-06T01:00:00Z",
+      "status": "IN_PLAY",
       "stage": "LAST_16",
       "group": null,
       "home": {
         "name": "Mexico",
         "tla": "MEX",
         "crest": "https://crests.football-data.org/769.svg",
-        "score": null
+        "score": 2
       },
       "away": {
         "name": "England",
         "tla": "ENG",
         "crest": "https://crests.football-data.org/770.svg",
-        "score": null
+        "score": 3
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537379,
