@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T02:52:38.264Z",
+  "updated": "2026-07-07T09:37:13.840Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1950,15 +1950,15 @@
       "stage": "QUARTER_FINALS",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg",
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Belgium",
+        "tla": "BEL",
+        "crest": "https://crests.football-data.org/805.svg",
         "score": null
       },
       "winner": null
