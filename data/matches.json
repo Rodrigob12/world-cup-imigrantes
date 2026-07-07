@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T19:52:28.964Z",
+  "updated": "2026-07-07T02:52:38.264Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1846,7 +1846,7 @@
     {
       "id": 537379,
       "utcDate": "2026-07-06T19:00:00Z",
-      "status": "LIVE",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "home": {
@@ -1859,29 +1859,29 @@
         "name": "Spain",
         "tla": "ESP",
         "crest": "https://crests.football-data.org/760.svg",
-        "score": 0
+        "score": 1
       },
-      "winner": "DRAW"
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537380,
       "utcDate": "2026-07-07T00:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "home": {
         "name": "United States",
         "tla": "USA",
         "crest": "https://crests.football-data.org/usa.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Belgium",
         "tla": "BEL",
         "crest": "https://crests.football-data.org/805.svg",
-        "score": null
+        "score": 4
       },
-      "winner": null
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537381,
