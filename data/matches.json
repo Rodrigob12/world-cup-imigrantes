@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T14:28:02.095Z",
+  "updated": "2026-07-07T19:52:06.461Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1886,22 +1886,22 @@
     {
       "id": 537381,
       "utcDate": "2026-07-07T16:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "home": {
         "name": "Argentina",
         "tla": "ARG",
         "crest": "https://crests.football-data.org/762.png",
-        "score": null
+        "score": 3
       },
       "away": {
         "name": "Egypt",
         "tla": "EGY",
         "crest": "https://crests.football-data.org/825.svg",
-        "score": null
+        "score": 2
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537382,

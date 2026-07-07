@@ -1,7 +1,15 @@
 {
-  "updated": "2026-07-07T14:28:01.745Z",
+  "updated": "2026-07-07T19:52:06.282Z",
   "source": "football-data.org WC",
   "scorers": [
+    {
+      "name": "Lionel Messi",
+      "team": "Argentina",
+      "crest": "https://crests.football-data.org/762.png",
+      "goals": 8,
+      "assists": 1,
+      "penalties": 0
+    },
     {
       "name": "Kylian Mbappé",
       "team": "France",
@@ -14,14 +22,6 @@
       "name": "Erling Haaland",
       "team": "Norway",
       "crest": "https://crests.football-data.org/813.svg",
-      "goals": 7,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Lionel Messi",
-      "team": "Argentina",
-      "crest": "https://crests.football-data.org/762.png",
       "goals": 7,
       "assists": 0,
       "penalties": 0
