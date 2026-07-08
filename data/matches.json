@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T02:29:31.689Z",
+  "updated": "2026-07-08T08:24:26.587Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1921,7 +1921,7 @@
         "crest": "https://crests.football-data.org/818.svg",
         "score": 3
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     },
     {
       "id": 537383,
@@ -1990,15 +1990,15 @@
       "stage": "QUARTER_FINALS",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Argentina",
+        "tla": "ARG",
+        "crest": "https://crests.football-data.org/762.png",
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Switzerland",
+        "tla": "SUI",
+        "crest": "https://crests.football-data.org/788.svg",
         "score": null
       },
       "winner": null
