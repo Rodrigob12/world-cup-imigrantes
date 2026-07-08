@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T19:52:06.461Z",
+  "updated": "2026-07-08T02:29:31.689Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -1906,20 +1906,20 @@
     {
       "id": 537382,
       "utcDate": "2026-07-07T20:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "LAST_16",
       "group": null,
       "home": {
         "name": "Switzerland",
         "tla": "SUI",
         "crest": "https://crests.football-data.org/788.svg",
-        "score": null
+        "score": 4
       },
       "away": {
         "name": "Colombia",
         "tla": "COL",
         "crest": "https://crests.football-data.org/818.svg",
-        "score": null
+        "score": 3
       },
       "winner": null
     },
