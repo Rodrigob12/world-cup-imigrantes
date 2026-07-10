@@ -1,7 +1,15 @@
 {
-  "updated": "2026-07-09T19:42:17.552Z",
+  "updated": "2026-07-10T02:48:54.018Z",
   "source": "football-data.org WC",
   "scorers": [
+    {
+      "name": "Kylian Mbappé",
+      "team": "France",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 8,
+      "assists": 2,
+      "penalties": 1
+    },
     {
       "name": "Lionel Messi",
       "team": "Argentina",
@@ -9,14 +17,6 @@
       "goals": 8,
       "assists": 1,
       "penalties": 0
-    },
-    {
-      "name": "Kylian Mbappé",
-      "team": "France",
-      "crest": "https://crests.football-data.org/773.svg",
-      "goals": 7,
-      "assists": 2,
-      "penalties": 1
     },
     {
       "name": "Erling Haaland",
@@ -33,6 +33,14 @@
       "goals": 6,
       "assists": 1,
       "penalties": 2
+    },
+    {
+      "name": "Ousmane Dembélé",
+      "team": "France",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 5,
+      "assists": 2,
+      "penalties": 0
     },
     {
       "name": "Julián Quiñones",
@@ -64,14 +72,6 @@
       "crest": "https://crests.football-data.org/760.svg",
       "goals": 4,
       "assists": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Ousmane Dembélé",
-      "team": "France",
-      "crest": "https://crests.football-data.org/773.svg",
-      "goals": 4,
-      "assists": 2,
       "penalties": 0
     },
     {
