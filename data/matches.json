@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T02:48:54.216Z",
+  "updated": "2026-07-10T09:31:07.470Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -2010,9 +2010,9 @@
       "stage": "SEMI_FINALS",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg",
         "score": null
       },
       "away": {
