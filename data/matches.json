@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T02:27:03.145Z",
+  "updated": "2026-07-11T07:51:38.153Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -2016,9 +2016,9 @@
         "score": null
       },
       "away": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg",
         "score": null
       },
       "winner": null
