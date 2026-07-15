@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T02:11:16.806Z",
+  "updated": "2026-07-15T08:05:04.846Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -2050,9 +2050,9 @@
       "stage": "THIRD_PLACE",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "France",
+        "tla": "FRA",
+        "crest": "https://crests.football-data.org/773.svg",
         "score": null
       },
       "away": {
@@ -2070,9 +2070,9 @@
       "stage": "FINAL",
       "group": null,
       "home": {
-        "name": null,
-        "tla": null,
-        "crest": null,
+        "name": "Spain",
+        "tla": "ESP",
+        "crest": "https://crests.football-data.org/760.svg",
         "score": null
       },
       "away": {
