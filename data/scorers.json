@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T19:16:18.593Z",
+  "updated": "2026-07-15T02:11:16.548Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -43,6 +43,14 @@
       "penalties": 0
     },
     {
+      "name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "crest": "https://crests.football-data.org/760.svg",
+      "goals": 5,
+      "assists": 1,
+      "penalties": 1
+    },
+    {
       "name": "Ousmane Dembélé",
       "team": "France",
       "crest": "https://crests.football-data.org/773.svg",
@@ -62,14 +70,6 @@
       "name": "Vinicius Junior",
       "team": "Brazil",
       "crest": "https://crests.football-data.org/764.svg",
-      "goals": 4,
-      "assists": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Mikel Oyarzabal",
-      "team": "Spain",
-      "crest": "https://crests.football-data.org/760.svg",
       "goals": 4,
       "assists": 1,
       "penalties": 0

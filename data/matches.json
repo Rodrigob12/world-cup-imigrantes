@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T19:16:18.890Z",
+  "updated": "2026-07-15T02:11:16.806Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -2006,7 +2006,7 @@
     {
       "id": 537387,
       "utcDate": "2026-07-14T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "stage": "SEMI_FINALS",
       "group": null,
       "home": {
@@ -2019,9 +2019,9 @@
         "name": "Spain",
         "tla": "ESP",
         "crest": "https://crests.football-data.org/760.svg",
-        "score": 0
+        "score": 2
       },
-      "winner": "DRAW"
+      "winner": "AWAY_TEAM"
     },
     {
       "id": 537388,
