@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T13:38:55.925Z",
+  "updated": "2026-07-15T19:07:07.318Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -2026,22 +2026,22 @@
     {
       "id": 537388,
       "utcDate": "2026-07-15T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "stage": "SEMI_FINALS",
       "group": null,
       "home": {
         "name": "England",
         "tla": "ENG",
         "crest": "https://crests.football-data.org/770.svg",
-        "score": null
+        "score": 0
       },
       "away": {
         "name": "Argentina",
         "tla": "ARG",
         "crest": "https://crests.football-data.org/762.png",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "DRAW"
     },
     {
       "id": 537389,
