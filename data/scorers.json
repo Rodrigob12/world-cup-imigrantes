@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17T02:27:12.431Z",
+  "updated": "2026-07-17T08:06:07.806Z",
   "source": "football-data.org WC",
   "scorers": [
     {
@@ -7,7 +7,7 @@
       "team": "France",
       "crest": "https://crests.football-data.org/773.svg",
       "goals": 8,
-      "assists": 2,
+      "assists": 3,
       "penalties": 1
     },
     {
