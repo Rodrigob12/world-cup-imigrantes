@@ -1,13 +1,13 @@
 {
-  "updated": "2026-07-18T19:00:31.192Z",
+  "updated": "2026-07-19T02:29:22.068Z",
   "source": "football-data.org WC",
   "scorers": [
     {
       "name": "Kylian Mbappé",
       "team": "France",
       "crest": "https://crests.football-data.org/773.svg",
-      "goals": 8,
-      "assists": 3,
+      "goals": 10,
+      "assists": 4,
       "penalties": 1
     },
     {
@@ -27,6 +27,14 @@
       "penalties": 0
     },
     {
+      "name": "Jude Bellingham",
+      "team": "England",
+      "crest": "https://crests.football-data.org/770.svg",
+      "goals": 7,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
       "name": "Harry Kane",
       "team": "England",
       "crest": "https://crests.football-data.org/770.svg",
@@ -35,11 +43,11 @@
       "penalties": 2
     },
     {
-      "name": "Jude Bellingham",
-      "team": "England",
-      "crest": "https://crests.football-data.org/770.svg",
+      "name": "Ousmane Dembélé",
+      "team": "France",
+      "crest": "https://crests.football-data.org/773.svg",
       "goals": 6,
-      "assists": 1,
+      "assists": 2,
       "penalties": 0
     },
     {
@@ -49,14 +57,6 @@
       "goals": 5,
       "assists": 1,
       "penalties": 1
-    },
-    {
-      "name": "Ousmane Dembélé",
-      "team": "France",
-      "crest": "https://crests.football-data.org/773.svg",
-      "goals": 5,
-      "assists": 2,
-      "penalties": 0
     },
     {
       "name": "Julián Quiñones",
@@ -131,6 +131,14 @@
       "penalties": 0
     },
     {
+      "name": "Bradley Barcola",
+      "team": "France",
+      "crest": "https://crests.football-data.org/773.svg",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
       "name": "Yoane Wissa",
       "team": "Congo DR",
       "crest": "https://crests.football-data.org/congo_dr.svg",
@@ -150,14 +158,6 @@
       "name": "Jonathan David",
       "team": "Canada",
       "crest": "https://crests.football-data.org/canada.svg",
-      "goals": 3,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Matheus Cunha",
-      "team": "Brazil",
-      "crest": "https://crests.football-data.org/764.svg",
       "goals": 3,
       "assists": 0,
       "penalties": 0
