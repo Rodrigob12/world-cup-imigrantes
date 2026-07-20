@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-19T19:02:32.442Z",
+  "updated": "2026-07-20T02:44:49.028Z",
   "source": "football-data.org WC",
   "count": 104,
   "matches": [
@@ -2066,22 +2066,22 @@
     {
       "id": 537390,
       "utcDate": "2026-07-19T19:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "stage": "FINAL",
       "group": null,
       "home": {
         "name": "Spain",
         "tla": "ESP",
         "crest": "https://crests.football-data.org/760.svg",
-        "score": null
+        "score": 1
       },
       "away": {
         "name": "Argentina",
         "tla": "ARG",
         "crest": "https://crests.football-data.org/762.png",
-        "score": null
+        "score": 0
       },
-      "winner": null
+      "winner": "HOME_TEAM"
     }
   ]
 }
